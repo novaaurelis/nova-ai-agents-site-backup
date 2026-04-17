@@ -15,6 +15,12 @@ export default function EnHome(){
 
 
 
+        <div className="hero-cta">
+          <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
+            <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
+          </div>
+        </div>
+
         <section className="features" aria-label="Features">
           <div className="feature-card">
             <strong>Runs 24/7</strong>
@@ -51,12 +57,6 @@ export default function EnHome(){
             <li>Paid modules (from 299 ₽) — deeper recipes and configs (optional)</li>
           </ul>
         </section>
-
-        <div className="hero-cta">
-          <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
-            <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
-          </div>
-        </div>
 
         <section className="models" aria-label="Models">
           <h3>Supported models (examples)</h3>
