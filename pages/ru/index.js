@@ -46,16 +46,6 @@ export default function RuHome(){
           </div>
         </section>
 
-        <section className="demo" aria-label="Пример работы" >
-          <h3>Как это может выглядеть (пример)</h3>
-          <div className="chat-card">
-            <div className="chat-line"><strong>Ты:</strong> Найди вечерний сеанс и купи 2 билета на субботу</div>
-            <div className="chat-line"><strong>Агент:</strong> Открываю сайт, авторизуйся в своём аккаунте и напиши «готово»</div>
-            <div className="chat-line muted"><em>Ты: готово</em></div>
-            <div className="chat-line"><strong>Агент:</strong> Нашёл сеанс 20:00, места 8–9. Оформляю... ✅ Билеты куплены. Код: K-XXXX</div>
-          </div>
-          <p className="muted">Пример упрощён — реальные шаги зависят от сайта и твоих аккаунтов.</p>
-        </section>
 
         <section className="what" aria-label="Что внутри">
           <h3>Что внутри</h3>

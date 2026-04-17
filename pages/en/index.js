@@ -42,16 +42,6 @@ export default function EnHome(){
           </div>
         </section>
 
-        <section className="demo" aria-label="Demo flow" >
-          <h3>How it can look (example)</h3>
-          <div className="chat-card">
-            <div className="chat-line"><strong>You:</strong> Find an evening show and buy 2 tickets for Saturday</div>
-            <div className="chat-line"><strong>Agent:</strong> I'll open the site — please sign in and say "done"</div>
-            <div className="chat-line muted"><em>You: done</em></div>
-            <div className="chat-line"><strong>Agent:</strong> Found a 20:00 show, seats 8–9. Ordering... ✅ Tickets bought. Code: K-XXXX</div>
-          </div>
-          <p className="muted">This is a simplified example — exact steps depend on the website and your accounts.</p>
-        </section>
 
         <section className="what" aria-label="What's inside">
           <h3>What's inside</h3>
