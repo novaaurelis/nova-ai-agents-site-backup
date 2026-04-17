@@ -14,7 +14,7 @@ export default function RuHome(){
           <li>Поддержка и обновления</li>
         </ul>
         <div className="cta">
-          <Link href="/ru/dashboard"><a className="button">Зарегистрироваться</a></Link>
+          <Link href="/ru/dashboard" className="button">Зарегистрироваться</Link>
         </div>
       </main>
     </div>

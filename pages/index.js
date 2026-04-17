@@ -5,8 +5,8 @@ export default function Home() {
     <div className="container">
       <h1>AI Agents — choose language</h1>
       <div className="links">
-        <Link href="/ru"><a>Русский</a></Link>
-        <Link href="/en"><a>English</a></Link>
+        <Link href="/ru">Русский</Link>
+        <Link href="/en">English</Link>
       </div>
     </div>
   )

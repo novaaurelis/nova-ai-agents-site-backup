@@ -6,9 +6,9 @@ export default function Header(){
       <div className="container nav">
         <h2 className="logo">AI Agents</h2>
         <nav>
-          <Link href="/ru"><a>RU</a></Link>
-          <Link href="/en"><a>EN</a></Link>
-          <Link href="/modules"><a>Модули</a></Link>
+          <Link href="/ru">RU</Link>
+          <Link href="/en">EN</Link>
+          <Link href="/modules">Модули</Link>
         </nav>
       </div>
     </header>
