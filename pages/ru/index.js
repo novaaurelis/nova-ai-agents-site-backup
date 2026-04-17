@@ -7,8 +7,10 @@ export default function RuHome(){
       <Header/>
       <main className="container">
         <section className="hero">
-          <h1 className="hero-title">Твоя команда - твоя суперсила</h1>
-          <p className="hero-sub">Собирай, запускай и кастомизируй персональных AI‑агентов: быстрый старт, готовые сценарии и полезные советы</p>
+          <div className="hero-inner">
+            <h1 className="hero-title">Твоя команда — твоя суперсила</h1>
+            <p className="hero-sub">Собирай, запускай и кастомизируй персональных AI‑агентов: быстрый старт, готовые сценарии и полезные советы</p>
+          </div>
         </section>
 
         <section className="features">

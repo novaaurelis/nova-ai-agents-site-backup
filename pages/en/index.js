@@ -7,8 +7,10 @@ export default function EnHome(){
       <Header/>
       <main className="container">
         <section className="hero">
-          <h1 className="hero-title">Your team — your superpower</h1>
-          <p className="hero-sub">Build, run and customize personal AI agents: quick start, ready workflows and practical tips</p>
+          <div className="hero-inner">
+            <h1 className="hero-title">Your team — your superpower</h1>
+            <p className="hero-sub">Build, run and customize personal AI agents: quick start, ready workflows and practical tips</p>
+          </div>
         </section>
 
         <section className="features">
