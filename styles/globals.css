@@ -37,7 +37,7 @@ body{
 .lang-item:hover{background:rgba(37,99,235,0.06);color:var(--accent)}
 
 /* Hero / page content */
-main.container{background:transparent;padding-top:36px;padding-bottom:60px}
+main.container{background:transparent;padding-top:36px;padding-bottom:60px;display:flex;flex-direction:column;min-height:calc(100vh - 120px)}
 .hero{display:flex;justify-content:center;padding:40px 0}
 /* make inner inline-block so its width matches the title's width */
 .hero-inner{display:inline-block;text-align:center}
@@ -47,6 +47,9 @@ main.container{background:transparent;padding-top:36px;padding-bottom:60px}
 
 /* subtitle constrained to hero-inner width (wraps to fit title width) */
 .hero-sub{color:var(--muted);font-size:clamp(14px,1.6vw,18px);margin:0 auto;display:block;width:100%;max-width:100%;line-height:1.4}
+
+/* footer placement */
+footer.muted{text-align:center;margin-top:auto;padding:20px 0 10px}
 
 /* keep earlier styles for features */
 .features{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}
