@@ -33,8 +33,6 @@ export default function EnFirstSteps(){
         <li>Store tokens securely in your dashboard.</li>
       </ul>
 
-      <p>If you want, I can auto-add a step-by-step install guide into the dashboard after signup — say "make guide" and I'll add a full how-to.</p>
-
       <p><Link href="/en/modules">← Back to modules</Link></p>
     </div>
   )
