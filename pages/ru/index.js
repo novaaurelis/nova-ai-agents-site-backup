@@ -6,7 +6,7 @@ export default function RuHome(){
     <div>
       <Header/>
       <main className="container">
-        <h1>AI‑агенты на основе OpenClaw</h1>
+        <h1>Создавай выдающееся прямо сейчас</h1>
         <p className="lead">Собирай, запускай и кастомизируй персональных AI‑агентов: быстрый старт, готовые сценарии и полезные советы.</p>
 
         <section className="features">
