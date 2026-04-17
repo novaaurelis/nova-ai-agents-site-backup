@@ -59,7 +59,7 @@ export default function EnHome(){
         </section>
 
         <section className="models" aria-label="Models">
-          <h3>Supported models (examples)</h3>
+          <h3 style={{textAlign: 'center'}}>Popular models</h3>
           <div className="model-grid">
             <div className="model">GLM</div>
             <div className="model">Gemini</div>

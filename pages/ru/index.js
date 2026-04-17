@@ -58,7 +58,7 @@ export default function RuHome(){
         </section>
 
         <section className="models" aria-label="Модели">
-          <h3>Поддерживаемые модели (примерно)</h3>
+          <h3 style={{textAlign: 'center'}}>Популярные модели</h3>
           <div className="model-grid">
             <div className="model">GLM</div>
             <div className="model">Gemini</div>
