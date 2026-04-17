@@ -23,7 +23,17 @@ export default function Header(){
   return (
     <header className="header">
       <div className="container nav">
-        <div />
+        <Link href={'/' + current} className="logo">
+          {current === 'ru' ? (
+            <>
+              <span>Опен</span><span className="logo-accent">Клоу</span>
+            </>
+          ) : (
+            <>
+              <span>Open</span><span className="logo-accent">Claw</span>
+            </>
+          )}
+        </Link>
         <nav className="nav-right">
           <div className="nav-links">
             <Link href={'/' + current + '/modules/first-steps'} className="nav-button">{current === 'ru' ? 'Первые шаги' : 'First steps'}</Link>
