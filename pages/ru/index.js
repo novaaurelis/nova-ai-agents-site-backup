@@ -13,7 +13,9 @@ export default function RuHome(){
           </div>
         </section>
 
-
+        <div className="hero-cta">
+          <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
+        </div>
 
         <section className="what">
           <h3>Что внутри</h3>
@@ -23,10 +25,6 @@ export default function RuHome(){
             <li>Платные модули (от 299 ₽) с продвинутыми конфигурациями — скоро</li>
           </ul>
         </section>
-
-        <div className="cta">
-          <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
-        </div>
 
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
