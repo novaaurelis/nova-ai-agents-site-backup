@@ -22,7 +22,9 @@ body{
 /* Header */
 .header{background:transparent;border-bottom:0;padding:10px 0}
 .container.nav{display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:27px;margin:0;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:4px}
+.logo{font-weight:800;font-size:27px;margin:0;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo span{display:inline-block}
+.site-logo{height:1.2em;width:auto;display:block}
 .logo-accent{color:#ef4444;margin-left:0}.nav-right{display:flex;align-items:center;gap:12px}
 
 /* Auth buttons */
