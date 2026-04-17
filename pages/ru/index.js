@@ -7,15 +7,31 @@ export default function RuHome(){
       <Header/>
       <main className="container">
         <h1>AI‑агенты на основе OpenClaw</h1>
-        <p>Коротко: бесплатная регистрация, инструкция по установке агента и платные модули с лайфхаками.</p>
-        <ul>
-          <li>Быстрая настройка</li>
-          <li>Готовые сценарии</li>
-          <li>Поддержка и обновления</li>
-        </ul>
+        <p className="lead">Собирай, запускай и кастомизируй персональных AI‑агентов: быстрый старт, готовые сценарии и полезные советы.</p>
+
+        <section className="features">
+          <h2>Почему OpenClaw</h2>
+          <ul>
+            <li>Простая установка: пошаговая инструкция для любой машины</li>
+            <li>Готовые сценарии: копируй и запускай</li>
+            <li>Расширяемость: плагины и продвинутые настройки</li>
+          </ul>
+        </section>
+
+        <section className="what">
+          <h3>Что внутри</h3>
+          <ul>
+            <li>Бесплатная регистрация и полная инструкция по установке</li>
+            <li>Примеры сообщества и базовый FAQ</li>
+            <li>Платные модули (от 299 ₽) с продвинутыми конфигурациями — скоро</li>
+          </ul>
+        </section>
+
         <div className="cta">
-          <Link href="/ru/dashboard" className="button">Зарегистрироваться</Link>
+          <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
         </div>
+
+        <footer className="muted">Вопросы? Пиши: hello@opn-claw.pro</footer>
       </main>
     </div>
   )
