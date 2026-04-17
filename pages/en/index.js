@@ -62,6 +62,13 @@ export default function EnHome(){
           </ul>
         </section>
 
+        <div className="hero-cta">
+          <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
+            <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
+            <Link href="/en/modules/first-steps" className="nav-button">First steps</Link>
+          </div>
+        </div>
+
         <section className="models" aria-label="Models">
           <h3>Supported models (examples)</h3>
           <div className="model-grid">
