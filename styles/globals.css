@@ -1,7 +1,7 @@
 /* Modern minimal global styles */
 :root{
-  --accent:#2563eb;
-  --accent-2:#1d4ed8;
+  --accent:#ff5a5a; /* primary red */
+  --accent-2:#e53935; /* darker red */
   --bg:#fbfdff;
   --surface:#ffffff;
   --muted:#6b7280;
@@ -25,7 +25,7 @@ body{
 .logo{font-weight:800;font-size:27px;margin:0;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
 .logo span{display:inline-block}
 .site-logo{height:1.2em;width:auto;display:block;mix-blend-mode:multiply}
-.logo-accent{color:#ef4444;margin-left:0}.nav-right{display:flex;align-items:center;gap:12px}
+.logo-accent{color:var(--accent);margin-left:0}.nav-right{display:flex;align-items:center;gap:12px}
 
 /* Auth buttons */
 .nav-button{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid transparent;text-decoration:none;font-weight:600;color:var(--accent);background:transparent}
