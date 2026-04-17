@@ -25,6 +25,10 @@ export default function Header(){
       <div className="container nav">
         <div />
         <nav className="nav-right">
+          <div className="nav-links">
+            <Link href={'/' + current + '/modules/first-steps'} className="nav-button">{current === 'ru' ? 'Первые шаги' : 'First steps'}</Link>
+          </div>
+
           <div className="auth-buttons">
             <Link href={loginHref} className="nav-button">{loginText}</Link>
             <Link href={registerHref} className="nav-button primary">{registerText}</Link>
