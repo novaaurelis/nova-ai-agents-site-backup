@@ -47,6 +47,7 @@ export default function RuHome(){
         </section>
 
 
+        <div style={{height:24}} />
         <section className="what" aria-label="Что внутри">
           <h3>Что внутри</h3>
           <ul>
