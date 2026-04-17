@@ -1,8 +1,9 @@
-export default function Dashboard(){
+export default function EnDashboard(){
   return (
     <div className="container">
-      <h1>Dashboard — welcome!</h1>
-      <p>The installation guide will be available here after registration.</p>
+      <h1>Dashboard</h1>
+      <p>After signup you'll see the install guide and materials here.</p>
+      <p>This is a placeholder — signup coming soon.</p>
     </div>
   )
 }
