@@ -28,7 +28,7 @@ export default function EnHome(){
           <Link href="/en/dashboard" className="button">Register — it's free</Link>
         </div>
 
-        <footer className="muted">© 2026 All rights reserved</footer>
+        <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
     </div>
   )

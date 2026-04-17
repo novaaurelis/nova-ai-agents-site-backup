@@ -28,7 +28,7 @@ export default function RuHome(){
           <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
         </div>
 
-        <footer className="muted">© 2026 All rights reserved</footer>
+        <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
     </div>
   )
