@@ -24,7 +24,7 @@ export default function Header(){
     <header className="header">
       <div className="container nav">
         <Link href={'/' + current} className="logo">
-          <img src="/logo.svg" alt="OpenClaw" className="site-logo" />
+          <img src="/logo.png" alt="OpenClaw" className="site-logo" />
           {current === 'ru' ? (
             <>
               <span>ОпенКлоу</span>
