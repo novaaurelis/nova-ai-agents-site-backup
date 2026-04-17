@@ -27,11 +27,11 @@ export default function Header(){
           <img src="/logo.png" alt="OpenClaw" className="site-logo" />
           {current === 'ru' ? (
             <>
-              <span>ОпенКлоу</span>
+              <span>Опен<span className="logo-accent">Клоу</span></span>
             </>
           ) : (
             <>
-              <span>OpenClaw</span>
+              <span>Open<span className="logo-accent">Claw</span></span>
             </>
           )}
         </Link>
