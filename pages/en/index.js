@@ -61,7 +61,7 @@ export default function EnHome(){
         <section className="models" aria-label="Models">
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
           <div style={{display:'flex',justifyContent:'center',marginTop:12}}>
-            <img src="/popular_ai.png" alt="popular models" style={{maxWidth:'100%',height:'auto',borderRadius:12,boxShadow:'0 8px 24px rgba(2,6,23,0.08)'}} />
+            <img src="/popular_ai.png" alt="popular models" className="popular-illustration" />
           </div>
         </section>
 
