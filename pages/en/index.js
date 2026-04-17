@@ -60,13 +60,8 @@ export default function EnHome(){
 
         <section className="models" aria-label="Models">
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
-          <div className="model-grid">
-            <div className="model">GLM</div>
-            <div className="model">Gemini</div>
-            <div className="model">GPT‑5</div>
-            <div className="model">Claude</div>
-            <div className="model">Grok</div>
-            <div className="model">and others — 300+ variants</div>
+          <div style={{display:'flex',justifyContent:'center',marginTop:12}}>
+            <img src="/popular_ai.png" alt="popular models" style={{maxWidth:'100%',height:'auto',borderRadius:12,boxShadow:'0 8px 24px rgba(2,6,23,0.08)'}} />
           </div>
         </section>
 
