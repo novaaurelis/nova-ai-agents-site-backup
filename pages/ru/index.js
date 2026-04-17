@@ -28,7 +28,7 @@ export default function RuHome(){
           <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
         </div>
 
-        <footer className="muted">Вопросы? Пиши: hello@opn-claw.pro</footer>
+        <footer className="muted">© 2026 All rights reserved</footer>
       </main>
     </div>
   )
