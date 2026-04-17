@@ -15,18 +15,55 @@ export default function EnHome(){
 
 
 
-        <section className="what">
-          <h3>What's included</h3>
+        <section className="features" aria-label="Features">
+          <div className="feature-card">
+            <strong>Runs 24/7</strong>
+            <div className="muted">Agent works while you do other things</div>
+          </div>
+          <div className="feature-card">
+            <strong>Many models</strong>
+            <div className="muted">Hundreds supported — pick what fits</div>
+          </div>
+          <div className="feature-card">
+            <strong>Browser control</strong>
+            <div className="muted">Open sites, fill forms, make purchases</div>
+          </div>
+          <div className="feature-card">
+            <strong>Voice & recognition</strong>
+            <div className="muted">Talk to the agent and listen to answers</div>
+          </div>
+        </section>
+
+        <section className="demo" aria-label="Demo flow" >
+          <h3>Demo: buy tickets</h3>
+          <div className="chat-card">
+            <div className="chat-line"><strong>You:</strong> Buy two tickets for Saturday evening</div>
+            <div className="chat-line"><strong>Agent:</strong> OK. I'll open the site, please sign in and say "done"</div>
+            <div className="chat-line muted"><em>User signed in — agent completed the purchase</em></div>
+            <div className="chat-line"><strong>Agent:</strong> Done — tickets bought. Code: K-XXXX</div>
+          </div>
+        </section>
+
+        <section className="what" aria-label="What's inside">
+          <h3>What's inside</h3>
           <ul>
-            <li>Free registration and full installation guide</li>
-            <li>Community examples and basic troubleshooting</li>
-            <li>Paid modules (from 299 ₽) with advanced configs — coming soon</li>
+            <li>Free registration and a clear install guide</li>
+            <li>Simple examples and scenario templates</li>
+            <li>Paid modules (from 299 ₽) — deeper recipes & configs</li>
           </ul>
         </section>
 
-        <div className="hero-cta">
-          <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
-        </div>
+        <section className="models" aria-label="Models">
+          <h3>Supported models</h3>
+          <div className="model-grid">
+            <div className="model">GLM</div>
+            <div className="model">Gemini</div>
+            <div className="model">GPT‑5</div>
+            <div className="model">Claude</div>
+            <div className="model">Grok</div>
+            <div className="model">and more (300+)</div>
+          </div>
+        </section>
 
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
