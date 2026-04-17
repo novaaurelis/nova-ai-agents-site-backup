@@ -6,8 +6,10 @@ export default function EnHome(){
     <div>
       <Header/>
       <main className="container">
-        <h1>Create something outstanding — start now</h1>
-        <p className="lead">Build, run and customize personal AI agents powered by OpenClaw — quick start guides and ready workflows.</p>
+        <section className="hero">
+          <h1 className="hero-title">Your team — your superpower</h1>
+          <p className="hero-sub">Build, run and customize personal AI agents: quick start, ready workflows and practical tips</p>
+        </section>
 
         <section className="features">
           <h2>Why use OpenClaw agents</h2>
