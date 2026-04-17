@@ -7,15 +7,31 @@ export default function EnHome(){
       <Header/>
       <main className="container">
         <h1>OpenClaw‑based AI agents</h1>
-        <p>Brief: free registration, installation guide and paid modules with advanced tips.</p>
-        <ul>
-          <li>Quick setup</li>
-          <li>Ready workflows</li>
-          <li>Support & updates</li>
-        </ul>
+        <p className="lead">Build, run and customize personal AI agents powered by OpenClaw — quick start guides and ready workflows.</p>
+
+        <section className="features">
+          <h2>Why use OpenClaw agents</h2>
+          <ul>
+            <li>Easy install: step‑by‑step guide for any machine</li>
+            <li>Ready automations: examples and templates to copy</li>
+            <li>Extendable: plugins, integrations and pro tips</li>
+          </ul>
+        </section>
+
+        <section className="what">
+          <h3>What's included</h3>
+          <ul>
+            <li>Free registration and full installation guide</li>
+            <li>Community examples and basic troubleshooting</li>
+            <li>Paid modules (from 299 ₽) with advanced configs — coming soon</li>
+          </ul>
+        </section>
+
         <div className="cta">
-          <Link href="/en/dashboard"><a className="button">Register</a></Link>
+          <Link href="/en/dashboard" className="button">Register — it's free</Link>
         </div>
+
+        <footer className="muted">Questions? Contact: hello@opn-claw.pro</footer>
       </main>
     </div>
   )
