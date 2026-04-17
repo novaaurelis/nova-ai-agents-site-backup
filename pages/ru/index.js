@@ -14,7 +14,7 @@ export default function RuHome(){
         </section>
 
         <div className="hero-cta">
-          <Link href="/ru/dashboard" className="button">Зарегистрироваться — бесплатно</Link>
+          <Link href="/ru/dashboard" className="button">Начни прямо сейчас — это бесплатно</Link>
         </div>
 
         <section className="what">

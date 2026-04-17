@@ -24,8 +24,8 @@ export default function EnHome(){
           </ul>
         </section>
 
-        <div className="cta">
-          <Link href="/en/dashboard" className="button">Register — it's free</Link>
+        <div className="hero-cta">
+          <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
         </div>
 
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
