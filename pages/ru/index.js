@@ -16,7 +16,6 @@ export default function RuHome(){
         <div className="hero-cta">
           <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
             <Link href="/ru/dashboard" className="button">Начни прямо сейчас — это бесплатно</Link>
-            <Link href="/ru/modules/first-steps" className="nav-button">Первые шаги</Link>
           </div>
         </div>
 

@@ -65,7 +65,6 @@ export default function EnHome(){
         <div className="hero-cta">
           <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
             <Link href="/en/dashboard" className="button">Get started right now — it's free</Link>
-            <Link href="/en/modules/first-steps" className="nav-button">First steps</Link>
           </div>
         </div>
 
