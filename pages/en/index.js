@@ -13,14 +13,7 @@ export default function EnHome(){
           </div>
         </section>
 
-        <section className="features">
-          <h2>Why use OpenClaw agents</h2>
-          <ul>
-            <li>Easy install: step‑by‑step guide for any machine</li>
-            <li>Ready automations: examples and templates to copy</li>
-            <li>Extendable: plugins, integrations and pro tips</li>
-          </ul>
-        </section>
+
 
         <section className="what">
           <h3>What's included</h3>

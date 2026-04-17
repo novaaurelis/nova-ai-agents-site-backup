@@ -13,14 +13,7 @@ export default function RuHome(){
           </div>
         </section>
 
-        <section className="features">
-          <h2>Почему OpenClaw</h2>
-          <ul>
-            <li>Простая установка: пошаговая инструкция для любой машины</li>
-            <li>Готовые сценарии: копируй и запускай</li>
-            <li>Расширяемость: плагины и продвинутые настройки</li>
-          </ul>
-        </section>
+
 
         <section className="what">
           <h3>Что внутри</h3>
