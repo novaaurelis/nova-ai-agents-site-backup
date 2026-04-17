@@ -40,8 +40,8 @@ body{
 .lang-item:hover{background:rgba(37,99,235,0.06);color:var(--accent)}
 
 /* Hero / page content */
-main.container{background:transparent;padding-top:36px;padding-bottom:60px;display:flex;flex-direction:column;min-height:calc(100vh - 120px)}
-.hero{display:flex;justify-content:center;padding:40px 0}
+main.container{background:transparent;padding-top:36px;padding-bottom:60px;display:flex;flex-direction:column;min-height:calc(100vh - 120px);align-items:center}
+.hero{display:flex;justify-content:center;padding:40px 0;width:100%}
 /* make inner inline-block so its width matches the title's width */
 .hero-inner{display:inline-block;text-align:center}
 

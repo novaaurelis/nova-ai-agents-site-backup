@@ -34,12 +34,12 @@ export default function Header(){
             <Link href={registerHref} className="nav-button primary">{registerText}</Link>
           </div>
 
-          <div className="lang-select" tabIndex={0} onBlur={() => setOpen(false)}>
+          <div className="lang-select">
             <button type="button" className="lang-button" onClick={() => setOpen(v => !v)}>{current.toUpperCase()} ▾</button>
             {open && (
               <div className="lang-menu">
-                <Link href={ruPath} className="lang-item">RU</Link>
-                <Link href={enPath} className="lang-item">EN</Link>
+                <Link href={ruPath} className="lang-item" onClick={() => setOpen(false)}>RU</Link>
+                <Link href={enPath} className="lang-item" onClick={() => setOpen(false)}>EN</Link>
               </div>
             )}
           </div>
