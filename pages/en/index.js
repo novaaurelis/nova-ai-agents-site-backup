@@ -62,6 +62,11 @@ export default function EnHome(){
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
         </section>
 
+        <div style={{display:'flex',justifyContent:'center',marginBottom:8,gap:12}}>
+          <Link href="/en/terms" className="muted">Terms of service</Link>
+          <Link href="/en/privacy" className="muted">Privacy policy</Link>
+          <Link href="/en/offer" className="muted">Offer</Link>
+        </div>
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
     </div>

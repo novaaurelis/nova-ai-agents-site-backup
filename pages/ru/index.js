@@ -61,6 +61,11 @@ export default function RuHome(){
           <h3 style={{textAlign: 'center'}}>Популярные модели</h3>
         </section>
 
+        <div style={{display:'flex',justifyContent:'center',marginBottom:8,gap:12}}>
+          <Link href="/ru/terms" className="muted">Пользовательское соглашение</Link>
+          <Link href="/ru/privacy" className="muted">Политика конфиденциальности</Link>
+          <Link href="/ru/offer" className="muted">Оферта</Link>
+        </div>
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
       </main>
     </div>
