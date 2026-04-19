@@ -62,12 +62,14 @@ export default function EnHome(){
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
         </section>
 
-        <div style={{display:'flex',justifyContent:'center',marginBottom:8,gap:12}}>
-          <Link href="/en/terms" className="muted">Terms of service</Link>
-          <Link href="/en/privacy" className="muted">Privacy policy</Link>
-          <Link href="/en/offer" className="muted">Offer</Link>
-        </div>
-        <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
+        <footer className="muted" style={{textAlign:'center'}}>
+          <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
+            <Link href="/en/terms" className="muted">Terms of service</Link>
+            <Link href="/en/privacy" className="muted">Privacy policy</Link>
+            <Link href="/en/offer" className="muted">Offer</Link>
+          </div>
+          <div style={{fontSize: '0.95em'}}>© {new Date().getFullYear()} All rights reserved</div>
+        </footer>
       </main>
     </div>
   )
