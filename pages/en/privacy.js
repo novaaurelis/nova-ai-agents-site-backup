@@ -7,6 +7,7 @@ export default function EnPrivacy(){
       <Header/>
       <main className="container">
         <article className="policy">
+          <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Privacy Policy</h1>
             <p className="muted"><time dateTime="2026-04-19">Publication date: April 19, 2026</time> — effective from this date.</p>
@@ -15,19 +16,19 @@ export default function EnPrivacy(){
           <nav className="toc" aria-label="Table of contents">
             <strong>Contents</strong>
             <ul>
-              <li><a href="#general">1. General provisions</a></li>
-              <li><a href="#terms">2. Definitions</a></li>
-              <li><a href="#collected">3. Which data are collected</a></li>
-              <li><a href="#purposes">4. Purposes of processing</a></li>
-              <li><a href="#legal">5. Legal grounds</a></li>
-              <li><a href="#cookies">6. Cookies</a></li>
-              <li><a href="#third">7. Disclosure to third parties</a></li>
-              <li><a href="#storage">8. Storage periods</a></li>
-              <li><a href="#security">9. Security</a></li>
-              <li><a href="#rights">10. Data subject rights</a></li>
-              <li><a href="#cross">11. Cross‑border transfers</a></li>
-              <li><a href="#changes">12. Changes to the Policy</a></li>
-              <li><a href="#contacts">13. Contacts</a></li>
+              <li><a href="#general">General provisions</a></li>
+              <li><a href="#terms">Definitions</a></li>
+              <li><a href="#collected">Which data are collected</a></li>
+              <li><a href="#purposes">Purposes of processing</a></li>
+              <li><a href="#legal">Legal grounds</a></li>
+              <li><a href="#cookies">Cookies & technologies</a></li>
+              <li><a href="#third">Disclosure to third parties</a></li>
+              <li><a href="#storage">Storage periods</a></li>
+              <li><a href="#security">Security</a></li>
+              <li><a href="#rights">Data subject rights</a></li>
+              <li><a href="#cross">Cross‑border transfers</a></li>
+              <li><a href="#changes">Changes to the Policy</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
 
@@ -159,15 +160,20 @@ export default function EnPrivacy(){
         </article>
 
         <style jsx>{`
+          :root { scroll-behavior: smooth; }
           .policy { max-width: 900px; margin: 18px auto; padding: 0 18px; }
           .policy-header { margin-bottom: 12px; }
-          .toc { background: #f7f8fa; border-left: 4px solid #e6e6e6; padding: 12px 14px; margin: 8px 0 18px; border-radius: 6px; }
-          .toc ul { margin: 8px 0 0; padding-left: 18px; }
-          .toc a { color: inherit; text-decoration: none; }
+          .toc { background: #fff; border:1px solid #eee; padding: 10px 12px; margin: 8px 0 18px; border-radius: 8px; box-shadow: 0 1px 2px rgba(20,20,20,0.03); }
+          .toc strong { display:block; margin-bottom:6px; }
+          .toc ul { margin: 0; padding: 0; list-style: none; display:flex; gap:10px; flex-wrap:wrap; }
+          .toc li { margin: 0; }
+          .toc a { color: #333; text-decoration: none; padding:6px 8px; border-radius:6px; display:inline-block; font-size:14px }
+          .toc a:hover { background: #f3f4f6; }
           .policy h2 { margin-top: 18px; }
           .policy ul { margin: 8px 0 16px; padding-left: 20px; }
           .contacts { background:#fbfbfb; border:1px solid #eee; padding:12px; margin:18px 0; border-radius:6px }
-          @media (max-width: 640px) { .policy { padding: 0 12px } }
+          .sr-only { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+          @media (max-width: 640px) { .policy { padding: 0 12px } .toc ul { flex-direction:column; gap:6px } }
         `}</style>
       </main>
     </div>
