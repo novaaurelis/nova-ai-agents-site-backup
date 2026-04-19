@@ -163,11 +163,11 @@ export default function EnPrivacy(){
           :root { scroll-behavior: smooth; }
           .policy { max-width: 900px; margin: 18px auto; padding: 0 18px; }
           .policy-header { margin-bottom: 12px; }
-          .toc { background: #fff; border:1px solid #eee; padding: 10px 12px; margin: 8px 0 18px; border-radius: 8px; box-shadow: 0 1px 2px rgba(20,20,20,0.03); }
-          .toc strong { display:block; margin-bottom:6px; }
-          .toc ul { margin: 0; padding: 0; list-style: none; display:flex; gap:10px; flex-wrap:wrap; }
-          .toc li { margin: 0; }
-          .toc a { color: #333; text-decoration: none; padding:6px 8px; border-radius:6px; display:inline-block; font-size:14px }
+          .toc { background: #fff; border:1px solid #eee; padding: 14px; margin: 8px 0 18px; border-radius: 8px; box-shadow: 0 1px 2px rgba(20,20,20,0.03); }
+          .toc strong { display:block; margin-bottom:8px; font-size:15px }
+          .toc ul { margin: 0; padding-left: 18px; list-style: disc; }
+          .toc li { margin: 6px 0; }
+          .toc a { color: #333; text-decoration: none; padding:4px 6px; border-radius:4px; display:inline-block; font-size:14px }
           .toc a:hover { background: #f3f4f6; }
           .policy h2 { margin-top: 18px; }
           .policy ul { margin: 8px 0 16px; padding-left: 20px; }
