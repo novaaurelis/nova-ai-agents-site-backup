@@ -47,8 +47,8 @@ export default function RuHome(){
         </section>
 
 
-        <div style={{height:24}} />
-        <section className="what" aria-label="Что внутри">
+        <div style={{height:12}} />
+        <section className="what" aria-label="Что внутри" style={{marginBottom:12}}>
           <h3>Что внутри</h3>
           <ul>
             <li>Бесплатная регистрация и понятная инструкция по установке</li>
