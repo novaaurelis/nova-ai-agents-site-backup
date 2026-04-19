@@ -16,7 +16,7 @@ export default function RuTerms(){
             <strong>Оглавление</strong>
             <ul>
               <li><a href="#intro">Введение</a></li>
-              <li><a href="#definitions">Определения</a></li>
+              <li><a href="#definitions">Термины</a></li>
               <li><a href="#account">Регистрация и аккаунт</a></li>
               <li><a href="#use">Использование сервиса</a></li>
               <li><a href="#prohibited">Запрещённые действия</a></li>
