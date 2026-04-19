@@ -7,6 +7,7 @@ export default function EnOffer(){
       <Header/>
       <main className="container">
         <article className="policy">
+          <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Public Offer</h1>
             <p className="muted"><time dateTime="2026-04-19">Publication date: April 19, 2026</time> — effective from this date.</p>
@@ -15,17 +16,17 @@ export default function EnOffer(){
           <nav className="toc" aria-label="Contents">
             <strong>Contents</strong>
             <ul>
-              <li><a href="#subject">1. Subject of the offer</a></li>
-              <li><a href="#acceptance">2. Acceptance</a></li>
-              <li><a href="#price">3. Services and payment</a></li>
-              <li><a href="#delivery">4. Service provision</a></li>
-              <li><a href="#warranty">5. Warranties and refunds</a></li>
-              <li><a href="#liability">6. Liability</a></li>
-              <li><a href="#personal">7. Personal data</a></li>
-              <li><a href="#force">8. Force majeure</a></li>
-              <li><a href="#termination">9. Termination</a></li>
-              <li><a href="#law">10. Governing law</a></li>
-              <li><a href="#contacts">11. Contacts</a></li>
+              <li><a href="#subject">Subject of the offer</a></li>
+              <li><a href="#acceptance">Acceptance</a></li>
+              <li><a href="#price">Services and payment</a></li>
+              <li><a href="#delivery">Service provision</a></li>
+              <li><a href="#warranty">Warranties and refunds</a></li>
+              <li><a href="#liability">Liability</a></li>
+              <li><a href="#personal">Personal data</a></li>
+              <li><a href="#force">Force majeure</a></li>
+              <li><a href="#termination">Termination</a></li>
+              <li><a href="#law">Governing law</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
 
