@@ -50,7 +50,7 @@ export default function EnHome(){
 
 
         <div style={{height:12}} />
-        <section className="what" aria-label="What's inside" style={{marginBottom:12}}>
+        <section className="what" aria-label="What's inside" style={{marginBottom:12, position: 'relative', top: 12}}>
           <h3>What's inside</h3>
           <ul>
             <li>Free signup and a clear install guide</li>
