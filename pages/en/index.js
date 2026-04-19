@@ -60,9 +60,6 @@ export default function EnHome(){
 
         <section className="models" aria-label="Models">
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
-          <div style={{display:'flex',justifyContent:'center',marginTop:12}}>
-            <img src="/popular_ai.png" alt="popular models" className="popular-illustration" />
-          </div>
         </section>
 
         <footer className="muted">© {new Date().getFullYear()} All rights reserved</footer>
