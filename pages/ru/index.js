@@ -49,8 +49,8 @@ export default function RuHome(){
 
         <div style={{height:12}} />
         <section className="what" aria-label="Что внутри" style={{marginBottom:12, position: 'relative', top: 12}}>
-          <h3>Что внутри</h3>
-          <ul>
+          <h3 style={{marginBottom:6}}>Что внутри</h3>
+          <ul style={{marginTop:6}}>
             <li>Бесплатная регистрация и понятная инструкция по установке</li>
             <li>Простые примеры и готовые шаблоны сценариев</li>
             <li>Платные модули (от 299 ₽) — углублённые рецепты и конфиги (по желанию)</li>

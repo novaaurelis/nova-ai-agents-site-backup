@@ -51,8 +51,8 @@ export default function EnHome(){
 
         <div style={{height:12}} />
         <section className="what" aria-label="What's inside" style={{marginBottom:12, position: 'relative', top: 12}}>
-          <h3>What's inside</h3>
-          <ul>
+          <h3 style={{marginBottom:6}}>What's inside</h3>
+          <ul style={{marginTop:6}}>
             <li>Free signup and a clear install guide</li>
             <li>Simple examples and ready scenario templates</li>
             <li>Paid modules (from 299 ₽) — deeper recipes and configs (optional)</li>
