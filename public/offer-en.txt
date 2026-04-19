@@ -1,0 +1,41 @@
+Public Offer
+Publication date: April 19, 2026
+Effective date: April 19, 2026
+
+1. Subject of the offer
+1.1. This public offer (the "Offer") is addressed to any natural or legal person (the "Offeree") and contains LLC "Openclaw"'s (the "Provider") proposal to provide access to the web service and related services (the "Services") on the terms set out in this document.
+
+2. Acceptance
+2.1. Acceptance occurs upon registration on the Site or actual use of the Services by the Offeree. Acceptance is deemed complete and unconditional unless the Offeree notifies the Provider of refusal in writing before beginning to use the Services.
+
+3. Services and payment
+3.1. Information on tariffs, prices and payment terms is posted on the Site and/or provided to the Offeree when ordering a service.
+3.2. Payment is made using the methods available on the Site. All payments are considered confirmed upon receipt by the Provider.
+3.3. Refund rules are set by tariff terms and applicable law.
+
+4. Service provision
+4.1. The Provider provides access to the Services remotely via the web interface. The Provider takes reasonable efforts to ensure availability but does not guarantee uninterrupted operation.
+4.2. The Provider may temporarily suspend Services for maintenance with prior notice where possible.
+
+5. Warranties and refunds
+5.1. Services are provided "as is" without additional warranties except as expressly set out in this Offer.
+5.2. The Offeree may withdraw from Services as set out on the Site and receive refunds where applicable under tariffs and law.
+
+6. Liability
+6.1. The parties are liable in accordance with the law. The Provider is not liable for indirect damages, lost profits or consequences arising from improper use of the Service by the client.
+6.2. The Provider's total liability under this Offer shall not exceed amounts actually received by the Provider from the Offeree in the 6 (six) months preceding the event giving rise to the loss.
+
+7. Personal data
+7.1. Personal data processing is carried out in accordance with the Privacy Policy posted on the Site. Registration and use of the Service constitute consent to personal data processing under the Policy.
+
+8. Force majeure
+8.1. Parties are released from liability for partial or total non‑performance due to force majeure upon timely notice to the other party.
+
+9. Termination
+9.1. The Offer is effective until revoked by the Provider. The Provider may terminate Services in case of breach of the Offer by the Offeree.
+
+10. Governing law
+10.1. This Offer is governed by the laws of the Russian Federation.
+
+11. Contacts
+For questions related to the Offer contact: opn-claw@yandex.ru
