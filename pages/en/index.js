@@ -53,9 +53,12 @@ export default function EnHome(){
         <section className="what" aria-label="What's inside" style={{marginBottom:12, position: 'relative', top: 12}}>
           <h3 style={{marginBottom:6}}>What's inside</h3>
           <ul style={{marginTop:6}}>
-            <li>Free signup and a clear install guide</li>
+            <li>Free signup — a clear install guide</li>
             <li>Simple examples and ready scenario templates</li>
-            <li>Paid modules (from 299 ₽) — deeper recipes and configs (optional)</li>
+            <li>Professional tips, deeper recipes and configs</li>
+            <li>Interactive step‑by‑step lessons for a fast start</li>
+            <li>Prebuilt integration templates (Telegram, Webhook, API)</li>
+            <li>Support and community — discussions, tips and config sharing</li>
           </ul>
         </section>
 
