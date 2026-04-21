@@ -44,7 +44,7 @@ export default function FirstStepsEn(){
         </article>
 
         <style jsx>{`
-          .module { max-width:900px; margin:18px auto; padding:0 18px }
+          .module { max-width:900px; margin:18px auto; padding:0 18px; text-align: justify; text-justify: inter-word; }
           .module-header { margin-bottom:12px }
           .module h2 { margin-top:16px }
           code { background:#f4f4f4; padding:2px 6px; border-radius:4px }
