@@ -44,6 +44,15 @@ export default function FirstSteps(){
             <Link href="/ru" className="nav-button">На главную</Link>
             <Link href="/ru/dashboard" className="nav-button primary">Начать бесплатно</Link>
           </div>
+
+          <footer className="muted" style={{textAlign:'center',marginTop:18}}>
+            <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
+              <Link href="/ru/terms" className="muted">Пользовательское соглашение</Link>
+              <Link href="/ru/privacy" className="muted">Политика конфиденциальности</Link>
+              <Link href="/ru/offer" className="muted">Оферта</Link>
+            </div>
+            <div style={{fontSize:'0.95em'}}>© {new Date().getFullYear()} All rights reserved</div>
+          </footer>
         </article>
 
         <style jsx>{`

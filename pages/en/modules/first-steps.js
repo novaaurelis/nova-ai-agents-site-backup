@@ -44,6 +44,15 @@ export default function FirstStepsEn(){
             <Link href="/en" className="nav-button">Home</Link>
             <Link href="/en/dashboard" className="nav-button primary">Get started — it's free</Link>
           </div>
+
+          <footer className="muted" style={{textAlign:'center',marginTop:18}}>
+            <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
+              <Link href="/en/terms" className="muted">Terms of service</Link>
+              <Link href="/en/privacy" className="muted">Privacy policy</Link>
+              <Link href="/en/offer" className="muted">Offer</Link>
+            </div>
+            <div style={{fontSize:'0.95em'}}>© {new Date().getFullYear()} All rights reserved</div>
+          </footer>
         </article>
 
         <style jsx>{`
