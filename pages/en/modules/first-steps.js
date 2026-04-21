@@ -13,20 +13,7 @@ export default function FirstStepsEn(){
             <p className="muted">Intro module: quick start, configure and run OpenClaw</p>
           </header>
 
-          <nav className="toc" aria-label="Contents">
-            <strong>Contents</strong>
-            <ul>
-              <li><a href="#about">About the project</a></li>
-              <li><a href="#what">What the module does</a></li>
-              <li><a href="#scenarios">Key scenarios</a></li>
-              <li><a href="#prepare">Prepare environment</a></li>
-              <li><a href="#install">Install & run</a></li>
-              <li><a href="#structure">Structure</a></li>
-              <li><a href="#security">Modes & security</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#next">Next steps</a></li>
-            </ul>
-          </nav>
+
 
           <section id="about">
             <h2>About OpenClaw</h2>

@@ -13,20 +13,7 @@ export default function FirstSteps(){
             <p className="muted">Вводный модуль: быстро стартуем, настраиваем и запускаем OpenClaw</p>
           </header>
 
-          <nav className="toc" aria-label="Оглавление">
-            <strong>Оглавление</strong>
-            <ul>
-              <li><a href="#about">О проекте</a></li>
-              <li><a href="#what">Что делает модуль</a></li>
-              <li><a href="#scenarios">Ключевые сценарии</a></li>
-              <li><a href="#prepare">Подготовка окружения</a></li>
-              <li><a href="#install">Установка и запуск</a></li>
-              <li><a href="#structure">Структура и конфигурация</a></li>
-              <li><a href="#security">Режимы и безопасность</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#next">Дальше</a></li>
-            </ul>
-          </nav>
+
 
           <section id="about">
             <h2>О проекте OpenClaw</h2>
