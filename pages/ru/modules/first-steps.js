@@ -40,7 +40,10 @@ export default function FirstSteps(){
             <p>Как начать? Зарегистрируйся на платформе и начни создавать своих цифровых помощников — старт бесплатно.</p>
           </section>
 
-          <p style={{marginTop:20}}><Link href="/ru">← На главную</Link></p>
+          <div style={{display:'flex',justifyContent:'center',gap:12,marginTop:20}}>
+            <Link href="/ru" className="nav-button">На главную</Link>
+            <Link href="/ru/dashboard" className="nav-button primary">Начать бесплатно</Link>
+          </div>
         </article>
 
         <style jsx>{`

@@ -40,7 +40,10 @@ export default function FirstStepsEn(){
             <p>How to start? Register on the platform and begin creating your digital assistants — start for free.</p>
           </section>
 
-          <p style={{marginTop:20}}><Link href="/en">← Home</Link></p>
+          <div style={{display:'flex',justifyContent:'center',gap:12,marginTop:20}}>
+            <Link href="/en" className="nav-button">Home</Link>
+            <Link href="/en/dashboard" className="nav-button primary">Get started — it's free</Link>
+          </div>
         </article>
 
         <style jsx>{`
