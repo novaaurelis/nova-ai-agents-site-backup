@@ -10,7 +10,7 @@ export default function FirstSteps(){
           <a className="sr-only" id="top" />
           <header className="module-header">
             <h1>Первые шаги</h1>
-            <p className="muted">Вводный модуль: быстро стартуем, настраиваем и запускаем OpenClaw</p>
+            <p className="muted">Зачем тебе создавать команду, которая будет двигать тебя вперёд?</p>
           </header>
 
 
