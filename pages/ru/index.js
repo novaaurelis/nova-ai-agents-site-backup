@@ -62,6 +62,9 @@ export default function RuHome(){
 
         <section className="models" aria-label="Модели">
           <h3 style={{textAlign: 'center'}}>Популярные модели</h3>
+          <div style={{display:'flex',justifyContent:'center',marginTop:12}}>
+            <img src="/images/neurologos_background.svg" alt="neurologos background" className="popular-illustration" style={{maxWidth:'100%',height:'auto'}} />
+          </div>
         </section>
 
         <footer className="muted" style={{textAlign:'center'}}>
