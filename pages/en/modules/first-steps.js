@@ -7,79 +7,94 @@ export default function FirstStepsEn(){
       <Header/>
       <main className="container">
         <article className="module">
+          <a className="sr-only" id="top" />
           <header className="module-header">
             <h1>First steps</h1>
-            <p className="muted">Draft instruction and introductory text — converted from the uploaded file.</p>
+            <p className="muted">Intro module: quick start, configure and run OpenClaw</p>
           </header>
 
-          <section>
+          <nav className="toc" aria-label="Contents">
+            <strong>Contents</strong>
+            <ul>
+              <li><a href="#about">About the project</a></li>
+              <li><a href="#what">What the module does</a></li>
+              <li><a href="#scenarios">Key scenarios</a></li>
+              <li><a href="#prepare">Prepare environment</a></li>
+              <li><a href="#install">Install & run</a></li>
+              <li><a href="#structure">Structure</a></li>
+              <li><a href="#security">Modes & security</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#next">Next steps</a></li>
+            </ul>
+          </nav>
+
+          <section id="about">
             <h2>About OpenClaw</h2>
-            <p>OpenClaw is a combined digital tool that enables automating repetitive workflows using AI agents. The project combines a convenient web interface, ready integrations and a set of tools for quick task setup and execution monitoring.</p>
+            <p>OpenClaw is a tool for automating repetitive workflows with AI agents. The platform combines a friendly web interface, ready integrations and tooling to move from idea to working scenario quickly.</p>
           </section>
 
-          <section>
-            <h2>What this chatbot / module does</h2>
-            <p>The chatbot in OpenClaw is designed to automate typical work processes: it can accept instructions, run scenarios, select and apply configurations, and generate reports and notifications. The platform is built for flexible configuration — from fast onboarding to complex integrations.</p>
+          <section id="what">
+            <h2>What this module does</h2>
+            <p>This module demonstrates a typical workflow: receive an instruction, run scenarios, select configurations and produce reports. Suitable for local development and integration testing.</p>
           </section>
 
-          <section>
+          <section id="scenarios">
             <h2>Key scenarios</h2>
             <ul>
-              <li>Quick start — step‑by‑step installation and launch of a basic agent</li>
-              <li>Automation of routine tasks — scripts and triggers</li>
-              <li>Integration with external services — Telegram, Webhook, API</li>
+              <li>Quick start: install, run, verify</li>
+              <li>Automate routine tasks: triggers and schedules</li>
+              <li>Integrations: Telegram, Webhook, API</li>
             </ul>
           </section>
 
-          <section>
-            <h2>Environment preparation</h2>
+          <section id="prepare">
+            <h2>Prepare environment</h2>
             <ul>
-              <li>Operating system: Mac / Linux / WSL</li>
+              <li>OS: Mac / Linux / WSL</li>
               <li>Node.js (recommended v18+)</li>
-              <li>git — for cloning the repository</li>
-              <li>Internet connection for installing dependencies</li>
+              <li>git for repo operations</li>
+              <li>Internet for dependency installation</li>
             </ul>
           </section>
 
-          <section>
+          <section id="install">
             <h2>Install & run</h2>
             <ol>
               <li>Clone the repo: <code>git clone &lt;repo&gt;</code></li>
-              <li>Change to the project folder: <code>cd ai-agents-site</code></li>
-              <li>Install dependencies: <code>npm install</code> (or <code>yarn</code>/<code>pnpm</code>)</li>
-              <li>Start the dev server: <code>npm run dev</code></li>
+              <li>cd into project: <code>cd ai-agents-site</code></li>
+              <li>Install deps: <code>npm install</code> (or <code>yarn</code>/<code>pnpm</code>)</li>
+              <li>Start dev server: <code>npm run dev</code></li>
             </ol>
-            <p>After starting, the site will be available at <code>http://localhost:3000</code>. The dev server hot‑reloads on changes.</p>
+            <p>Site available at <code>http://localhost:3000</code> with hot reload enabled.</p>
           </section>
 
-          <section>
-            <h2>Architecture & config locations</h2>
-            <p>Quick overview of important files and folders:</p>
+          <section id="structure">
+            <h2>Project structure</h2>
             <ul>
-              <li><code>pages/</code> — site content and routes</li>
-              <li><code>public/</code> — static assets (images, policy texts)</li>
+              <li><code>pages/</code> — routes and pages</li>
+              <li><code>public/</code> — static assets</li>
               <li><code>memory/</code> and <code>MEMORY.md</code> — agent local memory</li>
-              <li><code>.env</code> (optional) — environment variables</li>
+              <li><code>.env</code> — environment variables (do not commit)</li>
             </ul>
           </section>
 
-          <section>
+          <section id="security">
             <h2>Modes & security</h2>
-            <p>OpenClaw supports flexible run modes: local for development and production deployments via CI/CD. Keep secrets safe and avoid committing .env to public repositories.</p>
+            <p>Run locally for development or deploy with CI/CD for production. Keep secrets in secure storage and avoid committing environment files.</p>
           </section>
 
-          <section>
-            <h2>FAQ & common issues</h2>
+          <section id="faq">
+            <h2>FAQ</h2>
             <ul>
-              <li>Port 3000 occupied — stop the process or change the port</li>
-              <li>Package install errors — try updating Node.js or removing <code>node_modules</code></li>
-              <li>Build errors — inspect server and console logs for details</li>
+              <li>Port 3000 in use — stop process or change port</li>
+              <li>Install errors — try updating Node.js or deleting <code>node_modules</code></li>
+              <li>Build issues — check server and console logs</li>
             </ul>
           </section>
 
-          <section>
+          <section id="next">
             <h2>Next steps</h2>
-            <p>Recommended next steps: enable authentication (NextAuth), set up CI/CD, add MDX lessons and interactive examples. I can help with any of these — tell me which is a priority.</p>
+            <p>Recommended: enable auth (NextAuth), set up CI/CD, add MDX lessons and interactive examples. I can help with any step — tell me the priority.</p>
           </section>
 
           <p style={{marginTop:20}}><Link href="/en">← Home</Link></p>
