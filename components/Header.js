@@ -37,6 +37,7 @@ export default function Header(){
         </Link>
         <nav className="nav-right">
           <div className="nav-links">
+            <Link href={'/' + current + '/modules'} className="nav-button">{current === 'ru' ? 'Модули' : 'Modules'}</Link>
             <Link href={'/' + current + '/modules/first-steps'} className="nav-button">{current === 'ru' ? 'Первые шаги' : 'First steps'}</Link>
           </div>
 
