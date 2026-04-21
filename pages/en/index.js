@@ -65,7 +65,7 @@ export default function EnHome(){
         <section className="models" aria-label="Models">
           <h3 style={{textAlign: 'center'}}>Popular models</h3>
           <div style={{display:'flex',justifyContent:'center',marginTop:12}}>
-            <img src="/images/neurologos_background_clean.svg" alt="neurologos background" className="popular-illustration" style={{maxWidth:'100%',height:'auto'}} />
+            <img src="/images/neurologos_background.svg" alt="neurologos background" className="popular-illustration" style={{maxWidth:'100%',height:'auto'}} />
           </div>
         </section>
 
