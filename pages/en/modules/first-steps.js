@@ -15,73 +15,29 @@ export default function FirstStepsEn(){
 
 
 
-          <section id="about">
-            <h2>About OpenClaw</h2>
-            <p>OpenClaw is a tool for automating repetitive workflows with AI agents. The platform combines a friendly web interface, ready integrations and tooling to move from idea to working scenario quickly.</p>
-          </section>
+          <section>
+            <h2>What is it</h2>
+            <p>OpenClaw is a modern digital assistant — not just a chat bot. While classic chat bots mainly hold conversations, OpenClaw is designed to perform tasks: act on user commands, integrate with external services, use a browser, run automations and drive processes to completion.</p>
 
-          <section id="what">
-            <h2>What this module does</h2>
-            <p>This module demonstrates a typical workflow: receive an instruction, run scenarios, select configurations and produce reports. Suitable for local development and integration testing.</p>
-          </section>
+            <h3>Not just another chat bot</h3>
+            <p>OpenClaw’s agent logic lets it plan sequences of actions: break down tasks, pick tools and execute steps. Instead of only explaining how to do something, an agent can gather information, open sites, process data and prepare messages. It’s closer to a digital assistant that executes work.</p>
 
-          <section id="scenarios">
-            <h2>Key scenarios</h2>
-            <ul>
-              <li>Quick start: install, run, verify</li>
-              <li>Automate routine tasks: triggers and schedules</li>
-              <li>Integrations: Telegram, Webhook, API</li>
-            </ul>
-          </section>
+            <h3>Eliminate manual routine</h3>
+            <p>OpenClaw focuses on practical automation — repeatability, speed and reliability. It’s ideal for handling similar requests, maintaining communications, monitoring events or executing scheduled tasks, useful for personal and business use.</p>
 
-          <section id="prepare">
-            <h2>Prepare environment</h2>
-            <ul>
-              <li>OS: Mac / Linux / WSL</li>
-              <li>Node.js (recommended v18+)</li>
-              <li>git for repo operations</li>
-              <li>Internet for dependency installation</li>
-            </ul>
-          </section>
+            <h3>Unlimited possibilities</h3>
+            <p>Different AI models (fast / accurate / local / cloud), platform and messenger integrations, and access to external tools (browser, files, system commands) turn OpenClaw from a text assistant into a functional executor.</p>
 
-          <section id="install">
-            <h2>Install & run</h2>
-            <ol>
-              <li>Clone the repo: <code>git clone &lt;repo&gt;</code></li>
-              <li>cd into project: <code>cd ai-agents-site</code></li>
-              <li>Install deps: <code>npm install</code> (or <code>yarn</code>/<code>pnpm</code>)</li>
-              <li>Start dev server: <code>npm run dev</code></li>
-            </ol>
-            <p>Site available at <code>http://localhost:3000</code> with hot reload enabled.</p>
-          </section>
+            <h3>Context & memory</h3>
+            <p>OpenClaw stores context and past steps, enabling complex workflows that standard chat models can’t sustain. From data collection to sequential UI actions — it’s automation, not just text generation.</p>
 
-          <section id="structure">
-            <h2>Project structure</h2>
-            <ul>
-              <li><code>pages/</code> — routes and pages</li>
-              <li><code>public/</code> — static assets</li>
-              <li><code>memory/</code> and <code>MEMORY.md</code> — agent local memory</li>
-              <li><code>.env</code> — environment variables (do not commit)</li>
-            </ul>
-          </section>
+            <h3>Short summary</h3>
+            <p>OpenClaw is a digital secretary: it understands requests and helps get work done. From conversation to execution — a step beyond classic chat bots.</p>
 
-          <section id="security">
-            <h2>Modes & security</h2>
-            <p>Run locally for development or deploy with CI/CD for production. Keep secrets in secure storage and avoid committing environment files.</p>
-          </section>
+            <h3>Agent team</h3>
+            <p>Build a team of agents: one collects data, another analyzes, another writes content, a fourth handles schedules. Together they form a system that saves time and frees people for higher‑value tasks.</p>
 
-          <section id="faq">
-            <h2>FAQ</h2>
-            <ul>
-              <li>Port 3000 in use — stop process or change port</li>
-              <li>Install errors — try updating Node.js or deleting <code>node_modules</code></li>
-              <li>Build issues — check server and console logs</li>
-            </ul>
-          </section>
-
-          <section id="next">
-            <h2>Next steps</h2>
-            <p>Recommended: enable auth (NextAuth), set up CI/CD, add MDX lessons and interactive examples. I can help with any step — tell me the priority.</p>
+            <p>How to start? Register on the platform and begin creating your digital assistants — start for free.</p>
           </section>
 
           <p style={{marginTop:20}}><Link href="/en">← Home</Link></p>
