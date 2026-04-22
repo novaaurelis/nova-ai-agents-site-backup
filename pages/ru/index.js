@@ -61,9 +61,9 @@ export default function RuHome(){
         </section>
 
         <section className="models" aria-label="Модели">
-          <div style={{position:'relative',display:'flex',justifyContent:'center',marginTop:-32}}>
+          <h3 style={{textAlign: 'center'}}>Популярные модели</h3>
+          <div style={{display:'flex',justifyContent:'center',marginTop:4}}>
             <img src="/images/logos.png" alt="neurologos collage" className="popular-illustration" style={{maxWidth:'100%',height:'auto',background:'transparent'}} />
-            <h3 style={{position:'absolute',top:12,left:0,right:0,margin:0,zIndex:3,color:'#fff',textAlign:'center',textShadow:'0 2px 6px rgba(0,0,0,0.6)'}}>Популярные модели</h3>
           </div>
         </section>
 
