@@ -94,7 +94,7 @@ export default function RuTerms(){
 
           <aside id="contacts" className="contacts">
             <h3>Контакты</h3>
-            <p>По вопросам, связанным с Соглашением, обращайтесь: <a href="mailto:opn-claw@yandex.ru">opn-claw@yandex.ru</a></p>
+            <p>По вопросам, связанным с Соглашением, обращайтесь: <a href="mailto:openclaw.ai.ru@yandex.ru">openclaw.ai.ru@yandex.ru</a></p>
           </aside>
 
           <p style={{marginTop:20}}><Link href="/ru">← На главную</Link></p>

@@ -35,7 +35,7 @@ export default function EnPrivacy(){
           <section id="general">
             <h2>1. General provisions</h2>
             <p>1.1. This Privacy Policy (the "Policy") defines the procedures for collecting, storing, using and disclosing personal data of users of the website (the "Site").</p>
-            <p>1.2. The personal data operator: LLC "Openclaw" (the "Operator"). Operator contact: opn-claw@yandex.ru.</p>
+            <p>1.2. The personal data operator: LLC "Openclaw" (the "Operator"). Operator contact: openclaw.ai.ru@yandex.ru.</p>
             <p>1.3. The Policy is developed in accordance with the Federal Law No. 152‑FZ of 27.07.2006 "On Personal Data" and other applicable Russian legislation.</p>
             <p>1.4. Registering on the Site or otherwise using the Site means that the User agrees to the terms of this Policy.</p>
           </section>
@@ -134,7 +134,7 @@ export default function EnPrivacy(){
               <li>request restriction or object to processing where applicable;</li>
               <li>file a complaint with the competent authority (Roskomnadzor).</li>
             </ul>
-            <p>10.2. To exercise these rights, the user may send a request to: opn-claw@yandex.ru. Requests are processed in accordance with the law.</p>
+            <p>10.2. To exercise these rights, the user may send a request to: openclaw.ai.ru@yandex.ru. Requests are processed in accordance with the law.</p>
           </section>
 
           <section id="cross">
@@ -144,7 +144,7 @@ export default function EnPrivacy(){
 
           <section id="changes">
             <h2>12. Changes to the Policy</h2>
-            <p>12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://opn-claw.pro/policy (or another URL).</p>
+            <p>12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://openclaw.ai.ru.pro/policy (or another URL).</p>
             <p>12.2. Continued use of the Site after changes constitutes acceptance of the new version.</p>
           </section>
 
@@ -152,7 +152,7 @@ export default function EnPrivacy(){
             <h3>Contacts</h3>
             <p>For questions about personal data processing and to exercise rights contact:</p>
             <ul>
-              <li>e‑mail: <a href="mailto:opn-claw@yandex.ru">opn-claw@yandex.ru</a></li>
+              <li>e‑mail: <a href="mailto:openclaw.ai.ru@yandex.ru">openclaw.ai.ru@yandex.ru</a></li>
             </ul>
           </aside>
 

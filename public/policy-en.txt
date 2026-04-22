@@ -3,7 +3,7 @@ Effective date: April 19, 2026
 
 1. General provisions
 1.1. This Privacy Policy (the "Policy") defines the procedures for collecting, storing, using and disclosing personal data of users of the website (the "Site").
-1.2. The personal data operator: LLC "Openclaw" (the "Operator"). Operator contact: opn-claw@yandex.ru.
+1.2. The personal data operator: LLC "Openclaw" (the "Operator"). Operator contact: openclaw.ai.ru@yandex.ru.
 1.3. The Policy is developed in accordance with the Federal Law No. 152-FZ of 27.07.2006 "On Personal Data" and other applicable Russian legislation.
 1.4. Registering on the Site or otherwise using the Site means that the User agrees to the terms of this Policy.
 
@@ -69,11 +69,11 @@ Effective date: April 19, 2026
 - withdraw consent to processing (if processing is based on consent);
 - request restriction or object to processing where applicable;
 - file a complaint with the competent authority (Roskomnadzor).
-10.2. To exercise these rights, the user may send a request to: opn-claw@yandex.ru. Requests are processed in accordance with the law.
+10.2. To exercise these rights, the user may send a request to: openclaw.ai.ru@yandex.ru. Requests are processed in accordance with the law.
 
 11. Cross‑border transfers
 11.1. If necessary, personal data may be transferred outside the Russian Federation to service providers. In such cases, the Operator ensures protection measures and compliance with applicable law.
 
 12. Changes to the Policy
-12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://opn-claw.pro/policy (or another URL).
+12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://openclaw.ai.ru.pro/policy (or another URL).
 12.2. Continued use of the Site after changes constitutes acceptance of the new version.
