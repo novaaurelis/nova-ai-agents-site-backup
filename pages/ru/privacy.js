@@ -160,16 +160,16 @@ export default function RuPrivacy(){
 
         <style jsx>{`
           :root { scroll-behavior: smooth; }
-          .policy { max-width: 900px; margin: 18px auto; padding: 0 18px; }
+          .policy { max-width: 900px; margin: 18px auto; padding: 0 18px; text-align: justify; text-justify: inter-word; }
           .policy-header { margin-bottom: 12px; }
-          .toc { background: #fff; border:1px solid #eee; padding: 14px; margin: 8px 0 18px; border-radius: 8px; box-shadow: 0 1px 2px rgba(20,20,20,0.03); }
+          .toc { background: #fff; border:1px solid #eee; padding: 14px; margin: 8px 0 18px; border-radius: 8px; box-shadow: 0 1px 2px rgba(20,20,20,0.03); text-align: left; }
           .toc strong { display:block; margin-bottom:8px; font-size:15px }
           .toc ul { margin: 0; padding-left: 18px; list-style: disc; }
           .toc li { margin: 6px 0; }
           .toc a { color: #333; text-decoration: none; padding:4px 6px; border-radius:4px; display:inline-block; font-size:14px }
           .toc a:hover { background: #f3f4f6; }
           .policy h2 { margin-top: 18px; }
-          .policy ul { margin: 8px 0 16px; padding-left: 20px; }
+          .policy ul { margin: 8px 0 16px; padding-left: 20px; text-align: left; }
           .contacts { background:#fbfbfb; border:1px solid #eee; padding:12px; margin:18px 0; border-radius:6px }
           .sr-only { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
           @media (max-width: 640px) { .policy { padding: 0 12px } .toc ul { flex-direction:column; gap:6px } }
