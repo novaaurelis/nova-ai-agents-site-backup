@@ -94,7 +94,7 @@ export default function EnTerms(){
 
           <aside id="contacts" className="contacts">
             <h3>Contacts</h3>
-            <p>For questions related to the Agreement contact: <a href="mailto:openclaw.ai.ru@yandex.ru">openclaw.ai.ru@yandex.ru</a></p>
+            <p>For questions related to the Agreement contact: <a href="mailto:openclaw.ai@ya.ru">openclaw.ai@ya.ru</a></p>
           </aside>
 
           <p style={{marginTop:20}}><Link href="/en">← Home</Link></p>

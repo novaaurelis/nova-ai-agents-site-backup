@@ -87,7 +87,7 @@ export default function RuOffer(){
 
           <aside id="contacts" className="contacts">
             <h3>Контакты</h3>
-            <p>По вопросам, связанным с Офертой, обращайтесь: <a href="mailto:openclaw.ai.ru@yandex.ru">openclaw.ai.ru@yandex.ru</a></p>
+            <p>По вопросам, связанным с Офертой, обращайтесь: <a href="mailto:openclaw.ai@ya.ru">openclaw.ai@ya.ru</a></p>
           </aside>
 
           <p style={{marginTop:20}}><Link href="/ru">← На главную</Link></p>
