@@ -75,5 +75,5 @@ Effective date: April 19, 2026
 11.1. If necessary, personal data may be transferred outside the Russian Federation to service providers. In such cases, the Operator ensures protection measures and compliance with applicable law.
 
 12. Changes to the Policy
-12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://openclaw.ai.ru.pro/policy (or another URL).
+12.1. The Operator reserves the right to amend the Policy. The current version is published at: https://openclaw.ai/policy (or another URL).
 12.2. Continued use of the Site after changes constitutes acceptance of the new version.
