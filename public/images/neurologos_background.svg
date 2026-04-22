@@ -4,7 +4,7 @@
 <svg
    height="550"
    width="1000"
-   sodipodi:docname="neurologos_background.svg"
+   sodipodi:docname="neurologos_background1.svg"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -20,7 +20,7 @@
      id="base"
      pagecolor="#ffffff"
      bordercolor="#000000"
-     borderopacity="0.3"
+     borderopacity="0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
@@ -37,7 +37,7 @@
      inkscape:window-maximized="0"
      showborder="true"
      inkscape:showpageshadow="false"
-     inkscape:pagecheckerboard="0"
+     inkscape:pagecheckerboard="false"
      inkscape:deskcolor="#d1d1d1"><sodipodi:guide
        id="guide_baseline"
        inkscape:label="baseline"
@@ -320,7 +320,7 @@
          id="path9-7" /></g><g
        mask="url(#mask0_958_15881)"
        id="g1-9"
-       transform="matrix(0.47383721,0,0,0.45396705,76,192)"><rect
+       transform="matrix(0.47383721,0,0,0.45396705,76,204)"><rect
          x="-158.25"
          y="-455.44299"
          width="832.09003"
