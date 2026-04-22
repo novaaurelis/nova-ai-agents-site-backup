@@ -10,7 +10,7 @@ export default function RuPrivacy(){
           <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Политика конфиденциальности</h1>
-            <p className="muted"><time dateTime="2026-04-19">Дата публикации: 19 апреля 2026 г.</time> — вступает в силу с этой же даты.</p>
+            <p className="muted"><time dateTime="2026-04-23">Дата публикации: 23 апреля 2026 г.</time> — вступает в силу с этой же даты.</p>
           </header>
 
           <nav className="toc" aria-label="Оглавление">

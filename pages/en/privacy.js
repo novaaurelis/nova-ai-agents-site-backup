@@ -10,7 +10,7 @@ export default function EnPrivacy(){
           <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Privacy Policy</h1>
-            <p className="muted"><time dateTime="2026-04-19">Publication date: April 19, 2026</time> — effective from this date.</p>
+            <p className="muted"><time dateTime="2026-04-23">Publication date: April 23, 2026</time> — effective from this date.</p>
           </header>
 
           <nav className="toc" aria-label="Table of contents">

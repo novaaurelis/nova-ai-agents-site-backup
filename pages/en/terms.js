@@ -10,7 +10,7 @@ export default function EnTerms(){
           <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Terms of Service</h1>
-            <p className="muted"><time dateTime="2026-04-19">Effective date: April 19, 2026</time></p>
+            <p className="muted"><time dateTime="2026-04-23">Effective date: April 23, 2026</time></p>
           </header>
 
           <nav className="toc" aria-label="Table of contents">

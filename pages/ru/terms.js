@@ -10,7 +10,7 @@ export default function RuTerms(){
           <a className="sr-only" id="top" />
           <header className="policy-header">
             <h1>Пользовательское соглашение</h1>
-            <p className="muted"><time dateTime="2026-04-19">Дата вступления в силу: 19 апреля 2026 г.</time></p>
+            <p className="muted"><time dateTime="2026-04-23">Дата вступления в силу: 23 апреля 2026 г.</time></p>
           </header>
 
           <nav className="toc" aria-label="Оглавление">
