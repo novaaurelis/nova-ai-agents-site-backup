@@ -46,7 +46,7 @@ export default function ModulesIndex({list}){
               <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения. Нажмите «Перейти», чтобы открыть материал.'}</p>
 
               <div className="card-actions">
-                <Link href={`/modules/${m.slug}`} className="button">Перейти</Link>
+                <Link href={`/modules/${m.slug}`} className="button subtle">Получить ответ</Link>
               </div>
             </article>
           ))}
@@ -67,7 +67,8 @@ export default function ModulesIndex({list}){
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
         .card-actions{display:flex;gap:8px}
-        .button{display:inline-block;padding:9px 14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+        .button{display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+        .button.subtle{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px}
         .container { max-width:980px; margin:18px auto; padding:0 18px }
       `}</style>
     </div>
