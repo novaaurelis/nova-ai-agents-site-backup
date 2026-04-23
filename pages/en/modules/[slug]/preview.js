@@ -29,10 +29,15 @@ export default function ModulePreview({mdxSource}){
         <article className="module">
           <MDXRemote {...mdxSource} />
           {/* Note: preview copy intentionally has no 'Start for free' CTA */}
+
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/en/modules" className="button secondary">Back to dashboard</a>
+          </div>
         </article>
 
         <style jsx>{`
           .module{max-width:820px;margin:18px auto;padding:0 18px;text-align:justify;text-justify:inter-word}
+          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
         `}</style>
       </main>
     </div>
