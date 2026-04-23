@@ -41,10 +41,9 @@ export default function ModulesIndex({list}){
             <article key={m.slug} className="card">
               <div className="card-head">
                 <h3>{titleFor(m.slug)}</h3>
-                <div className="langs">{m.langs.includes('ru') && <span className="pill">RU</span>} {m.langs.includes('en') && <span className="pill">EN</span>}</div>
               </div>
 
-              <p className="muted">Краткое описание модуля и цели обучения. Нажмите «Перейти», чтобы открыть материал.</p>
+              <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения. Нажмите «Перейти», чтобы открыть материал.'}</p>
 
               <div className="card-actions">
                 <Link href={`/modules/${m.slug}`} className="button">Перейти</Link>
