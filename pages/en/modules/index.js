@@ -28,7 +28,7 @@ export default function ModulesIndex({list}){
       <Header/>
       <main className="container">
         <header style={{marginBottom:12}}>
-          <h1>Dashboard</h1>
+          <h1>Your Dashboard</h1>
         </header>
 
         <div className="grid">
