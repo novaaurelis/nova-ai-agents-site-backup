@@ -24,6 +24,20 @@ export async function getStaticProps(){
     }
     return { slug, title }
   })
+
+  // Ensure preferred ordering: first-steps, installation-and-run, then others alphabetically
+  const preferredOrder = ['first-steps','installation-and-run']
+  list.sort((a,b)=>{
+    const ia = preferredOrder.indexOf(a.slug)
+    const ib = preferredOrder.indexOf(b.slug)
+    if(ia !== -1 || ib !== -1){
+      if(ia === -1) return 1
+      if(ib === -1) return -1
+      return ia - ib
+    }
+    return a.title.localeCompare(b.title,'ru')
+  })
+
   return { props: { list } }
 }
 
