@@ -22,6 +22,9 @@ export async function getStaticProps(){
       // fallback prettify
       title = slug.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase())
     }
+    // custom display titles for specific modules
+    if(slug === 'first-steps') title = 'Базовый модуль. Первые шаги 🐾'
+    if(slug === 'installation-and-run') title = 'Первый модуль. Установка и запуск 🚀'
     return { slug, title }
   })
 
