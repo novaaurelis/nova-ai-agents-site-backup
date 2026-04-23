@@ -61,6 +61,10 @@ export default function ModulesIndex({list}){
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
         .card-actions{display:flex;gap:8px}
+        /* make entire card a clean link: no underlines, inherit color */
+        a.card{display:block;text-decoration:none;color:inherit}
+        a.card *{text-decoration:none;color:inherit}
+        a.card:focus{outline:none}
         .button{display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
         .button.subtle{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px}
         .container { max-width:980px; margin:18px auto; padding:0 18px }
