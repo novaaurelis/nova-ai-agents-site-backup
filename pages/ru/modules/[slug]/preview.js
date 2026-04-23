@@ -15,7 +15,9 @@ export async function getStaticProps({params}){
   const dir = path.join(process.cwd(),'content/modules')
   const file = path.join(dir, `${params.slug}.ru.mdx`)
   if(!fs.existsSync(file)) return { notFound:true }
-  const source = fs.readFileSync(file,'utf8')
+  let source = fs.readFileSync(file,'utf8')
+  // Remove YAML frontmatter if present so it doesn't render as content (--- ... ---)
+  source = source.replace(/^---[\s\S]*?---\s*/,'')
   const mdxSource = await serialize(source)
   return { props: { mdxSource } }
 }
