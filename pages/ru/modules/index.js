@@ -5,29 +5,31 @@ import Header from '../../../components/Header'
 
 export async function getStaticProps(){
   const dir = path.join(process.cwd(),'content/modules')
-  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.mdx'))
-  const modules = files.map(f=>{
-    const m = f.replace(/\.(ru|en)\.mdx$/,'')
-    const lang = f.includes('.ru.mdx') ? 'ru' : 'en'
-    return { slug: m, lang }
+  // Only include modules that have a Russian MDX file
+  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.ru.mdx'))
+  const list = files.map(f=>{
+    const slug = f.replace(/\.ru\.mdx$/,'')
+    const full = path.join(dir, f)
+    const src = fs.readFileSync(full, 'utf8')
+    // extract title from YAML frontmatter if present
+    let title = null
+    const fm = src.match(/^---\s*([\s\S]*?)---/)
+    if(fm){
+      const m = fm[1].match(/title:\s*(.+)/)
+      if(m) title = m[1].trim().replace(/^['\"]|['\"]$/g,'')
+    }
+    if(!title){
+      // fallback prettify
+      title = slug.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase())
+    }
+    return { slug, title }
   })
-  const map = {}
-  modules.forEach(m=>{ if(!map[m.slug]) map[m.slug]=[]; map[m.slug].push(m.lang) })
-  const list = Object.keys(map).map(k=>({slug:k,langs:map[k]}))
   return { props: { list } }
 }
 
 function slugToTitle(s){ return s.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase()) }
 
 export default function ModulesIndex({list}){
-  // Simplified RU dashboard per request: remove progress, filter and mark-complete actions
-
-  function titleFor(slug){
-    if(slug === 'first-steps') return 'Базовый модуль. Первые шаги'
-    // fallback: prettify
-    return slug.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase())
-  }
-
   return (
     <div>
       <Header/>
@@ -39,9 +41,9 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={`/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={m.slug==='first-steps'} aria-label={titleFor(m.slug)}>
+              <a className="card" data-accent={m.slug==='first-steps'} aria-label={m.title}>
                 <div className="card-head">
-                  <h3>{titleFor(m.slug)}</h3>
+                  <h3>{m.title}</h3>
                 </div>
 
                 <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения.'}</p>
