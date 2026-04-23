@@ -72,7 +72,7 @@ export default function ModulesIndex({list}){
       <style jsx>{`
         header{margin-bottom:12px}
         h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
+        .grid{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px} /* stack cards vertically so installation appears under first-steps */
         /* Flat card with left accent, no animation */
         .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box}
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
