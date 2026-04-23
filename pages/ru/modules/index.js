@@ -61,7 +61,7 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={m.slug === 'first-steps' ? `/ru/modules/${m.slug}/preview` : `/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run')} data-slug={m.slug} aria-label={m.title}>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases')} data-slug={m.slug} aria-label={m.title}>
                 <div className="card-head">
                   <h3>{m.title}</h3>
                 </div>
@@ -88,6 +88,8 @@ export default function ModulesIndex({list}){
         .card[data-slug="first-steps"]{border-left-color:#9CA3AF}
         /* installation-and-run uses accent */
         .card[data-slug="installation-and-run"]{border-left-color:var(--accent)}
+        /* new modules use accent */
+        .card[data-slug="deep-configuration"], .card[data-slug="updates-and-support"], .card[data-slug="practical-cases"]{border-left-color:var(--accent)}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
