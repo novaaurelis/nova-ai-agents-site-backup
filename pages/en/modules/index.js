@@ -53,8 +53,8 @@ export default function ModulesIndex({list}){
       <style jsx>{`
         header{margin-bottom:12px}
         h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px;justify-items:center} /* center cards */
+        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;max-width:560px;width:100%;box-sizing:border-box}
         .card{border-left:6px solid transparent}
         .card[data-accent="true"]{border-left-color:var(--accent)}
         .card-head{display:block;margin-bottom:6px}
