@@ -65,6 +65,9 @@ export default function ModulesIndex({list}){
         .card[data-accent="true"]{border-left-color:var(--accent)}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
+        /* Featured module larger typography */
+        .card[data-accent="true"] .card-head h3{font-size:2.4rem}
+        .card[data-accent="true"] .muted{font-size:1.5rem}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
         .card-actions{display:flex;gap:8px}
         .button{display:inline-block;padding:9px 14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
