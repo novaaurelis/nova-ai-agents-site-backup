@@ -23,7 +23,7 @@ export default function ModulesIndex({list}){
   // Simplified RU dashboard per request: remove progress, filter and mark-complete actions
 
   function titleFor(slug){
-    if(slug === 'first-steps') return 'Первые шаги'
+    if(slug === 'first-steps') return 'Базовый модуль. Первые шаги'
     // fallback: prettify
     return slug.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase())
   }
