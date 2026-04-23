@@ -21,7 +21,9 @@ export async function getStaticProps({params}){
   if (fs.existsSync(ru)) file = ru
   else if (fs.existsSync(en)) file = en
   if(!file) return { notFound:true }
-  const source = fs.readFileSync(file,'utf8')
+  let source = fs.readFileSync(file,'utf8')
+  // Strip YAML frontmatter if present (to avoid rendering it as content)
+  source = source.replace(/^---[\s\S]*?---\s*/,'')
   const mdxSource = await serialize(source)
   return { props: { mdxSource } }
 }
