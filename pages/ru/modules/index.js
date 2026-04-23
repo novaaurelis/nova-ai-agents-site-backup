@@ -78,6 +78,8 @@ export default function ModulesIndex({list}){
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
         .card[data-accent="true"]{border-left-color:var(--accent)}
+        /* first-steps gets a different color (gray) */
+        .card[data-accent="true"][aria-label="Базовый модуль. Первые шаги"]{border-left-color:#9CA3AF}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
