@@ -1,0 +1,44 @@
+---
+title: Первые шаги
+lang: ru
+---
+
+# Первые шаги
+
+Короткое руководство по быстрому запуску и проверке работоспособности проекта.
+
+## 1. Клонировать репозиторий
+
+```bash
+git clone https://github.com/novaaurelis/ai-agents-site.git
+cd ai-agents-site
+git checkout mvp/clone-openclaw
+npm install
+```
+
+## 2. Запуск в режиме разработки (macOS / Linux)
+
+```bash
+npm run dev
+# открой http://localhost:3000
+```
+
+## 3. Docker (альтернатива)
+
+Простой Dockerfile можно добавить для запуска продакшн‑образа. Пример:
+
+```Dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+RUN npm run build
+CMD ["npm","start"]
+```
+
+## 4. Что проверить
+
+- Откройте главную страницу и проверьте, что отображаются разделы: Hero, Popular models, Modules.
+- Зайдите в разделы /ru/terms, /ru/privacy, /ru/offer и убедитесь, что e‑mail внизу — openclaw.ai@ya.ru.
+
