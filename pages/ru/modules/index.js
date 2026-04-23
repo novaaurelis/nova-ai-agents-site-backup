@@ -57,15 +57,16 @@ export default function ModulesIndex({list}){
 
       <style jsx>{`
         header{margin-bottom:12px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:18px}
-        .card{padding:14px;border:1px solid rgba(15,23,42,0.06);border-radius:10px;background:var(--surface)}
-        .card-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
-        .langs{display:flex;gap:6px}
-        .pill{background:#f3f4f6;padding:4px 8px;border-radius:999px;font-size:12px}
+        h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:16px}
+        .card{padding:18px;border:1px solid rgba(15,23,42,0.06);border-radius:12px;background:var(--surface);transition:transform .18s ease,box-shadow .18s ease}
+        .card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+        .card-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+        .card-head h3{margin:0;font-size:1.15rem;font-weight:800}
+        .card .muted{margin-top:6px;color:var(--muted);line-height:1.45}
         .card-actions{display:flex;gap:8px;margin-top:12px}
-        .button{display:inline-block;padding:8px 12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:8px;text-decoration:none}
-        .muted{color:var(--muted)}
-        .container { max-width:900px; margin:18px auto; padding:0 18px }
+        .button{display:inline-block;padding:9px 14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+        .container { max-width:980px; margin:20px auto; padding:0 18px }
       `}</style>
     </div>
   )
