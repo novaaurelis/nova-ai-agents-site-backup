@@ -74,10 +74,10 @@ export default function ModulesIndex({list}){
         h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
         .grid{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px} /* stack cards vertically so installation appears under first-steps */
         /* Flat card with left accent, no animation */
-        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box}
+        .card{position:relative;padding:16px 16px 16px 28px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box}
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
-        .card{border-left:6px solid transparent}
-        .card[data-accent="true"]{border-left-color:var(--accent)}
+        /* left decorative stripe for each card */
+        .card::before{content:'';position:absolute;left:8px;top:12px;bottom:12px;width:8px;background:var(--accent);border-radius:6px}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
