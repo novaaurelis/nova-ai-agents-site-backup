@@ -30,6 +30,10 @@ export default function ModulePreview({mdxSource}){
         <article className="module">
           <MDXRemote {...mdxSource} />
           {/* Note: preview copy intentionally has no 'Начать бесплатно' CTA */}
+
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/ru/modules" className="button secondary">Назад в личный кабинет</a>
+          </div>
         </article>
 
         <style jsx>{`
