@@ -38,7 +38,7 @@ export default function ModulesIndex({list}){
 
         <div className="grid">
           {list.map(m=> (
-            <article key={m.slug} className="card">
+            <article key={m.slug} className="card" data-accent={m.slug==='first-steps'}>
               <div className="card-head">
                 <h3>{titleFor(m.slug)}</h3>
               </div>
