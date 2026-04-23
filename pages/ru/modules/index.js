@@ -55,7 +55,7 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={`/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={m.slug==='first-steps'} aria-label={m.title}>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run')} aria-label={m.title}>
                 <div className="card-head">
                   <h3>{m.title}</h3>
                 </div>
