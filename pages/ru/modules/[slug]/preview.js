@@ -38,6 +38,8 @@ export default function ModulePreview({mdxSource}){
 
         <style jsx>{`
           .module{max-width:820px;margin:18px auto;padding:0 18px;text-align:justify;text-justify:inter-word}
+
+          .button.secondary{background:transparent;color:var(--text);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
         `}</style>
       </main>
     </div>
