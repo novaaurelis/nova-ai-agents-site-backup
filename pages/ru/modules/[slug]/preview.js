@@ -33,7 +33,7 @@ export default function ModulePreview({mdxSource}){
         </article>
 
         <style jsx>{`
-          .module{max-width:820px;margin:18px auto;padding:0 18px}
+          .module{max-width:820px;margin:18px auto;padding:0 18px;text-align:justify;text-justify:inter-word}
         `}</style>
       </main>
     </div>
