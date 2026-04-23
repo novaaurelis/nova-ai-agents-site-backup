@@ -77,12 +77,13 @@ export default function ModulesIndex({list}){
         h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
         .grid{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px} /* stack cards vertically so installation appears under first-steps */
         /* Flat card with left accent, no animation */
-        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box}
+        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
-        .card[data-accent="true"]{border-left-color:var(--accent)}
         /* first-steps gets a different color (gray) */
         .card[data-slug="first-steps"]{border-left-color:#9CA3AF}
+        /* installation-and-run uses accent */
+        .card[data-slug="installation-and-run"]{border-left-color:var(--accent)}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
