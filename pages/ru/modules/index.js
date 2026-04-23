@@ -72,6 +72,9 @@ export default function ModulesIndex({list}){
         a.card{display:block;text-decoration:none;color:inherit}
         a.card *{text-decoration:none;color:inherit}
         a.card:focus{outline:none}
+        /* ensure titles inside links are visible and use site text color */
+        a.card h3{color:var(--text);text-decoration:none}
+        a.card .muted{color:var(--muted)}
         .button{display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
         .button.subtle{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px}
         .container { max-width:980px; margin:18px auto; padding:0 18px }
