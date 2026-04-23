@@ -78,6 +78,7 @@ export default function ModulesIndex({list}){
         .grid{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px} /* stack cards vertically so installation appears under first-steps */
         /* Flat card with left accent, no animation */
         .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+        .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
         /* first-steps gets a different color (gray) */

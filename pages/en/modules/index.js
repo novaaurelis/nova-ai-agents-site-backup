@@ -53,7 +53,8 @@ export default function ModulesIndex({list}){
         h1{font-size:clamp(20px,3vw,28px);margin:0 0 6px}
         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
         /* match RU: card fills the available column (no extra max-width) */
-        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box}
+        .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+        .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
         .card[data-accent="true"]{border-left-color:var(--accent)}
