@@ -55,7 +55,7 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={`/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run')} aria-label={m.title}>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run')} data-slug={m.slug} aria-label={m.title}>
                 <div className="card-head">
                   <h3>{m.title}</h3>
                 </div>
@@ -79,7 +79,7 @@ export default function ModulesIndex({list}){
         .card{border-left:6px solid transparent}
         .card[data-accent="true"]{border-left-color:var(--accent)}
         /* first-steps gets a different color (gray) */
-        .card[data-accent="true"][aria-label="Базовый модуль. Первые шаги"]{border-left-color:#9CA3AF}
+        .card[data-slug="first-steps"]{border-left-color:#9CA3AF}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
