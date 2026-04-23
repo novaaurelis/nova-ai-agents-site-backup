@@ -25,6 +25,9 @@ export async function getStaticProps(){
     // custom display titles for specific modules
     if(slug === 'first-steps') title = 'Базовый модуль. Первые шаги 🐾'
     if(slug === 'installation-and-run') title = 'Первый модуль. Установка и запуск 🚀'
+    if(slug === 'deep-configuration') title = 'Второй модуль. Глубокая настройка.'
+    if(slug === 'updates-and-support') title = 'Третий модуль. Обновления и поддержка.'
+    if(slug === 'practical-cases') title = 'Четвертый модуль. Практические кейсы.'
     return { slug, title }
   })
 
