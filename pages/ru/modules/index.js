@@ -46,7 +46,7 @@ export default function ModulesIndex({list}){
               <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения. Нажмите «Перейти», чтобы открыть материал.'}</p>
 
               <div className="card-actions">
-                <Link href={`/modules/${m.slug}`} legacyBehavior><a className="button subtle">Получить ответ</a></Link>
+                <Link href={`/modules/${m.slug}/preview`} legacyBehavior><a className="button subtle">Получить ответ</a></Link>
               </div>
             </article>
           ))}
