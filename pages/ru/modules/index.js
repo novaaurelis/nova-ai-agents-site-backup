@@ -38,17 +38,15 @@ export default function ModulesIndex({list}){
 
         <div className="grid">
           {list.map(m=> (
-            <article key={m.slug} className="card" data-accent={m.slug==='first-steps'}>
-              <div className="card-head">
-                <h3>{titleFor(m.slug)}</h3>
-              </div>
+            <Link href={`/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
+              <a className="card" data-accent={m.slug==='first-steps'} aria-label={titleFor(m.slug)}>
+                <div className="card-head">
+                  <h3>{titleFor(m.slug)}</h3>
+                </div>
 
-              <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения. Нажмите «Перейти», чтобы открыть материал.'}</p>
-
-              <div className="card-actions">
-                <Link href={`/ru/modules/${m.slug}/preview`} legacyBehavior><a className="button subtle">Получить ответ</a></Link>
-              </div>
-            </article>
+                <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : 'Краткое описание модуля и цели обучения.'}</p>
+              </a>
+            </Link>
           ))}
         </div>
 

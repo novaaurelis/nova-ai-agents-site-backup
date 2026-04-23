@@ -33,17 +33,15 @@ export default function ModulesIndex({list}){
 
         <div className="grid">
           {list.map(m=> (
-            <article key={m.slug} className="card" data-accent={m.slug==='first-steps'}>
-              <div className="card-head">
-                <h3>{titleFor(m.slug)}</h3>
-              </div>
+            <Link href={`/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
+              <a className="card" data-accent={m.slug==='first-steps'} aria-label={titleFor(m.slug)}>
+                <div className="card-head">
+                  <h3>{titleFor(m.slug)}</h3>
+                </div>
 
-              <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : 'Short module description and learning goals. Click “Get answer” to open the material.'}</p>
-
-              <div className="card-actions">
-                <Link href={`/en/modules/${m.slug}/preview`} legacyBehavior><a className="button subtle">Get answer</a></Link>
-              </div>
-            </article>
+                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : 'Short module description and learning goals.'}</p>
+              </a>
+            </Link>
           ))}
         </div>
 
