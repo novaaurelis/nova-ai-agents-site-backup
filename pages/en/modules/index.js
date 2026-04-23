@@ -5,15 +5,42 @@ import Header from '../../../components/Header'
 
 export async function getStaticProps(){
   const dir = path.join(process.cwd(),'content/modules')
-  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.mdx'))
-  const modules = files.map(f=>{
-    const m = f.replace(/\.(ru|en)\.mdx$/,'')
-    const lang = f.includes('.en.mdx') ? 'en' : 'ru'
-    return { slug: m, lang }
+  // Only include modules that have an English MDX file
+  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.en.mdx'))
+  const list = files.map(f=>{
+    const slug = f.replace(/\.en\.mdx$/,'')
+    const full = path.join(dir, f)
+    const src = fs.readFileSync(full, 'utf8')
+    // extract title from YAML frontmatter if present
+    let title = null
+    const fm = src.match(/^---\s*([\s\S]*?)---/)
+    if(fm){
+      const m = fm[1].match(/title:\s*(.+)/)
+      if(m) title = m[1].trim().replace(/^['\"]|['\"]$/g,'')
+    }
+    if(!title){
+      // fallback prettify
+      title = slug.replace(/-/g,' ').replace(/\b\w/g, c=>c.toUpperCase())
+    }
+    // custom display titles for specific modules (EN)
+    if(slug === 'first-steps') title = 'Base module. First steps 🐾'
+    if(slug === 'installation-and-run') title = 'First module. Installation and run 🚀'
+    return { slug, title }
   })
-  const map = {}
-  modules.forEach(m=>{ if(!map[m.slug]) map[m.slug]=[]; map[m.slug].push(m.lang) })
-  const list = Object.keys(map).map(k=>({slug:k,langs:map[k]}))
+
+  // Ensure preferred ordering: first-steps, installation-and-run, then others alphabetically
+  const preferredOrder = ['first-steps','installation-and-run']
+  list.sort((a,b)=>{
+    const ia = preferredOrder.indexOf(a.slug)
+    const ib = preferredOrder.indexOf(b.slug)
+    if(ia !== -1 || ib !== -1){
+      if(ia === -1) return 1
+      if(ib === -1) return -1
+      return ia - ib
+    }
+    return a.title.localeCompare(b.title,'en')
+  })
+
   return { props: { list } }
 }
 
@@ -33,13 +60,13 @@ export default function ModulesIndex({list}){
 
         <div className="grid">
           {list.map(m=> (
-            <Link href={`/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={m.slug==='first-steps'} aria-label={titleFor(m.slug)}>
+            <Link href={m.slug === 'first-steps' ? `/en/modules/${m.slug}/preview` : `/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run')} data-slug={m.slug} aria-label={m.title}>
                 <div className="card-head">
-                  <h3>{titleFor(m.slug)}</h3>
+                  <h3>{m.title}</h3>
                 </div>
 
-                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : 'Short module description and learning goals.'}</p>
+                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : (m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' : 'Short module description and goals.')}</p>
               </a>
             </Link>
           ))}
