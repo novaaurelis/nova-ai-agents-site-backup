@@ -9,7 +9,7 @@ export default function RuHome(){
         <section className="hero">
           <div className="hero-inner">
             <h1 className="hero-title">Твоя команда — твоя суперсила</h1>
-            <p className="hero-sub">Собирай, запускай и кастомизируй персональных AI‑агентов (ИИ — искусственный интеллект): быстрый старт, готовые сценарии и полезные советы</p>
+            <p className="hero-sub">Собери команду мечты, кастомизируй цифровых помощников и начни зарабатывать с искусственным интеллектом</p>
           </div>
         </section>
 
