@@ -65,7 +65,7 @@ export default function ModulesIndex({list}){
               <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')} data-slug={m.slug} aria-label={m.title}>
                 {/* paid badge for selected modules */}
                 {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases' || m.slug === 'skills-and-personas') && (
-                  <span className="paid-badge" aria-hidden>💰</span>
+                  <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
                 )}
 
                 <div className="card-head">
