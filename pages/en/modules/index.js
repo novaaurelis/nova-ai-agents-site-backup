@@ -28,8 +28,8 @@ export async function getStaticProps(){
     return { slug, title }
   })
 
-  // Ensure preferred ordering: first-steps, installation-and-run, then others alphabetically
-  const preferredOrder = ['first-steps','installation-and-run']
+  // Ensure preferred ordering: first-steps, installation-and-run, deep-configuration, updates-and-support, practical-cases
+  const preferredOrder = ['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases']
   list.sort((a,b)=>{
     const ia = preferredOrder.indexOf(a.slug)
     const ib = preferredOrder.indexOf(b.slug)
