@@ -65,6 +65,9 @@ export default function ModulesIndex({list}){
           {list.map(m=> (
             <Link href={m.slug === 'first-steps' ? `/en/modules/${m.slug}/preview` : `/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
               <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases')} data-slug={m.slug} aria-label={m.title}>
+                {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases') && (
+                  <span className="paid-badge" aria-hidden>💰</span>
+                )
                 <div className="card-head">
                   <h3>{m.title}</h3>
                 </div>
@@ -92,6 +95,8 @@ export default function ModulesIndex({list}){
         .card[data-slug="first-steps"]{border-left-color:#9CA3AF}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
+        .paid-badge{position:absolute;top:12px;right:12px;font-size:16px}
+        .card{position:relative}
         .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:10px}
         .card-actions{display:flex;gap:8px}
         /* make entire card a clean link: no underlines, inherit color */
