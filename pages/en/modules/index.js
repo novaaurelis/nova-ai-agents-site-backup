@@ -28,11 +28,12 @@ export async function getStaticProps(){
     if(slug === 'deep-configuration') title = 'Second module. Deep configuration 👨‍💻'
     if(slug === 'updates-and-support') title = 'Third module. Updates and support 🦀'
     if(slug === 'practical-cases') title = 'Fourth module. Practical cases 🧨'
+    if(slug === 'skills-and-personas') title = 'Fifth module. Skills and personas 🎭'
     return { slug, title }
   })
 
-  // Ensure preferred ordering: first-steps, installation-and-run, deep-configuration, updates-and-support, practical-cases
-  const preferredOrder = ['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases']
+  // Ensure preferred ordering: first-steps, installation-and-run, deep-configuration, updates-and-support, practical-cases, skills-and-personas
+  const preferredOrder = ['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases','skills-and-personas']
   list.sort((a,b)=>{
     const ia = preferredOrder.indexOf(a.slug)
     const ib = preferredOrder.indexOf(b.slug)
@@ -64,7 +65,7 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={m.slug === 'first-steps' ? `/en/modules/${m.slug}/preview` : `/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases')} data-slug={m.slug} aria-label={m.title}>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')} data-slug={m.slug} aria-label={m.title}>
                 {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases') && (
                   <span className="paid-badge" aria-hidden>💰</span>
                 )}
@@ -72,7 +73,7 @@ export default function ModulesIndex({list}){
                   <h3>{m.title}</h3>
                 </div>
 
-                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : (m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' : (m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' : (m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' : (m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' : 'Short module description and goals.'))))}</p>
+                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : (m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' : (m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' : (m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' : (m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' : (m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' : 'Short module description and goals.'))))}</p>
               </a>
             </Link>
           ))}

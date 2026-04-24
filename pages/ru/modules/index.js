@@ -28,11 +28,12 @@ export async function getStaticProps(){
     if(slug === 'deep-configuration') title = 'Второй модуль. Глубокая настройка 👨‍💻'
     if(slug === 'updates-and-support') title = 'Третий модуль. Обновления и поддержка 🦀'
     if(slug === 'practical-cases') title = 'Четвертый модуль. Практические кейсы 🧨'
+    if(slug === 'skills-and-personas') title = 'Пятый модуль. Скиллы и образы 🎭'
     return { slug, title }
   })
 
-  // Ensure preferred ordering: first-steps, installation-and-run, deep-configuration, updates-and-support, practical-cases
-  const preferredOrder = ['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases']
+  // Ensure preferred ordering: first-steps, installation-and-run, deep-configuration, updates-and-support, practical-cases, skills-and-personas
+  const preferredOrder = ['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases','skills-and-personas']
   list.sort((a,b)=>{
     const ia = preferredOrder.indexOf(a.slug)
     const ib = preferredOrder.indexOf(b.slug)
@@ -61,7 +62,7 @@ export default function ModulesIndex({list}){
         <div className="grid">
           {list.map(m=> (
             <Link href={m.slug === 'first-steps' ? `/ru/modules/${m.slug}/preview` : `/ru/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases')} data-slug={m.slug} aria-label={m.title}>
+              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')} data-slug={m.slug} aria-label={m.title}>
                 {/* paid badge for selected modules */}
                 {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases') && (
                   <span className="paid-badge" aria-hidden>💰</span>
@@ -71,7 +72,7 @@ export default function ModulesIndex({list}){
                   <h3>{m.title}</h3>
                 </div>
 
-                <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : (m.slug === 'installation-and-run' ? 'Пошаговая инструкция по установке на macOS, Windows и VPS, а также интеграция с Telegram.' : (m.slug === 'deep-configuration' ? 'Правильные параметры, оптимизационные конфиги, безопасность и интеграции.' : (m.slug === 'updates-and-support' ? 'Обновление системы, апгрейд дэшборда, пушим бэкапы и сопровождаем.' : (m.slug === 'practical-cases' ? 'Примеры использования, готовые шаблоны и пошаговые сценарии.' : 'Краткое описание модуля и цели обучения.'))))}</p>
+                <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : (m.slug === 'installation-and-run' ? 'Пошаговая инструкция по установке на macOS, Windows и VPS, а также интеграция с Telegram.' : (m.slug === 'deep-configuration' ? 'Правильные параметры, оптимизационные конфиги, безопасность и интеграции.' : (m.slug === 'updates-and-support' ? 'Обновление системы, апгрейд дэшборда, пушим бэкапы и сопровождаем.' : (m.slug === 'practical-cases' ? 'Примеры использования, готовые шаблоны и пошаговые сценарии.' : (m.slug === 'skills-and-personas' ? 'Разборы агентов, прокачка навыков, промт‑инжениринг.' : 'Краткое описание модуля и цели обучения.')))))}</p>
               </a>
             </Link>
           ))}
@@ -94,7 +95,7 @@ export default function ModulesIndex({list}){
         /* installation-and-run uses accent */
         .card[data-slug="installation-and-run"]{border-left-color:var(--accent)}
         /* new modules use accent */
-        .card[data-slug="deep-configuration"], .card[data-slug="updates-and-support"], .card[data-slug="practical-cases"]{border-left-color:var(--accent)}
+        .card[data-slug="deep-configuration"], .card[data-slug="updates-and-support"], .card[data-slug="practical-cases"], .card[data-slug="skills-and-personas"]{border-left-color:var(--accent)}
         .card-head{display:block;margin-bottom:6px}
         .card-head h3{margin:0;font-size:1.2rem;font-weight:800}
         .paid-badge{position:absolute;top:12px;right:12px;font-size:16px}
