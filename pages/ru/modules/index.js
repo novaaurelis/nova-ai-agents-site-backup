@@ -25,7 +25,7 @@ export async function getStaticProps(){
     // custom display titles for specific modules
     if(slug === 'first-steps') title = 'Базовый модуль. Первые шаги 🐾'
     if(slug === 'installation-and-run') title = 'Первый модуль. Установка и запуск 🚀'
-    if(slug === 'deep-configuration') title = 'Второй модуль. Глубокая настройка.'
+    if(slug === 'deep-configuration') title = 'Второй модуль. Глубокая настройка 👨‍💻'
     if(slug === 'updates-and-support') title = 'Третий модуль. Обновления и поддержка.'
     if(slug === 'practical-cases') title = 'Четвертый модуль. Практические кейсы.'
     return { slug, title }
@@ -66,7 +66,7 @@ export default function ModulesIndex({list}){
                   <h3>{m.title}</h3>
                 </div>
 
-                <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : (m.slug === 'installation-and-run' ? 'Пошаговая инструкция по установке на macOS, Windows и VPS, а также интеграция с Telegram.' : (m.slug === 'deep-configuration' ? 'Глубокая настройка: параметры, конфиги, безопасность и интеграции.' : (m.slug === 'updates-and-support' ? 'Обновления и поддержка: как обновлять систему, делать бэкапы и сопровождать.' : (m.slug === 'practical-cases' ? 'Практические кейсы: примеры использования, шаблоны и готовые сценарии.' : 'Краткое описание модуля и цели обучения.'))))}</p>
+                <p className="muted">{m.slug === 'first-steps' ? 'Зачем тебе создавать супер‑команду из цифровых помощников, которые будут двигать тебя вперёд?' : (m.slug === 'installation-and-run' ? 'Пошаговая инструкция по установке на macOS, Windows и VPS, а также интеграция с Telegram.' : (m.slug === 'deep-configuration' ? 'Правильные параметры, оптимизационные конфиги, безопасность и интеграции.' : (m.slug === 'updates-and-support' ? 'Обновления и поддержка: как обновлять систему, делать бэкапы и сопровождать.' : (m.slug === 'practical-cases' ? 'Практические кейсы: примеры использования, шаблоны и готовые сценарии.' : 'Краткое описание модуля и цели обучения.'))))}</p>
               </a>
             </Link>
           ))}
