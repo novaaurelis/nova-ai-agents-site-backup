@@ -73,7 +73,15 @@ export default function ModulesIndex({list}){
                   <h3>{m.title}</h3>
                 </div>
 
-                <p className="muted">{m.slug === 'first-steps' ? 'Why build a team that will move you forward?' : (m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' : (m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' : (m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' : (m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' : (m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' : 'Short module description and goals.'))))}</p>
+                <p className="muted">{
+                  m.slug === 'first-steps' ? 'Why build a team that will move you forward?' :
+                  m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' :
+                  m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' :
+                  m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' :
+                  m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' :
+                  m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' :
+                  'Short module description and goals.'
+                }</p>
               </a>
             </Link>
           ))}
