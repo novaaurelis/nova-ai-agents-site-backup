@@ -67,7 +67,7 @@ export default function ModulesIndex({list}){
               <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases')} data-slug={m.slug} aria-label={m.title}>
                 {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases') && (
                   <span className="paid-badge" aria-hidden>💰</span>
-                )
+                )}
                 <div className="card-head">
                   <h3>{m.title}</h3>
                 </div>
