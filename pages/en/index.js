@@ -50,16 +50,49 @@ export default function EnHome(){
 
 
         <div style={{height:12}} />
-        <section className="what" aria-label="What's inside" style={{marginBottom:12, position: 'relative', top: 12}}>
-          <h3 style={{marginBottom:6}}>What's inside</h3>
-          <ul style={{marginTop:6}}>
-            <li>Free signup — a clear install guide</li>
-            <li>Simple examples and ready scenario templates</li>
-            <li>Professional tips, deeper recipes and configs</li>
-            <li>Interactive step‑by‑step lessons for a fast start</li>
-            <li>Prebuilt integration templates (Telegram, Webhook, API)</li>
-            <li>Support and community — discussions, tips and config sharing</li>
-          </ul>
+        <section className="what" aria-label="What's inside" style={{marginBottom:36, position: 'relative', top: 12}}>
+          <h3 style={{marginBottom:12}}>What's inside</h3>
+
+          <div className="grid-cards">
+            <div className="card">
+              <div className="icon" aria-hidden>🛠️</div>
+              <div className="card-body">Clear, step-by-step installation and startup guide</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>📦</div>
+              <div className="card-body">Simple examples and ready-to-use scenario templates</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🧠</div>
+              <div className="card-body">Professional tips, in-depth configuration recipes and best practices</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🔗</div>
+              <div className="card-body">Integrations with popular services, dashboard upgrades, and agent personalization</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🎯</div>
+              <div className="card-body">Effective prompts, detailed walkthroughs, and skill training</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>📚</div>
+              <div className="card-body">Continuously updated content and structured learning modules</div>
+            </div>
+          </div>
+
+          <style jsx>{`
+            .grid-cards{display:grid;grid-template-columns:repeat(1,1fr);gap:14px;margin-top:12px}
+            @media(min-width:700px){ .grid-cards{grid-template-columns:repeat(2,1fr)} }
+            @media(min-width:1100px){ .grid-cards{grid-template-columns:repeat(3,1fr)} }
+            .card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;min-height:120px;border-radius:12px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04);border:1px solid rgba(15,23,42,0.04)}
+            .icon{font-size:32px;line-height:1;margin:0}
+            .card-body{font-size:0.98rem;color:var(--text);text-align:center}
+          `}</style>
         </section>
 
         <section className="models" aria-label="Models">

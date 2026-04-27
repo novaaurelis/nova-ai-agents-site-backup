@@ -48,16 +48,49 @@ export default function RuHome(){
 
 
         <div style={{height:12}} />
-        <section className="what" aria-label="Что внутри" style={{marginBottom:12, position: 'relative', top: 12}}>
-          <h3 style={{marginBottom:6}}>Что внутри</h3>
-          <ul style={{marginTop:6}}>
-            <li>Бесплатная регистрация — понятная инструкция по установке</li>
-            <li>Простые примеры и готовые шаблоны сценариев применения</li>
-            <li>Профессиональные лайфхаки, углублённые рецепты и конфиги</li>
-            <li>Интерактивные пошаговые уроки для быстрого старта</li>
-            <li>Готовые шаблоны интеграций (Telegram, Webhook, API)</li>
-            <li>Поддержка и сообщество — обсуждения, советы и обмен конфигами</li>
-          </ul>
+        <section className="what" aria-label="Что внутри" style={{marginBottom:36, position: 'relative', top: 12}}>
+          <h3 style={{marginBottom:12}}>Что внутри</h3>
+
+          <div className="grid-cards">
+            <div className="card">
+              <div className="icon" aria-hidden>🛠️</div>
+              <div className="card-body">Понятная и пошаговая инструкция по установке и запуску</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>📦</div>
+              <div className="card-body">Простые примеры и готовые шаблоны сценариев применения</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🧠</div>
+              <div className="card-body">Профессиональные лайфхаки, углублённые рецепты настройки и конфигурации</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🔗</div>
+              <div className="card-body">Интеграции с популярными сервисами, апгрейды дэшборда и персонализация агентов</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>🎯</div>
+              <div className="card-body">Правильные запросы, детальные разборы, прокачка навыков</div>
+            </div>
+
+            <div className="card">
+              <div className="icon" aria-hidden>📚</div>
+              <div className="card-body">Обновляемый контент и структурируемые модули обучения</div>
+            </div>
+          </div>
+
+          <style jsx>{`
+            .grid-cards{display:grid;grid-template-columns:repeat(1,1fr);gap:14px;margin-top:12px}
+            @media(min-width:700px){ .grid-cards{grid-template-columns:repeat(2,1fr)} }
+            @media(min-width:1100px){ .grid-cards{grid-template-columns:repeat(3,1fr)} }
+            .card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;min-height:120px;border-radius:12px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04);border:1px solid rgba(15,23,42,0.04)}
+            .icon{font-size:32px;line-height:1;margin:0}
+            .card-body{font-size:0.98rem;color:var(--text);text-align:center}
+          `}</style>
         </section>
 
         <section className="models" aria-label="Модели">

@@ -63,10 +63,13 @@ export default function ModulesIndex({list}){
         </header>
 
         <div className="grid">
-          {list.map(m=> (
-            <Link href={m.slug === 'first-steps' ? `/en/modules/${m.slug}/preview` : `/en/modules/${m.slug}`} key={m.slug} legacyBehavior>
-              <a className="card" data-accent={(m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')} data-slug={m.slug} aria-label={m.title}>
-                {(m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases' || m.slug === 'skills-and-personas') && (
+          {list.map(m=> {
+            const href = m.slug === 'first-steps' ? `/en/modules/${m.slug}/preview` : `/en/modules/${m.slug}`
+            const isAccent = (m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')
+            const isPaid = (m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases' || m.slug === 'skills-and-personas')
+            return (
+              <Link href={href} key={m.slug} className="card" data-accent={isAccent ? "true" : undefined} data-slug={m.slug} aria-label={m.title}>
+                {isPaid && (
                   <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
                 )}
                 <div className="card-head">
@@ -82,9 +85,9 @@ export default function ModulesIndex({list}){
                   m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' :
                   'Short module description and goals.'
                 }</p>
-              </a>
-            </Link>
-          ))}
+              </Link>
+            )
+          })}
         </div>
 
         <p style={{marginTop:20}}><Link href="/en">← Home</Link></p>
