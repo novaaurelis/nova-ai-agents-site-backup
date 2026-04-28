@@ -16,33 +16,33 @@ export default function InstallationRunEn(){
           {/* Cards styled like /en/modules (same as RU, but English) */}
           <div className="grid" aria-hidden>
             <a href="#mac" className="card" data-accent data-slug="installation-and-run">
-              <div className="card-head"><h3>Install on macOS</h3></div>
-              <p className="muted">Homebrew, Node, and common permissions</p>
+              <div className="card-head"><h3>Installation on macOS</h3></div>
+              <p className="muted">Step-by-step we install the digital assistant on macOS</p>
             </a>
 
             <a href="#windows" className="card">
-              <div className="card-head"><h3>Install on Windows</h3></div>
-              <p className="muted">WSL or native, PATH and Node versions</p>
+              <div className="card-head"><h3>Installation on Windows</h3></div>
+              <p className="muted">Step-by-step we install the digital assistant on Windows</p>
             </a>
 
             <a href="#vps" className="card">
-              <div className="card-head"><h3>Install on VPS / Server</h3></div>
-              <p className="muted">Deployment, security and backups</p>
+              <div className="card-head"><h3>Installation on VPS / Server</h3></div>
+              <p className="muted">Step-by-step we install the digital assistant on a VPS / server</p>
             </a>
 
             <a href="#ollama" className="card">
               <div className="card-head"><h3>Ollama integration</h3></div>
-              <p className="muted">Connect local models to OpenClaw</p>
+              <p className="muted">We install Ollama and create pairing with your digital assistant</p>
             </a>
 
             <a href="#telegram" className="card">
               <div className="card-head"><h3>Create a Telegram bot</h3></div>
-              <p className="muted">Token, webhook and testing</p>
+              <p className="muted">Step-by-step bot creation and pairing with your digital assistant</p>
             </a>
 
             <a href="#check" className="card">
-              <div className="card-head"><h3>Checks & debugging</h3></div>
-              <p className="muted">Logs, ports and typical errors</p>
+              <div className="card-head"><h3>Connection checks</h3></div>
+              <p className="muted">We verify that everything works</p>
             </a>
           </div>
 
