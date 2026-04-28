@@ -8,26 +8,35 @@ export default function UpdatesSupport(){
       <main className="container">
         <article className="module">
           <header className="module-header">
-            <h1>Обновление и поддержка</h1>
-            <p className="muted">Как обновлять, мониторить и поддерживать проект в рабочем состоянии.</p>
+            <h1>Третий модуль. Обновления и поддержка 🦀</h1>
+            <p className="muted">Обновление системы, апгрейд дэшборда, пушим бэкапы и сопровождаем.</p>
           </header>
 
-          <section>
-            <h2>Процедура обновления</h2>
-            <p>Порядок обновлений, миграции и проверки совместимости.</p>
-          </section>
+          {/* Cards styled like second module */}
+          <div className="grid" aria-hidden>
+            <a href="#update" className="card" data-accent data-slug="updates-and-support">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>Процедура обновления</h3></div>
+              <p className="muted">Порядок обновлений, миграции и проверки совместимости.</p>
+            </a>
 
-          <section>
-            <h2>Автоматизированная диагностика</h2>
-            <p>Создание "бота‑доктора" и автоматических проверок</p>
-          </section>
+            <a href="#diag" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>Автоматизированная диагностика</h3></div>
+              <p className="muted">Создание "бота‑доктора" и автоматических проверок.</p>
+            </a>
 
-          <section>
-            <h2>FAQ и восстановление</h2>
-            <p>Как действовать при ошибках и восстановление из резервных копий.</p>
-          </section>
+            <a href="#faq" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>FAQ и восстановление</h3></div>
+              <p className="muted">Действия при ошибках и восстановление из резервных копий.</p>
+            </a>
+          </div>
 
-          <p style={{marginTop:20}}><Link href="/ru/modules/first-steps">← Вернуться к Первым шагам</Link></p>
+
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/ru/modules" className="button secondary">Назад в личный кабинет</a>
+          </div>
         </article>
 
         <style jsx>{`

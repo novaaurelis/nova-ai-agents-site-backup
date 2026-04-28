@@ -8,26 +8,35 @@ export default function PracticalCases(){
       <main className="container">
         <article className="module">
           <header className="module-header">
-            <h1>Практические кейсы</h1>
-            <p className="muted">Реальные примеры использования агентов в быту и бизнесе.</p>
+            <h1>Четвертый модуль. Практические кейсы 🧨</h1>
+            <p className="muted">Примеры использования, готовые шаблоны и пошаговые сценарии.</p>
           </header>
 
-          <section>
-            <h2>Домашние задачи</h2>
-            <p>Примеры: планирование покупок, управление расписанием, автоматизация рутинных домашних процессов.</p>
-          </section>
+          {/* Cards styled like second module */}
+          <div className="grid" aria-hidden>
+            <a href="#home" className="card" data-accent data-slug="practical-cases">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>Домашние задачи</h3></div>
+              <p className="muted">Планирование покупок, управление расписанием и автоматизация рутинных дел.</p>
+            </a>
 
-          <section>
-            <h2>Рабочие сценарии</h2>
-            <p>Примеры автоматизации задач: сбор данных, рассылки, подготовка черновиков и отчётов.</p>
-          </section>
+            <a href="#work" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>Рабочие сценарии</h3></div>
+              <p className="muted">Сбор данных, автоматические рассылки, подготовка черновиков и отчётов.</p>
+            </a>
 
-          <section>
-            <h2>Бизнес‑кейсы</h2>
-            <p>Автоматизация продаж, обработка входящих заявок, мониторинг конкурентов.</p>
-          </section>
+            <a href="#business" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
+              <div className="card-head"><h3>Бизнес‑кейсы</h3></div>
+              <p className="muted">Автоматизация продаж, обработка заявок и мониторинг конкурентов.</p>
+            </a>
+          </div>
 
-          <p style={{marginTop:20}}><Link href="/ru/modules/first-steps">← Вернуться к Первым шагам</Link></p>
+
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/ru/modules" className="button secondary">Назад в личный кабинет</a>
+          </div>
         </article>
 
         <style jsx>{`

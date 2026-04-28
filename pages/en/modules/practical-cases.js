@@ -8,26 +8,35 @@ export default function PracticalCasesEn(){
       <main className="container">
         <article className="module">
           <header className="module-header">
-            <h1>Practical cases</h1>
-            <p className="muted">Real use cases of AI agents for home and business.</p>
+            <h1>Fourth module. Practical cases 🧨</h1>
+            <p className="muted">Usage examples, ready templates and step‑by‑step scenarios.</p>
           </header>
 
-          <section>
-            <h2>Home tasks</h2>
-            <p>Examples: shopping planning, schedule management, automating routine home tasks.</p>
-          </section>
+          {/* Cards styled like second module */}
+          <div className="grid" aria-hidden>
+            <a href="#home" className="card" data-accent data-slug="practical-cases">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
+              <div className="card-head"><h3>Home tasks</h3></div>
+              <p className="muted">Shopping planning, schedule management and automating routine home tasks.</p>
+            </a>
 
-          <section>
-            <h2>Work scenarios</h2>
-            <p>Automating tasks like data collection, mailings, drafting and reporting.</p>
-          </section>
+            <a href="#work" className="card">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
+              <div className="card-head"><h3>Work scenarios</h3></div>
+              <p className="muted">Automating data collection, mailings, drafting and reporting.</p>
+            </a>
 
-          <section>
-            <h2>Business cases</h2>
-            <p>Sales automation, handling incoming requests, competitor monitoring.</p>
-          </section>
+            <a href="#business" className="card">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
+              <div className="card-head"><h3>Business cases</h3></div>
+              <p className="muted">Sales automation, handling incoming requests, competitor monitoring.</p>
+            </a>
+          </div>
 
-          <p style={{marginTop:20}}><Link href="/en/modules/first-steps">← Back to First steps</Link></p>
+
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/en/modules" className="button secondary">Back to dashboard</a>
+          </div>
         </article>
 
         <style jsx>{`
