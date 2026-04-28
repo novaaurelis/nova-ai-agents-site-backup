@@ -54,7 +54,9 @@ export default function InstallationRunEn(){
 
         <style jsx>{`
           .module { max-width:900px; margin:18px auto; padding:0 18px }
-          .module-header { margin-bottom:12px }
+          .module-header{margin-bottom:8px}
+          .module-header h1{margin:0 0 6px}
+          .module-header p{margin:0}
           .module h2 { margin-top:16px }
           .toc ul { padding-left:18px }
 
