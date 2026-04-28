@@ -21,16 +21,19 @@ export default function DeepConfigEn(){
             </a>
 
             <a href="#architecture" className="card">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Architecture & configs</h3></div>
               <p className="muted">How to design agent "personas", role separation and team composition.</p>
             </a>
 
             <a href="#skills" className="card">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Skills & extensions</h3></div>
               <p className="muted">Adding third‑party modules, extending capabilities and code examples.</p>
             </a>
 
             <a href="#security" className="card">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Security & backups</h3></div>
               <p className="muted">Designing a secure data perimeter and backup/restore procedures.</p>
             </a>

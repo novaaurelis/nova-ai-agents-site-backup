@@ -21,16 +21,19 @@ export default function DeepConfig(){
             </a>
 
             <a href="#architecture" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Архитектура и конфиги</h3></div>
               <p className="muted">Как строить "личности" агентов, разделение ролей и команда агентов.</p>
             </a>
 
             <a href="#skills" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Скиллы и расширения</h3></div>
               <p className="muted">Добавление сторонних модулей и расширений, примеры кода.</p>
             </a>
 
             <a href="#security" className="card">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Безопасность и бэкапы</h3></div>
               <p className="muted">Создание безопасного контура данных и резервные копии.</p>
             </a>
