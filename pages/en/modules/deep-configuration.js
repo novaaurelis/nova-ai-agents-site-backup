@@ -70,6 +70,7 @@ export default function DeepConfigEn(){
 
           /* Back button style (matches preview) */
           .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+          .paid-badge{position:absolute;top:12px;right:12px;font-size:16px}
         `}</style>
       </main>
     </div>
