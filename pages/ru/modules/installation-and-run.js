@@ -17,32 +17,32 @@ export default function InstallationRun(){
           <div className="grid" aria-hidden>
             <a href="#mac" className="card" data-accent data-slug="installation-and-run">
               <div className="card-head"><h3>Установка на macOS</h3></div>
-              <p className="muted">Шаги и команды для macOS</p>
+              <p className="muted">Пошагово устанавливаем цифрового ассистента на macOS</p>
             </a>
 
             <a href="#windows" className="card">
               <div className="card-head"><h3>Установка на Windows</h3></div>
-              <p className="muted">WSL или нативная установка</p>
+              <p className="muted">Пошагово устанавливаем цифрового ассистента на Windows</p>
             </a>
 
             <a href="#vps" className="card">
               <div className="card-head"><h3>Установка на виртуальный сервер</h3></div>
-              <p className="muted">Развёртывание, безопасность и бэкапы</p>
+              <p className="muted">Пошагово устанавливаем цифрового ассистента на виртуальный сервер</p>
             </a>
 
             <a href="#ollama" className="card">
               <div className="card-head"><h3>Интеграция с Ollama</h3></div>
-              <p className="muted">Подключаем локальные модели</p>
+              <p className="muted">Устанавливаем Ollama и создаем сопряжение с твоим цифровым ассистентом</p>
             </a>
 
             <a href="#telegram" className="card">
-              <div className="card-head"><h3>Создаём бота в Telegram</h3></div>
-              <p className="muted">Токен, webhook и проверка</p>
+              <div className="card-head"><h3>Создаем бота в телеграм</h3></div>
+              <p className="muted">Пошаговое создание бота и сопряжение с твоим цифровым ассистентом</p>
             </a>
 
             <a href="#check" className="card">
               <div className="card-head"><h3>Проверка связи</h3></div>
-              <p className="muted">Логи, порты и типичные ошибки</p>
+              <p className="muted">Проверяем все ли работает</p>
             </a>
           </div>
 
@@ -54,7 +54,9 @@ export default function InstallationRun(){
 
         <style jsx>{`
           .module { max-width:900px; margin:18px auto; padding:0 18px }
-          .module-header { margin-bottom:12px }
+          .module-header{margin-bottom:8px}
+          .module-header h1{margin:0 0 6px}
+          .module-header p{margin:0}
           .module h2 { margin-top:16px }
           .toc ul { padding-left:18px }
 
