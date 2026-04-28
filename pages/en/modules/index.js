@@ -68,23 +68,25 @@ export default function ModulesIndex({list}){
             const isAccent = (m.slug==='first-steps' || m.slug==='installation-and-run' || m.slug==='deep-configuration' || m.slug==='updates-and-support' || m.slug==='practical-cases' || m.slug==='skills-and-personas')
             const isPaid = (m.slug === 'deep-configuration' || m.slug === 'updates-and-support' || m.slug === 'practical-cases' || m.slug === 'skills-and-personas')
             return (
-              <Link href={href} key={m.slug} className="card" data-accent={isAccent ? "true" : undefined} data-slug={m.slug} aria-label={m.title}>
-                {isPaid && (
-                  <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
-                )}
-                <div className="card-head">
-                  <h3>{m.title}</h3>
-                </div>
+              <Link href={href} key={m.slug} legacyBehavior>
+                <a className="card" data-accent={isAccent ? true : undefined} data-slug={m.slug} aria-label={m.title}>
+                  {isPaid && (
+                    <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
+                  )}
+                  <div className="card-head">
+                    <h3>{m.title}</h3>
+                  </div>
 
-                <p className="muted">{
-                  m.slug === 'first-steps' ? 'Why build a team that will move you forward?' :
-                  m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' :
-                  m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' :
-                  m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' :
-                  m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' :
-                  m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' :
-                  'Short module description and goals.'
-                }</p>
+                  <p className="muted">{
+                    m.slug === 'first-steps' ? 'Why build a team that will move you forward?' :
+                    m.slug === 'installation-and-run' ? 'Step-by-step installation guide for macOS, Windows and VPS, plus Telegram integration.' :
+                    m.slug === 'deep-configuration' ? 'Correct parameters, optimization configs, security and integrations.' :
+                    m.slug === 'updates-and-support' ? 'System updates, dashboard upgrades, backup pushes and maintenance.' :
+                    m.slug === 'practical-cases' ? 'Usage examples, ready templates and step-by-step scenarios.' :
+                    m.slug === 'skills-and-personas' ? 'Agent breakdowns, skill upgrades, prompt-engineering and persona design.' :
+                    'Short module description and goals.'
+                  }</p>
+                </a>
               </Link>
             )
           })}
@@ -100,9 +102,12 @@ export default function ModulesIndex({list}){
         /* match RU: card fills the available column (no extra max-width) */
         .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
         .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
+        /* keep the left accent visible on hover */
+        .card[data-accent]:hover{ border-left-color: var(--accent) }
+        .card[data-slug="first-steps"]:hover{ border-left-color: #9CA3AF }
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
-        .card[data-accent="true"]{border-left-color:var(--accent)}
+        .card[data-accent]{border-left-color:var(--accent)}
         /* first-steps gets a different color (gray) */
         .card[data-slug="first-steps"]{border-left-color:#9CA3AF}
         .card-head{display:block;margin-bottom:6px}

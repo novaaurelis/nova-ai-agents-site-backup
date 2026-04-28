@@ -88,6 +88,9 @@ export default function ModulesIndex({list}){
         /* Flat card with left accent, no animation */
         .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
         .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
+        /* keep the left accent visible on hover */
+        .card[data-accent="true"]:hover{ border-left-color: var(--accent) }
+        .card[data-slug="first-steps"]:hover{ border-left-color: #9CA3AF }
         @media (min-width:900px){ .card{width:720px;margin:0 auto} }
         .card{border-left:6px solid transparent}
         /* first-steps gets a different color (gray) */

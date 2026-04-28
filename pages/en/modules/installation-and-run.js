@@ -13,53 +13,43 @@ export default function InstallationRunEn(){
             <p className="muted">Instructions to install OpenClaw on several platforms and verify functionality.</p>
           </header>
 
-          <nav className="toc" aria-label="Contents">
-            <strong>Contents</strong>
-            <ul>
-              <li><a href="#mac">macOS</a></li>
-              <li><a href="#windows">Windows / WSL</a></li>
-              <li><a href="#vps">VPS / Server</a></li>
-              <li><a href="#ollama">Ollama integration</a></li>
-              <li><a href="#telegram">Telegram bot</a></li>
-              <li><a href="#check">Checks & debugging</a></li>
-            </ul>
-          </nav>
+          {/* Cards styled like /en/modules (same as RU, but English) */}
+          <div className="grid" aria-hidden>
+            <a href="#mac" className="card" data-accent data-slug="installation-and-run">
+              <div className="card-head"><h3>Install on macOS</h3></div>
+              <p className="muted">Homebrew, Node, and common permissions</p>
+            </a>
 
-          <section id="mac">
-            <h2>macOS</h2>
-            <p>Steps for Homebrew, Node.js installation and common permissions notes.</p>
-          </section>
+            <a href="#windows" className="card">
+              <div className="card-head"><h3>Install on Windows</h3></div>
+              <p className="muted">WSL or native, PATH and Node versions</p>
+            </a>
 
-          <section id="windows">
-            <h2>Windows / WSL</h2>
-            <p>Guidance for WSL or native setup, PATH tips and Node.js versions.</p>
-          </section>
+            <a href="#vps" className="card">
+              <div className="card-head"><h3>Install on VPS / Server</h3></div>
+              <p className="muted">Deployment, security and backups</p>
+            </a>
 
-          <section id="vps">
-            <h2>VPS / Server</h2>
-            <p>How to deploy to a remote server, security hints and backup suggestions.</p>
-          </section>
+            <a href="#ollama" className="card">
+              <div className="card-head"><h3>Ollama integration</h3></div>
+              <p className="muted">Connect local models to OpenClaw</p>
+            </a>
 
-          <section id="ollama">
-            <h2>Ollama integration</h2>
-            <p>Example: setting up Ollama (Kimi K2.5) and connecting local models to OpenClaw.</p>
-          </section>
+            <a href="#telegram" className="card">
+              <div className="card-head"><h3>Create a Telegram bot</h3></div>
+              <p className="muted">Token, webhook and testing</p>
+            </a>
 
-          <section id="telegram">
-            <h2>Telegram bot</h2>
-            <p>Mini‑guide: create a bot, get token, configure webhook or long polling.</p>
-          </section>
+            <a href="#check" className="card">
+              <div className="card-head"><h3>Checks & debugging</h3></div>
+              <p className="muted">Logs, ports and typical errors</p>
+            </a>
+          </div>
 
-          <section id="check">
-            <h2>Checks & debugging</h2>
-            <ul>
-              <li>Port checks</li>
-              <li>Server logs</li>
-              <li>Common errors and remediation</li>
-            </ul>
-          </section>
 
-          <p style={{marginTop:20}}><Link href="/en/modules/first-steps">← Back to First steps</Link></p>
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/en/modules" className="button secondary">Back to dashboard</a>
+          </div>
         </article>
 
         <style jsx>{`
@@ -67,6 +57,26 @@ export default function InstallationRunEn(){
           .module-header { margin-bottom:12px }
           .module h2 { margin-top:16px }
           .toc ul { padding-left:18px }
+
+          /* Reuse module index card styles: vertical stacked cards centered */
+          .grid{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:14px}
+          .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;text-decoration:none;color:inherit}
+          .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
+          @media (min-width:900px){ .card{width:720px;margin:0 auto} }
+          /* thin left accent: show by default (like modules index) */
+          .card{border-left:4px solid var(--accent);position:relative}
+          /* and explicitly ensure hover doesn't remove it */
+          .card:hover{ border-left-color: var(--accent) }
+          .card-head{display:block;margin-bottom:6px}
+          .card-head h3{margin:0;font-size:1.1rem;font-weight:800}
+          .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:0}
+          a.card{display:block}
+          a.card *{text-decoration:none;color:inherit}
+          /* ensure smooth hardware-accelerated transform */
+          .card{will-change:transform}
+
+          /* Back button style (matches preview) */
+          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
         `}</style>
       </main>
     </div>

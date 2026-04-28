@@ -47,7 +47,9 @@ export default function InstallationRun(){
           </div>
 
 
-          <p style={{marginTop:20}}><Link href="/ru/modules/first-steps">← Вернуться к Первым шагам</Link></p>
+          <div style={{marginTop:20,textAlign:'center'}}>
+            <a href="/ru/modules" className="button secondary">Назад в личный кабинет</a>
+          </div>
         </article>
 
         <style jsx>{`
@@ -61,8 +63,10 @@ export default function InstallationRun(){
           .card{padding:16px;border:1px solid rgba(15,23,42,0.04);border-radius:10px;background:var(--surface);display:flex;flex-direction:column;width:100%;box-sizing:border-box;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;text-decoration:none;color:inherit}
           .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(2,6,23,0.06);border-color:rgba(15,23,42,0.08)}
           @media (min-width:900px){ .card{width:720px;margin:0 auto} }
-          /* thin red accent on the left for every card */
+          /* thin left accent: show by default (like modules index) */
           .card{border-left:4px solid var(--accent);position:relative}
+          /* and explicitly ensure hover doesn't remove it */
+          .card:hover{ border-left-color: var(--accent) }
           .card-head{display:block;margin-bottom:6px}
           .card-head h3{margin:0;font-size:1.1rem;font-weight:800}
           .card .muted{margin-top:4px;color:var(--muted);line-height:1.38;margin-bottom:0}
@@ -70,6 +74,9 @@ export default function InstallationRun(){
           a.card *{text-decoration:none;color:inherit}
           /* ensure smooth hardware-accelerated transform */
           .card{will-change:transform}
+
+          /* Back button style (matches preview) */
+          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
         `}</style>
       </main>
     </div>
