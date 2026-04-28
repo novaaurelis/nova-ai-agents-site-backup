@@ -15,6 +15,7 @@ export default function DeepConfig(){
           {/* Cards styled like /ru/modules/installation-and-run */}
           <div className="grid" aria-hidden>
             <a href="#optimization" className="card" data-accent data-slug="deep-configuration">
+              <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Оптимизация работы агента</h3></div>
               <p className="muted">Настройки производительности, кеширование и баланс токенов.</p>
             </a>
@@ -67,6 +68,7 @@ export default function DeepConfig(){
 
           /* Back button style (matches preview) */
           .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+          .paid-badge{position:absolute;top:12px;right:12px;font-size:16px}
         `}</style>
       </main>
     </div>

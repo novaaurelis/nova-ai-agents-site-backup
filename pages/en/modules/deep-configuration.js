@@ -15,6 +15,7 @@ export default function DeepConfigEn(){
           {/* Cards styled like /en/modules/installation-and-run */}
           <div className="grid" aria-hidden>
             <a href="#optimization" className="card" data-accent data-slug="deep-configuration">
+              <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Performance tuning</h3></div>
               <p className="muted">Settings for throughput, caching and token budget optimization.</p>
             </a>
