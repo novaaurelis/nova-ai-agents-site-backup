@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import Header from 'components/Header'
 
 export default function InstallationRun(){
   return (
@@ -15,32 +15,32 @@ export default function InstallationRun(){
 
           {/* Cards styled like /ru/modules */}
           <div className="grid" aria-hidden>
-            <a href="#mac" className="card" data-accent data-slug="installation-and-run">
+            <a href="/ru/modules/installation-and-run/mac" className="card" data-accent data-slug="installation-and-run">
               <div className="card-head"><h3>Установка на macOS</h3></div>
               <p className="muted">Пошагово устанавливаем цифрового ассистента на macOS</p>
             </a>
 
-            <a href="#windows" className="card">
+            <a href="/ru/modules/installation-and-run/windows" className="card">
               <div className="card-head"><h3>Установка на Windows</h3></div>
               <p className="muted">Пошагово устанавливаем цифрового ассистента на Windows</p>
             </a>
 
-            <a href="#vps" className="card">
+            <a href="/ru/modules/installation-and-run/vps" className="card">
               <div className="card-head"><h3>Установка на виртуальный сервер</h3></div>
               <p className="muted">Пошагово устанавливаем цифрового ассистента на виртуальный сервер</p>
             </a>
 
-            <a href="#ollama" className="card">
+            <a href="/ru/modules/installation-and-run/ollama" className="card">
               <div className="card-head"><h3>Интеграция с Ollama</h3></div>
               <p className="muted">Устанавливаем Ollama и создаем сопряжение с твоим цифровым ассистентом</p>
             </a>
 
-            <a href="#telegram" className="card">
+            <a href="/ru/modules/installation-and-run/telegram" className="card">
               <div className="card-head"><h3>Создаем бота в телеграм</h3></div>
               <p className="muted">Пошаговое создание бота и сопряжение с твоим цифровым ассистентом</p>
             </a>
 
-            <a href="#check" className="card">
+            <a href="/ru/modules/installation-and-run/check" className="card">
               <div className="card-head"><h3>Проверка связи</h3></div>
               <p className="muted">Проверяем все ли работает</p>
             </a>

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import Header from 'components/Header'
 
 export default function InstallationRunEn(){
   return (
@@ -15,32 +15,32 @@ export default function InstallationRunEn(){
 
           {/* Cards styled like /en/modules (same as RU, but English) */}
           <div className="grid" aria-hidden>
-            <a href="#mac" className="card" data-accent data-slug="installation-and-run">
+            <a href="/en/modules/installation-and-run/mac" className="card" data-accent data-slug="installation-and-run">
               <div className="card-head"><h3>Installation on macOS</h3></div>
               <p className="muted">Step-by-step we install the digital assistant on macOS</p>
             </a>
 
-            <a href="#windows" className="card">
+            <a href="/en/modules/installation-and-run/windows" className="card">
               <div className="card-head"><h3>Installation on Windows</h3></div>
               <p className="muted">Step-by-step we install the digital assistant on Windows</p>
             </a>
 
-            <a href="#vps" className="card">
+            <a href="/en/modules/installation-and-run/vps" className="card">
               <div className="card-head"><h3>Installation on VPS / Server</h3></div>
               <p className="muted">Step-by-step we install the digital assistant on a VPS / server</p>
             </a>
 
-            <a href="#ollama" className="card">
+            <a href="/en/modules/installation-and-run/ollama" className="card">
               <div className="card-head"><h3>Ollama integration</h3></div>
               <p className="muted">We install Ollama and create pairing with your digital assistant</p>
             </a>
 
-            <a href="#telegram" className="card">
+            <a href="/en/modules/installation-and-run/telegram" className="card">
               <div className="card-head"><h3>Create a Telegram bot</h3></div>
               <p className="muted">Step-by-step bot creation and pairing with your digital assistant</p>
             </a>
 
-            <a href="#check" className="card">
+            <a href="/en/modules/installation-and-run/check" className="card">
               <div className="card-head"><h3>Connection checks</h3></div>
               <p className="muted">We verify that everything works</p>
             </a>

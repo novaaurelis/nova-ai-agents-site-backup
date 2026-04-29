@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import Header from '../../../../components/Header'
+import Header from 'components/Header'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 

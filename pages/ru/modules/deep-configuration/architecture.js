@@ -1,24 +1,24 @@
 import Link from 'next/link'
 import Header from 'components/Header'
 
-export default function VpsInstallEn(){
+export default function Architecture(){
   return (
     <div>
       <Header/>
       <main className="container">
         <article className="module">
           <header className="module-header">
-            <h1>Installation on VPS / Server</h1>
-            <p className="muted">Step-by-step we install the digital assistant on a VPS / server</p>
+            <h1>Архитектура и конфиги</h1>
+            <p className="muted">Скелетная страница — сюда добавим схемы архитектуры агентов, шаблоны конфигов и лучшие практики.</p>
           </header>
 
           <section>
-            <h2>Steps</h2>
-            <p>Skeleton page — deployment, security and backup instructions will go here.</p>
+            <h2>Темы</h2>
+            <p>Placeholder — разделы: разделение ролей, хранение состояний, шаблоны конфигов, примеры.</p>
           </section>
 
           <div style={{marginTop:20,textAlign:'center'}}>
-            <Link href="/en/modules/installation-and-run" legacyBehavior><a className="button secondary">Back</a></Link>
+            <Link href="/ru/modules/deep-configuration" legacyBehavior><a className="button secondary">Назад</a></Link>
           </div>
         </article>
 

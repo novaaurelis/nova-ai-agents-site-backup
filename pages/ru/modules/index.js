@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import Header from 'components/Header'
 
 export async function getStaticProps(){
   const dir = path.join(process.cwd(),'content/modules')

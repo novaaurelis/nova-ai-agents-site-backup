@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import Header from 'components/Header'
 
 export default function DeepConfig(){
   return (
@@ -14,29 +14,29 @@ export default function DeepConfig(){
 
           {/* Cards styled like /ru/modules/installation-and-run */}
           <div className="grid" aria-hidden>
-            <a href="#optimization" className="card" data-accent data-slug="deep-configuration">
+            <Link href="/ru/modules/deep-configuration/optimization" legacyBehavior><a className="card" data-accent data-slug="deep-configuration">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Оптимизация работы агента</h3></div>
               <p className="muted">Настройки производительности, кеширование и баланс токенов.</p>
-            </a>
+            </a></Link>
 
-            <a href="#architecture" className="card">
+            <Link href="/ru/modules/deep-configuration/architecture" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Архитектура и конфиги</h3></div>
               <p className="muted">Как строить "личности" агентов, разделение ролей и команда агентов.</p>
-            </a>
+            </a></Link>
 
-            <a href="#skills" className="card">
+            <Link href="/ru/modules/deep-configuration/skills" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Скиллы и расширения</h3></div>
               <p className="muted">Добавление сторонних модулей и расширений, примеры кода.</p>
-            </a>
+            </a></Link>
 
-            <a href="#security" className="card">
+            <Link href="/ru/modules/deep-configuration/security" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Безопасность и бэкапы</h3></div>
               <p className="muted">Создание безопасного контура данных и резервные копии.</p>
-            </a>
+            </a></Link>
           </div>
 
 
