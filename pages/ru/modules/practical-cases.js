@@ -14,23 +14,23 @@ export default function PracticalCases(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#home" className="card" data-accent data-slug="practical-cases">
+            <Link href="/ru/modules/practical-cases/home" legacyBehavior><a className="card" data-accent data-slug="practical-cases">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Домашние задачи</h3></div>
               <p className="muted">Планирование покупок, управление расписанием и автоматизация рутинных дел.</p>
-            </a>
+            </a></Link>
 
-            <a href="#work" className="card">
+            <Link href="/ru/modules/practical-cases/work" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Рабочие сценарии</h3></div>
               <p className="muted">Сбор данных, автоматические рассылки, подготовка черновиков и отчётов.</p>
-            </a>
+            </a></Link>
 
-            <a href="#business" className="card">
+            <Link href="/ru/modules/practical-cases/business" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Бизнес‑кейсы</h3></div>
               <p className="muted">Автоматизация продаж, обработка заявок и мониторинг конкурентов.</p>
-            </a>
+            </a></Link>
           </div>
 
 

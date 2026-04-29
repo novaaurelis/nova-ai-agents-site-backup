@@ -14,23 +14,23 @@ export default function PracticalCasesEn(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#home" className="card" data-accent data-slug="practical-cases">
+            <Link href="/en/modules/practical-cases/home" legacyBehavior><a className="card" data-accent data-slug="practical-cases">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Home tasks</h3></div>
               <p className="muted">Shopping planning, schedule management and automating routine home tasks.</p>
-            </a>
+            </a></Link>
 
-            <a href="#work" className="card">
+            <Link href="/en/modules/practical-cases/work" legacyBehavior><a className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Work scenarios</h3></div>
               <p className="muted">Automating data collection, mailings, drafting and reporting.</p>
-            </a>
+            </a></Link>
 
-            <a href="#business" className="card">
+            <Link href="/en/modules/practical-cases/business" legacyBehavior><a className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Business cases</h3></div>
               <p className="muted">Sales automation, handling incoming requests, competitor monitoring.</p>
-            </a>
+            </a></Link>
           </div>
 
 
