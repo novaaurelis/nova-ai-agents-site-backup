@@ -14,23 +14,23 @@ export default function SkillsAndPersonas(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#skills" className="card" data-accent data-slug="skills-and-personas">
+            <Link href="/ru/modules/skills-and-personas/skills" legacyBehavior><a className="card" data-accent data-slug="skills-and-personas">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Скиллы и расширения</h3></div>
               <p className="muted">Добавление сторонних модулей и расширений, примеры кода.</p>
-            </a>
+            </a></Link>
 
-            <a href="#personas" className="card">
+            <Link href="/ru/modules/skills-and-personas/personas" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Персоны и образы</h3></div>
               <p className="muted">Проектирование личностей, роли и взаимодействия в команде агентов.</p>
-            </a>
+            </a></Link>
 
-            <a href="#prompts" className="card">
+            <Link href="/ru/modules/skills-and-personas/prompts" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Промт‑инжениринг</h3></div>
               <p className="muted">Шаблоны промтов, техники детального инструктажа и отладки поведения.</p>
-            </a>
+            </a></Link>
           </div>
 
 

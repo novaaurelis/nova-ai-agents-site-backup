@@ -14,23 +14,23 @@ export default function SkillsAndPersonasEn(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#skills" className="card" data-accent data-slug="skills-and-personas">
+            <Link href="/en/modules/skills-and-personas/skills" legacyBehavior><a className="card" data-accent data-slug="skills-and-personas">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Skills & extensions</h3></div>
               <p className="muted">Adding third-party modules, extending capabilities and code examples.</p>
-            </a>
+            </a></Link>
 
-            <a href="#personas" className="card">
+            <Link href="/en/modules/skills-and-personas/personas" legacyBehavior><a className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Personas & scenarios</h3></div>
               <p className="muted">Designing personas, role separation and agent team composition.</p>
-            </a>
+            </a></Link>
 
-            <a href="#prompts" className="card">
+            <Link href="/en/modules/skills-and-personas/prompts" legacyBehavior><a className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Prompt engineering</h3></div>
               <p className="muted">Prompt templates, instruction techniques and behavior debugging.</p>
-            </a>
+            </a></Link>
           </div>
 
 
