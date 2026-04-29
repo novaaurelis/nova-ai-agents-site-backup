@@ -14,23 +14,23 @@ export default function UpdatesSupport(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#update" className="card" data-accent data-slug="updates-and-support">
+            <Link href="/ru/modules/updates-and-support/update" legacyBehavior><a className="card" data-accent data-slug="updates-and-support">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Процедура обновления</h3></div>
               <p className="muted">Порядок обновлений, миграции и проверки совместимости.</p>
-            </a>
+            </a></Link>
 
-            <a href="#diag" className="card">
+            <Link href="/ru/modules/updates-and-support/diag" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>Автоматизированная диагностика</h3></div>
               <p className="muted">Создание "бота‑доктора" и автоматических проверок.</p>
-            </a>
+            </a></Link>
 
-            <a href="#faq" className="card">
+            <Link href="/ru/modules/updates-and-support/faq" legacyBehavior><a className="card">
               <span className="paid-badge" title="Платный модуль" aria-hidden>💰</span>
               <div className="card-head"><h3>FAQ и восстановление</h3></div>
               <p className="muted">Действия при ошибках и восстановление из резервных копий.</p>
-            </a>
+            </a></Link>
           </div>
 
 
