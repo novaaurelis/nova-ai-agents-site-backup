@@ -98,3 +98,7 @@ footer.muted{margin-top:36px;color:var(--muted);font-size:13px}
   .nav-right{gap:8px}
 }
 
+/* Callout block used in modules */
+.callout{margin-top:16px;padding:12px 16px;border-left:4px solid var(--accent);background:#fff8f6;border-radius:6px;font-weight:700}
+
+
