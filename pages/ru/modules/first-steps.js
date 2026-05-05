@@ -31,6 +31,7 @@ export default function FirstSteps(){
             <p style={{marginTop:16,padding:'12px 16px',borderLeft:'4px solid var(--accent)',background:'#fff8f6',borderRadius:6,fontWeight:700}}>Мой совет: относись к хайпу критично — оцени, что конкретно автоматизирует агент, сколько будет стоить интеграция и кто будет поддерживать систему в реальном времени.</p>
 
             <h2>Избавление от ручных рутинных операций</h2>
+            <img src="/images/3openclaw.jpeg" alt="Automation" className="module-image" />
             <p>OpenClaw хорош там, где есть повторяющиеся однотипные действия. Примеры реальных сценариев:</p>
             <ul>
               <li>Сбор цен у конкурентов и ежедневная сводка в Telegram или почтой.</li>
