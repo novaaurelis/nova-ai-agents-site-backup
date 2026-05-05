@@ -76,6 +76,7 @@ export default function FirstSteps(){
             <p style={{marginTop:16,padding:'12px 16px',borderLeft:'4px solid var(--accent)',background:'#fff8f6',borderRadius:6,fontWeight:700}}>Если ты только начинаешь — рекомендую сначала пробный развёртывать на изолированном сервере и тестировать сценарии на тестовых данных.</p>
 
             <h2>Команда агентов</h2>
+            <img src="/images/openclaw_team.jpeg" alt="Team of agents" className="module-image" />
             <p>Можно собрать набор агентов под конкретные роли: сборщик данных, аналитик, копирайтер, исполнитель расписаний и т.д. Примеры распределения ролей:</p>
             <ul>
               <li>Сборщик: периодически тянет данные из источников.</li>
