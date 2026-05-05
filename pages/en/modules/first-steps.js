@@ -29,6 +29,7 @@ export default function FirstStepsEn(){
             <p className="callout">My advice: treat the hype critically — evaluate what exactly the agent will automate, how much integration will cost and who will maintain the system in real time.</p>
 
             <h2>Eliminating manual repetitive work</h2>
+            <img src="/images/3openclaw.jpeg" alt="Automation" className="module-image" />
             <p>OpenClaw shines where there are repetitive, one‑type actions. Real scenarios:</p>
             <ul>
               <li>Price collection from competitors and daily summary to Telegram or email.</li>
