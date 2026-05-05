@@ -14,8 +14,9 @@ export default function FirstStepsEn(){
           </header>
 
           <section>
-            <h2>What this thing is</h2>
-            <p>OpenClaw is a platform that runs AI-based "agents" and gives them tools to do real work. These agents do more than answer questions: they can visit websites, collect and compare data, edit files, send messages to messengers and run scripts. In short: you provide the goal - the agent executes the steps and delivers the result.</p>
+            <h2>What is openclaw</h2>
+            <img src="/images/1openclaw.jpeg" alt="OpenClaw" className="module-image" />
+            <p>OpenClaw is a platform that runs AI‑based “agents” and gives them tools to do real work. These agents do more than answer questions: they can visit websites, collect and compare data, edit files, send messages to messengers and run scripts. In short: you provide the goal — the agent executes the steps and delivers the result.</p>
 
             <h2>A new paradigm</h2>
             <p>Instead of a single reply, OpenClaw builds a plan of actions. When you give a task the system splits it into steps, chooses the necessary tools and executes them in sequence. It's like a small team at work: one agent collects data, another analyses it, a third prepares a report and sends a notification. For the user this means less manual work: you don't have to download reports or check sites yourself - agents do it for you.</p>
@@ -97,7 +98,7 @@ export default function FirstStepsEn(){
 
             <h2>Short summary</h2>
             <img src="/images/4openclaw.jpeg" alt="Summary illustration" className="module-image" />
-            <p>OpenClaw is a tool that turns routine into automated processes, helps free a lot of your time and can bring measurable revenue. Properly configured it saves time, reduces mistakes and makes workflows predictable. But it’s not a “magic button": you still need control, security and clarity on which tasks are worth automating.</p>
+            <p>OpenClaw is a tool that turns routine into automated processes, helps free a lot of your time and can bring measurable revenue. Properly configured it saves time, reduces mistakes and makes workflows predictable. But it's not a "magic button": you still need control, security and clarity on which tasks are worth automating.</p>
 
             <p className="callout">At the same time we'll help you navigate the nuances, minimize costs and avoid the common traps we've run into along the way.</p>
 
