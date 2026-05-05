@@ -104,7 +104,6 @@ export default function EnHome(){
 
         <section className="integrations" aria-label="Integrations" style={{marginTop:28}}>
           <h3 style={{textAlign:'center'}}>Software integrations</h3>
-          <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Agent interacts with thousands of services</div>
 
           <ul className="integration-compact" style={{marginTop:14}}>
             <li className="integration-item"><span className="integration-icon">💬</span><span className="integration-label">Chats in messengers</span></li>

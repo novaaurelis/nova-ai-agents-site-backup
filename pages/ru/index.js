@@ -102,7 +102,6 @@ export default function RuHome(){
 
         <section className="integrations" aria-label="Интеграции" style={{marginTop:28}}>
           <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
-          <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Агент взаимодействует с тысячами сервисов</div>
 
           <ul className="integration-compact" style={{marginTop:14}}>
             <li className="integration-item"><span className="integration-icon">💬</span><span className="integration-label">Общается в мессенджерах</span></li>
