@@ -74,6 +74,7 @@ export default function FirstStepsEn(){
             <p className="callout">If you're just starting - deploy to an isolated server first and test scenarios on test data.</p>
 
             <h2>Team of agents</h2>
+            <img src="/images/openclaw_team.jpeg" alt="Team of agents" className="module-image" />
             <p>You can assemble a set of agents for specific roles: data collector, analyst, copywriter, scheduler/executor, etc. Role examples:</p>
             <ul>
               <li>Collector: periodically pulls data from sources.</li>
