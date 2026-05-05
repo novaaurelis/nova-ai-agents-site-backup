@@ -101,4 +101,5 @@ footer.muted{margin-top:36px;color:var(--muted);font-size:13px}
 /* Callout block used in modules */
 .callout{margin-top:16px;padding:12px 16px;border-left:4px solid var(--accent);background:#fff8f6;border-radius:6px;font-weight:700}
 
-
+/* Module image — full width within module container */
+.module-image{width:100%;height:auto;margin:12px 0;border-radius:6px}
