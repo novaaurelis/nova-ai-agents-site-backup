@@ -106,75 +106,28 @@ export default function EnHome(){
           <h3 style={{textAlign:'center'}}>Software integrations</h3>
           <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Agent interacts with thousands of services</div>
 
-          <div className="integration-rows" style={{marginTop:18}}>
-            <div className="integration-row">
-              <div className="icon">💬</div>
-              <div className="content"><h4>Chats in messengers</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">✉️</div>
-              <div className="content"><h4>Checks email and can reply by voice</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">💻</div>
-              <div className="content"><h4>Writes websites and programs</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🎞️</div>
-              <div className="content"><h4>Watches videos and analyzes them</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📁</div>
-              <div className="content"><h4>Works with files and spreadsheets</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🖼️</div>
-              <div className="content"><h4>Generates photo and video content</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">⏰</div>
-              <div className="content"><h4>Sends reminders and manages calendar</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📝</div>
-              <div className="content"><h4>Makes notes and schedules</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🔎</div>
-              <div className="content"><h4>Performs deep research</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📰</div>
-              <div className="content"><h4>Monitors news and stays on top of trends</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📊</div>
-              <div className="content"><h4>Drafts financial and business plans</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">✨</div>
-              <div className="content"><h4>and much more</h4></div>
-            </div>
-          </div>
+          <ul className="integration-compact" style={{marginTop:14}}>
+            <li className="integration-item"><span className="integration-icon">💬</span><span className="integration-label">Chats in messengers</span></li>
+            <li className="integration-item"><span className="integration-icon">✉️</span><span className="integration-label">Checks email and can reply by voice</span></li>
+            <li className="integration-item"><span className="integration-icon">💻</span><span className="integration-label">Writes websites and programs</span></li>
+            <li className="integration-item"><span className="integration-icon">🎞️</span><span className="integration-label">Watches videos and analyzes them</span></li>
+            <li className="integration-item"><span className="integration-icon">📁</span><span className="integration-label">Works with files and spreadsheets</span></li>
+            <li className="integration-item"><span className="integration-icon">🖼️</span><span className="integration-label">Generates photo and video content</span></li>
+            <li className="integration-item"><span className="integration-icon">⏰</span><span className="integration-label">Sends reminders and manages calendar</span></li>
+            <li className="integration-item"><span className="integration-icon">📝</span><span className="integration-label">Makes notes and schedules</span></li>
+            <li className="integration-item"><span className="integration-icon">🔎</span><span className="integration-label">Performs deep research</span></li>
+            <li className="integration-item"><span className="integration-icon">📰</span><span className="integration-label">Monitors news and stays on top of trends</span></li>
+            <li className="integration-item"><span className="integration-icon">📊</span><span className="integration-label">Drafts financial and business plans</span></li>
+            <li className="integration-item"><span className="integration-icon">✨</span><span className="integration-label">and much more</span></li>
+          </ul>
 
           <style jsx>{`
-            .integration-rows{display:flex;flex-direction:column;gap:14px;margin-top:12px}
-            .integration-row{display:flex;align-items:center;gap:18px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,252,255,0.8));border:1px solid rgba(15,23,42,0.04)}
-            .integration-row:nth-child(even){flex-direction:row-reverse}
-            .integration-row .icon{font-size:28px;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-            .integration-row .content h4{margin:0;font-size:1.05rem}
-            @media(max-width:700px){ .integration-row{flex-direction:row;align-items:flex-start} .integration-row:nth-child(even){flex-direction:row} }
+            .integration-compact{display:grid;grid-template-columns:repeat(1,1fr);gap:8px}
+            @media(min-width:700px){ .integration-compact{grid-template-columns:repeat(2,1fr)} }
+            @media(min-width:1100px){ .integration-compact{grid-template-columns:repeat(3,1fr)} }
+            .integration-item{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:8px}
+            .integration-icon{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--surface);font-size:14px}
+            .integration-label{font-weight:600;font-size:0.95rem}
           `}</style>
         </section>
 

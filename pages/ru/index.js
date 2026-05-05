@@ -104,75 +104,28 @@ export default function RuHome(){
           <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
           <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Агент взаимодействует с тысячами сервисов</div>
 
-          <div className="integration-rows" style={{marginTop:18}}>
-            <div className="integration-row">
-              <div className="icon">💬</div>
-              <div className="content"><h4>Общается в мессенджерах</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">✉️</div>
-              <div className="content"><h4>Проверяет почту и может ответить голосом</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">💻</div>
-              <div className="content"><h4>Пишет сайты и программы</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🎞️</div>
-              <div className="content"><h4>Смотрит видео и делает анализ</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📁</div>
-              <div className="content"><h4>Работает с файлами и таблицами</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🖼️</div>
-              <div className="content"><h4>Генерирует фото и видео контент</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">⏰</div>
-              <div className="content"><h4>Напоминает и следит за календарем</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📝</div>
-              <div className="content"><h4>Составляет заметки и расписание</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">🔎</div>
-              <div className="content"><h4>Проводит глубокие исследования</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📰</div>
-              <div className="content"><h4>Следит за новостями и держит руку на пульсе</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">📊</div>
-              <div className="content"><h4>Разработает финансовый и бизнес‑план</h4></div>
-            </div>
-
-            <div className="integration-row">
-              <div className="icon">✨</div>
-              <div className="content"><h4>и многое другое</h4></div>
-            </div>
-          </div>
+          <ul className="integration-compact" style={{marginTop:14}}>
+            <li className="integration-item"><span className="integration-icon">💬</span><span className="integration-label">Общается в мессенджерах</span></li>
+            <li className="integration-item"><span className="integration-icon">✉️</span><span className="integration-label">Проверяет почту и может ответить голосом</span></li>
+            <li className="integration-item"><span className="integration-icon">💻</span><span className="integration-label">Пишет сайты и программы</span></li>
+            <li className="integration-item"><span className="integration-icon">🎞️</span><span className="integration-label">Смотрит видео и делает анализ</span></li>
+            <li className="integration-item"><span className="integration-icon">📁</span><span className="integration-label">Работает с файлами и таблицами</span></li>
+            <li className="integration-item"><span className="integration-icon">🖼️</span><span className="integration-label">Генерирует фото и видео контент</span></li>
+            <li className="integration-item"><span className="integration-icon">⏰</span><span className="integration-label">Напоминает и следит за календарем</span></li>
+            <li className="integration-item"><span className="integration-icon">📝</span><span className="integration-label">Составляет заметки и расписание</span></li>
+            <li className="integration-item"><span className="integration-icon">🔎</span><span className="integration-label">Проводит глубокие исследования</span></li>
+            <li className="integration-item"><span className="integration-icon">📰</span><span className="integration-label">Следит за новостями и держит руку на пульсе</span></li>
+            <li className="integration-item"><span className="integration-icon">📊</span><span className="integration-label">Разработает финансовый и бизнес‑план</span></li>
+            <li className="integration-item"><span className="integration-icon">✨</span><span className="integration-label">и многое другое</span></li>
+          </ul>
 
           <style jsx>{`
-            .integration-rows{display:flex;flex-direction:column;gap:14px;margin-top:12px}
-            .integration-row{display:flex;align-items:center;gap:18px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,252,255,0.8));border:1px solid rgba(15,23,42,0.04)}
-            .integration-row:nth-child(even){flex-direction:row-reverse}
-            .integration-row .icon{font-size:28px;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-            .integration-row .content h4{margin:0;font-size:1.05rem}
-            @media(max-width:700px){ .integration-row{flex-direction:row;align-items:flex-start} .integration-row:nth-child(even){flex-direction:row} }
+            .integration-compact{display:grid;grid-template-columns:repeat(1,1fr);gap:8px}
+            @media(min-width:700px){ .integration-compact{grid-template-columns:repeat(2,1fr)} }
+            @media(min-width:1100px){ .integration-compact{grid-template-columns:repeat(3,1fr)} }
+            .integration-item{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:8px}
+            .integration-icon{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--surface);font-size:14px}
+            .integration-label{font-weight:600;font-size:0.95rem}
           `}</style>
         </section>
 
