@@ -100,6 +100,35 @@ export default function RuHome(){
           </div>
         </section>
 
+        <section className="integrations" aria-label="Интеграции" style={{marginTop:28}}>
+          <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
+          <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Агент взаимодействует с тысячами сервисов</div>
+
+          <div className="integration-grid" style={{marginTop:16}}>
+            <div className="integration-card">💬<div className="integration-text">Общается в мессенджерах</div></div>
+            <div className="integration-card">✉️<div className="integration-text">Проверяет почту и может ответить голосом</div></div>
+            <div className="integration-card">💻<div className="integration-text">Пишет сайты и программы</div></div>
+            <div className="integration-card">🎞️<div className="integration-text">Смотрит видео и делает анализ</div></div>
+            <div className="integration-card">📁<div className="integration-text">Работает с файлами и таблицами</div></div>
+            <div className="integration-card">🖼️<div className="integration-text">Генерирует фото и видео контент</div></div>
+            <div className="integration-card">⏰<div className="integration-text">Напоминает и следит за календарем</div></div>
+            <div className="integration-card">📝<div className="integration-text">Составляет заметки и расписание</div></div>
+            <div className="integration-card">🔎<div className="integration-text">Проводит глубокие исследования</div></div>
+            <div className="integration-card">📰<div className="integration-text">Следит за новостями и держит руку на пульсе</div></div>
+            <div className="integration-card">📊<div className="integration-text">Разработает финансовый и бизнес-план</div></div>
+            <div className="integration-card">✨<div className="integration-text">и многое другое</div></div>
+          </div>
+
+          <style jsx>{`
+            .integration-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:12px}
+            @media(min-width:700px){ .integration-grid{grid-template-columns:repeat(2,1fr)} }
+            @media(min-width:1100px){ .integration-grid{grid-template-columns:repeat(3,1fr)} }
+            .integration-card{display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:10px;background:var(--surface);border:1px solid rgba(15,23,42,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+            .integration-card > div:first-child{font-size:22px}
+            .integration-text{font-weight:600}
+          `}</style>
+        </section>
+
         <footer className="muted" style={{textAlign:'center'}}>
           <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
             <Link href="/ru/terms" className="muted">Пользовательское соглашение</Link>
