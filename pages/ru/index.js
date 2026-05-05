@@ -104,18 +104,89 @@ export default function RuHome(){
           <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
 
           <ul className="integration-compact" style={{marginTop:14}}>
-            <li className="integration-item"><span className="integration-icon">💬</span><span className="integration-label">Общается в мессенджерах</span></li>
-            <li className="integration-item"><span className="integration-icon">✉️</span><span className="integration-label">Проверяет почту и может ответить голосом</span></li>
-            <li className="integration-item"><span className="integration-icon">💻</span><span className="integration-label">Пишет сайты и программы</span></li>
-            <li className="integration-item"><span className="integration-icon">🎞️</span><span className="integration-label">Смотрит видео и делает анализ</span></li>
-            <li className="integration-item"><span className="integration-icon">📁</span><span className="integration-label">Работает с файлами и таблицами</span></li>
-            <li className="integration-item"><span className="integration-icon">🖼️</span><span className="integration-label">Генерирует фото и видео контент</span></li>
-            <li className="integration-item"><span className="integration-icon">⏰</span><span className="integration-label">Напоминает и следит за календарем</span></li>
-            <li className="integration-item"><span className="integration-icon">📝</span><span className="integration-label">Составляет заметки и расписание</span></li>
-            <li className="integration-item"><span className="integration-icon">🔎</span><span className="integration-label">Проводит глубокие исследования</span></li>
-            <li className="integration-item"><span className="integration-icon">📰</span><span className="integration-label">Следит за новостями и держит руку на пульсе</span></li>
-            <li className="integration-item"><span className="integration-icon">📊</span><span className="integration-label">Разработает финансовый и бизнес‑план</span></li>
-            <li className="integration-item"><span className="integration-icon">✨</span><span className="integration-label">и многое другое</span></li>
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Чат в мессенджерах">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <span className="integration-label">Общается в мессенджерах</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Почта и голосовой ответ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16"/><path d="M22 6l-10 7L2 6"/></svg>
+              </span>
+              <span className="integration-label">Проверяет почту и может ответить голосом</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Создаёт сайты и программы">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 3h8v4H8z"/></svg>
+              </span>
+              <span className="integration-label">Пишет сайты и программы</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Анализ видео">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M10 9l6 3-6 3z"/></svg>
+              </span>
+              <span className="integration-label">Смотрит видео и делает анализ</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Файлы и таблицы">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <span className="integration-label">Работает с файлами и таблицами</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Генерация фото и видео">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 21l-5-5-4 4-6-6-1 1"/></svg>
+              </span>
+              <span className="integration-label">Генерирует фото и видео контент</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Календарь и напоминания">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M12 13v5"/><path d="M14.5 16.5l-3-1"/></svg>
+              </span>
+              <span className="integration-label">Напоминает и следит за календарем</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Заметки и расписание">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7h18"/><path d="M5 11h14"/><path d="M7 15h10"/></svg>
+              </span>
+              <span className="integration-label">Составляет заметки и расписание</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Глубокие исследования">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="6"/><path d="M21 21l-4.35-4.35"/></svg>
+              </span>
+              <span className="integration-label">Проводит глубокие исследования</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Новости и мониторинг">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h6"/></svg>
+              </span>
+              <span className="integration-label">Следит за новостями и держит руку на пульсе</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="Финансовые и бизнес‑планы">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="M9 17V9"/><path d="M13 17v-4"/><path d="M17 17v-7"/></svg>
+              </span>
+              <span className="integration-label">Разработает финансовый и бизнес‑план</span>
+            </li>
+
+            <li className="integration-item">
+              <span className="integration-icon" role="img" aria-label="И многое другое">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z"/></svg>
+              </span>
+              <span className="integration-label">и многое другое</span>
+            </li>
           </ul>
 
           <style jsx>{`
