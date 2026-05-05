@@ -104,28 +104,75 @@ export default function RuHome(){
           <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
           <div style={{textAlign:'center',color:'var(--muted)',marginTop:6}}>Агент взаимодействует с тысячами сервисов</div>
 
-          <div className="integration-grid" style={{marginTop:16}}>
-            <div className="integration-card">💬<div className="integration-text">Общается в мессенджерах</div></div>
-            <div className="integration-card">✉️<div className="integration-text">Проверяет почту и может ответить голосом</div></div>
-            <div className="integration-card">💻<div className="integration-text">Пишет сайты и программы</div></div>
-            <div className="integration-card">🎞️<div className="integration-text">Смотрит видео и делает анализ</div></div>
-            <div className="integration-card">📁<div className="integration-text">Работает с файлами и таблицами</div></div>
-            <div className="integration-card">🖼️<div className="integration-text">Генерирует фото и видео контент</div></div>
-            <div className="integration-card">⏰<div className="integration-text">Напоминает и следит за календарем</div></div>
-            <div className="integration-card">📝<div className="integration-text">Составляет заметки и расписание</div></div>
-            <div className="integration-card">🔎<div className="integration-text">Проводит глубокие исследования</div></div>
-            <div className="integration-card">📰<div className="integration-text">Следит за новостями и держит руку на пульсе</div></div>
-            <div className="integration-card">📊<div className="integration-text">Разработает финансовый и бизнес-план</div></div>
-            <div className="integration-card">✨<div className="integration-text">и многое другое</div></div>
+          <div className="integration-rows" style={{marginTop:18}}>
+            <div className="integration-row">
+              <div className="icon">💬</div>
+              <div className="content"><h4>Общается в мессенджерах</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">✉️</div>
+              <div className="content"><h4>Проверяет почту и может ответить голосом</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">💻</div>
+              <div className="content"><h4>Пишет сайты и программы</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">🎞️</div>
+              <div className="content"><h4>Смотрит видео и делает анализ</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">📁</div>
+              <div className="content"><h4>Работает с файлами и таблицами</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">🖼️</div>
+              <div className="content"><h4>Генерирует фото и видео контент</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">⏰</div>
+              <div className="content"><h4>Напоминает и следит за календарем</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">📝</div>
+              <div className="content"><h4>Составляет заметки и расписание</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">🔎</div>
+              <div className="content"><h4>Проводит глубокие исследования</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">📰</div>
+              <div className="content"><h4>Следит за новостями и держит руку на пульсе</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">📊</div>
+              <div className="content"><h4>Разработает финансовый и бизнес‑план</h4></div>
+            </div>
+
+            <div className="integration-row">
+              <div className="icon">✨</div>
+              <div className="content"><h4>и многое другое</h4></div>
+            </div>
           </div>
 
           <style jsx>{`
-            .integration-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:12px}
-            @media(min-width:700px){ .integration-grid{grid-template-columns:repeat(2,1fr)} }
-            @media(min-width:1100px){ .integration-grid{grid-template-columns:repeat(3,1fr)} }
-            .integration-card{display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:10px;background:var(--surface);border:1px solid rgba(15,23,42,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-            .integration-card > div:first-child{font-size:22px}
-            .integration-text{font-weight:600}
+            .integration-rows{display:flex;flex-direction:column;gap:14px;margin-top:12px}
+            .integration-row{display:flex;align-items:center;gap:18px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,252,255,0.8));border:1px solid rgba(15,23,42,0.04)}
+            .integration-row:nth-child(even){flex-direction:row-reverse}
+            .integration-row .icon{font-size:28px;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+            .integration-row .content h4{margin:0;font-size:1.05rem}
+            @media(max-width:700px){ .integration-row{flex-direction:row;align-items:flex-start} .integration-row:nth-child(even){flex-direction:row} }
           `}</style>
         </section>
 
