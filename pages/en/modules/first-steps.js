@@ -57,6 +57,7 @@ export default function FirstStepsEn(){
             </ul>
 
             <h2>Interaction via everyday messengers</h2>
+            <img src="/images/2openclaw.jpeg" alt="Agents in messenger" className="module-image" />
             <p>A convenient option is to control agents through your favourite messenger: send a command → agent performs the task → sends the result to the chat. This lowers the entry barrier: no separate UI is required — the familiar chat format is enough.</p>
 
             <h2>Security</h2>
