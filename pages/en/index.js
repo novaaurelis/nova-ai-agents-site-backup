@@ -56,7 +56,7 @@ export default function EnHome(){
           <div className="grid-cards">
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- wrench / tools -->
+                {/* wrench / tools */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M22 12v2a2 2 0 0 1-2 2h-1l-3.5-3.5 1-1L19 15v-1a2 2 0 0 1 2-2z" />
                   <path d="M8.5 15.5L3 21l1.5-5.5L9 13l-0.5 2.5z" />
@@ -67,7 +67,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- package / box -->
+                {/* package / box */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M21 16V8a2 2 0 0 0-1-1.73L13 3l-7 3.27A2 2 0 0 0 5 8v8a2 2 0 0 0 1 1.73L11 21l7-3.27A2 2 0 0 0 21 16z" />
                   <path d="M12 3v8" />
@@ -78,7 +78,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- brain -->
+                {/* brain */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M12 3c-1 0-2 .5-2 1.5S11 7 12 7s2-1.5 2-2.5S13 3 12 3z" />
                   <path d="M6 9c-1 1-1 2-1 3s1 2 2 2" />
@@ -91,7 +91,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- link/chain -->
+                {/* link/chain */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M10 14a5 5 0 0 1 0-7l1.41-1.41a5 5 0 0 1 7.07 7.07L17.07 14" />
                   <path d="M14 10a5 5 0 0 1 0 7l-1.41 1.41a5 5 0 0 1-7.07-7.07L6.93 10" />
@@ -102,7 +102,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- target -->
+                {/* target */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <circle cx="12" cy="12" r="10" />
                   <circle cx="12" cy="12" r="6" />
@@ -114,7 +114,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
-                <!-- book -->
+                {/* book */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M3 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a1 1 0 0 1-1.3.95L12 16l-7.7 2.95A1 1 0 0 1 3 18V6z" />
                   <path d="M7 8h10M7 12h6" />
