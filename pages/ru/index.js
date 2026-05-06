@@ -86,7 +86,8 @@ export default function RuHome(){
             <div className="card">
               <div className="icon" aria-hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z" />
+                  <path d="M10 14a5 5 0 0 1 0-7l1.41-1.41a5 5 0 0 1 7.07 7.07L17.07 14" />
+                  <path d="M14 10a5 5 0 0 1 0 7l-1.41 1.41a5 5 0 0 1-7.07-7.07L6.93 10" />
                 </svg>
               </div>
               <div className="card-body">Интеграции с популярными сервисами, апгрейды дэшборда и персонализация агентов</div>
@@ -106,7 +107,8 @@ export default function RuHome(){
             <div className="card">
               <div className="icon" aria-hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z" />
+                  <path d="M3 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a1 1 0 0 1-1.3.95L12 16l-7.7 2.95A1 1 0 0 1 3 18V6z" />
+                  <path d="M7 8h10M7 12h6" />
                 </svg>
               </div>
               <div className="card-body">Обновляемый контент и структурируемые модули обучения</div>
