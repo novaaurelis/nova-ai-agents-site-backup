@@ -93,6 +93,10 @@ export default function RuHome(){
           `}</style>
         </section>
 
+        <div className="what-cta" style={{display:'flex',justifyContent:'center',marginTop:18,marginBottom:18}}>
+          <Link href="/ru/dashboard" className="button">Начни прямо сейчас — это бесплатно</Link>
+        </div>
+
         <section className="models" aria-label="Модели">
           <h3 style={{textAlign: 'center'}}>Популярные модели</h3>
           <div style={{display:'flex',justifyContent:'center',marginTop:-12}}>
