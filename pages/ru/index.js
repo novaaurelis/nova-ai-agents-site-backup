@@ -104,7 +104,7 @@ export default function RuHome(){
           </div>
         </section>
 
-        <div className="integrations-cta" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:12,justifyContent:'center',marginTop:12, marginBottom:6,maxWidth:'880px',marginLeft:'auto',marginRight:'auto',padding:'0 18px'}}>
+        <div className="integrations-cta" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:12,justifyContent:'center',marginTop:12, marginBottom:6,maxWidth:'720px',marginLeft:'auto',marginRight:'auto',padding:'0 18px'}}>
           <p className="integrations-lead" style={{textAlign:'justify',maxWidth:'100%',lineHeight:1.6,color:'var(--muted)',margin:0,textAlignLast:'center'}}>
             Твой цифровой ассистент будет работать с передовыми нейромоделями, будет проактивным, поможет вам перевести скучную рутину в автоматические процессы, освободит вам кучу времени для себя и принесет приличный доход. При правильной настройке он экономит время и делает рабочие процессы предсказуемыми. Ты уже в одном клике от волшебства.
           </p>
