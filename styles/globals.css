@@ -78,7 +78,14 @@ footer.muted{text-align:center;margin-top:auto;padding:20px 0 10px}
 .model-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:12px}
 .model{background:var(--surface);border:1px solid rgba(15,23,42,0.04);padding:8px 12px;border-radius:8px}
 
-.popular-illustration{max-width:800px;width:90%;height:auto;display:block;border-radius:0;box-shadow:none;background:transparent}
+.popular-illustration{max-width:808px;width:100%;height:auto;display:block;border-radius:0;box-shadow:none;background:transparent}
+/* Match the width of the "Что внутри" cards grid:
+   - 3 columns: 3 * 260px + 2 * 14px gap = 808px
+   - 2 columns: 2 * 260px + 1 * 14px gap = 534px
+   - 1 column: 260px
+*/
+@media (max-width:1099px) and (min-width:700px){ .popular-illustration{max-width:534px} }
+@media (max-width:699px){ .popular-illustration{max-width:260px} }
 @media (max-width:600px){
   .popular-illustration{width:100%;max-width:420px}
 }
