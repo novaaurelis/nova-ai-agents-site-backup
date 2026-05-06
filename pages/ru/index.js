@@ -100,6 +100,10 @@ export default function RuHome(){
           </div>
         </section>
 
+        <div className="integrations-cta" style={{display:'flex',gap:12,justifyContent:'center',marginTop:12, marginBottom:6}}>
+          <Link href="/ru/dashboard" className="button">Начни прямо сейчас — это бесплатно</Link>
+        </div>
+
         <section className="integrations" aria-label="Интеграции" style={{marginTop:28}}>
           <h3 style={{textAlign:'center'}}>Программные интеграции</h3>
 
