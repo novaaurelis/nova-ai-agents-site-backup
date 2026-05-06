@@ -210,6 +210,41 @@ export default function EnHome(){
                 <span className="integration-label">Sends reminders and manages calendar</span>
               </li>
 
+              <li className="integration-item">
+                <span className="integration-icon" role="img" aria-label="Notes and scheduling">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7h18"/><path d="M5 11h14"/><path d="M7 15h10"/></svg>
+                </span>
+                <span className="integration-label">Takes notes and manages schedules</span>
+              </li>
+
+              <li className="integration-item">
+                <span className="integration-icon" role="img" aria-label="Deep research">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="6"/><path d="M21 21l-4.35-4.35"/></svg>
+                </span>
+                <span className="integration-label">Performs deep research</span>
+              </li>
+
+              <li className="integration-item">
+                <span className="integration-icon" role="img" aria-label="News and monitoring">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h6"/></svg>
+                </span>
+                <span className="integration-label">Monitors news and keeps you updated</span>
+              </li>
+
+              <li className="integration-item">
+                <span className="integration-icon" role="img" aria-label="Financial and business plans">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="M9 17V9"/><path d="M13 17v-4"/><path d="M17 17v-7"/></svg>
+                </span>
+                <span className="integration-label">Builds financial and business plans</span>
+              </li>
+
+              <li className="integration-item">
+                <span className="integration-icon" role="img" aria-label="And much more">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z"/></svg>
+                </span>
+                <span className="integration-label">And much more</span>
+              </li>
+
             </ul>
 
             <style jsx>{`
