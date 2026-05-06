@@ -210,8 +210,6 @@ export default function EnHome(){
                 <span className="integration-label">Sends reminders and manages calendar</span>
               </li>
 
-            `}]}]}]}]}]}]}'
-
         <footer className="muted" style={{textAlign:'center'}}>
           <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
             <Link href="/en/terms" className="muted">Terms of service</Link>
