@@ -210,6 +210,19 @@ export default function EnHome(){
                 <span className="integration-label">Sends reminders and manages calendar</span>
               </li>
 
+            </ul>
+
+            <style jsx>{`
+              .integration-compact{display:grid;grid-template-columns:repeat(1,1fr);gap:8px}
+              @media(min-width:700px){ .integration-compact{grid-template-columns:repeat(2,1fr)} }
+              @media(min-width:1100px){ .integration-compact{grid-template-columns:repeat(3,1fr)} }
+              .integration-item{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:8px}
+              .integration-icon{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--surface);font-size:14px}
+              .integration-label{font-weight:600;font-size:0.95rem}
+            `}</style>
+          </div>
+        </section>
+
         <footer className="muted" style={{textAlign:'center'}}>
           <div style={{display:'flex',justifyContent:'center',gap:12,marginBottom:6}}>
             <Link href="/en/terms" className="muted">Terms of service</Link>
