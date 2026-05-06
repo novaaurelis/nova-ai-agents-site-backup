@@ -110,7 +110,7 @@ export default function RuHome(){
           </p>
 
           <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
-            <Link href="/ru/dashboard" className="button">Начни прямо сейчас — это бесплатно. Ты уже в одном клике от волшебства.</Link>
+            <Link href="/ru/dashboard" className="button">Ты уже в одном клике от волшебства</Link>
           </div>
         </div>
 
