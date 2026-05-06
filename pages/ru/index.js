@@ -106,7 +106,7 @@ export default function RuHome(){
 
         <div className="integrations-cta" style={{display:'flex',flexDirection:'column',alignItems:'center',gap:12,justifyContent:'center',marginTop:12, marginBottom:6,maxWidth:1160,marginLeft:'auto',marginRight:'auto',padding:'0 18px'}}>
           <p className="integrations-lead" style={{textAlign:'justify',maxWidth:1080,lineHeight:1.6,color:'var(--muted)',margin:0,textAlignLast:'center'}}>
-            Твой цифровой ассистент помогает переводить рутину в автоматические процессы, может освободить вам кучу личного времени и принести приличный доход. При правильной настройке он экономит время и делает рабочие процессы предсказуемыми. Но это не «волшебная кнопка»: нужен контроль, безопасность и понимание, какие задачи действительно стоит автоматизировать.
+            Твой цифровой ассистент будет работать с передовыми нейромоделями, будет проактивным, поможет вам перевести скучную рутину в автоматические процессы, освободит вам кучу времени для себя и принесет приличный доход. При правильной настройке он экономит время и делает рабочие процессы предсказуемыми. Ты уже в одном клике от волшебства.
           </p>
 
           <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
