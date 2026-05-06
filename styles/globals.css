@@ -78,8 +78,9 @@ footer.muted{text-align:center;margin-top:auto;padding:20px 0 10px}
 .model-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:12px}
 .model{background:var(--surface);border:1px solid rgba(15,23,42,0.04);padding:8px 12px;border-radius:8px}
 
-.popular-illustration{max-width:var(--max-width);width:100%;height:auto;display:block;border-radius:0;box-shadow:none;background:transparent}
-/* Make the illustration larger — up to the page max width (var(--max-width)). It will scale down on small screens automatically. */
+.popular-illustration{max-width:calc(var(--max-width) - 36px);width:100%;height:auto;display:block;border-radius:0;box-shadow:none;background:transparent;box-sizing:border-box}
+/* Align illustration width with the integrations text which has horizontal padding of 18px (total 36px).
+   On small screens it still scales to 100%. */
 @media (max-width:699px){ .popular-illustration{max-width:100%} }
 @media (max-width:600px){
   .popular-illustration{width:100%;max-width:420px}
