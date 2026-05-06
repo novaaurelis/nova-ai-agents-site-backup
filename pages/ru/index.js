@@ -87,7 +87,7 @@ export default function RuHome(){
             .grid-cards{display:grid;grid-template-columns:repeat(1,1fr);gap:14px;margin-top:12px}
             @media(min-width:700px){ .grid-cards{grid-template-columns:repeat(2,1fr)} }
             @media(min-width:1100px){ .grid-cards{grid-template-columns:repeat(3,1fr)} }
-            .card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;min-height:120px;border-radius:12px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04);border:1px solid rgba(15,23,42,0.04)}
+            .card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;min-height:120px;border-radius:12px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04);border:1px solid rgba(15,23,42,0.04);min-width:200px;max-width:260px;text-align:center}
             .icon{font-size:32px;line-height:1;margin:0}
             .card-body{font-size:0.98rem;color:var(--text);text-align:center}
           `}</style>
