@@ -53,32 +53,62 @@ export default function RuHome(){
 
           <div className="grid-cards">
             <div className="card">
-              <div className="icon" aria-hidden>🛠️</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M8 3h8v4H8z" />
+                </svg>
+              </div>
               <div className="card-body">Понятная и пошаговая инструкция по установке и запуску</div>
             </div>
 
             <div className="card">
-              <div className="icon" aria-hidden>📦</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <rect x="3" y="3" width="18" height="14" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 21l-5-5-4 4-6-6-1 1" />
+                </svg>
+              </div>
               <div className="card-body">Простые примеры и готовые шаблоны сценариев применения</div>
             </div>
 
             <div className="card">
-              <div className="icon" aria-hidden>🧠</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <circle cx="11" cy="11" r="6" />
+                  <path d="M21 21l-4.35-4.35" />
+                </svg>
+              </div>
               <div className="card-body">Профессиональные лайфхаки, углублённые рецепты настройки и конфигурации</div>
             </div>
 
             <div className="card">
-              <div className="icon" aria-hidden>🔗</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z" />
+                </svg>
+              </div>
               <div className="card-body">Интеграции с популярными сервисами, апгрейды дэшборда и персонализация агентов</div>
             </div>
 
             <div className="card">
-              <div className="icon" aria-hidden>🎯</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M7 8h10" />
+                  <path d="M7 12h6" />
+                </svg>
+              </div>
               <div className="card-body">Правильные запросы, детальные разборы, прокачка навыков</div>
             </div>
 
             <div className="card">
-              <div className="icon" aria-hidden>📚</div>
+              <div className="icon" aria-hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M12 2l1.7 4.3L18 8l-4 2.9L15.4 16 12 13.7 8.6 16 10 10.9 6 8l4.3-1.7L12 2z" />
+                </svg>
+              </div>
               <div className="card-body">Обновляемый контент и структурируемые модули обучения</div>
             </div>
           </div>
@@ -88,7 +118,8 @@ export default function RuHome(){
             @media(min-width:700px){ .grid-cards{grid-template-columns:repeat(2,1fr)} }
             @media(min-width:1100px){ .grid-cards{grid-template-columns:repeat(3,1fr)} }
             .card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;min-height:120px;border-radius:12px;background:var(--surface);box-shadow:0 6px 18px rgba(2,6,23,0.04);border:1px solid rgba(15,23,42,0.04);min-width:200px;max-width:260px;text-align:center}
-            .icon{font-size:32px;line-height:1;margin:0}
+            .icon{width:56px;height:56px;display:inline-flex;align-items:center;justify-content:center;margin:0}
+            .icon svg{width:28px;height:28px;stroke:currentColor}
             .card-body{font-size:0.98rem;color:var(--text);text-align:center}
           `}</style>
         </section>
