@@ -56,9 +56,10 @@ export default function EnHome(){
           <div className="grid-cards">
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- wrench / tools -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <rect x="2" y="7" width="20" height="14" rx="2" />
-                  <path d="M8 3h8v4H8z" />
+                  <path d="M22 12v2a2 2 0 0 1-2 2h-1l-3.5-3.5 1-1L19 15v-1a2 2 0 0 1 2-2z" />
+                  <path d="M8.5 15.5L3 21l1.5-5.5L9 13l-0.5 2.5z" />
                 </svg>
               </div>
               <div className="card-body">Clear, step-by-step installation and startup guide</div>
@@ -66,10 +67,10 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- package / box -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <rect x="3" y="3" width="18" height="14" rx="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <path d="M21 21l-5-5-4 4-6-6-1 1" />
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73L13 3l-7 3.27A2 2 0 0 0 5 8v8a2 2 0 0 0 1 1.73L11 21l7-3.27A2 2 0 0 0 21 16z" />
+                  <path d="M12 3v8" />
                 </svg>
               </div>
               <div className="card-body">Simple examples and ready-to-use scenario templates</div>
@@ -77,9 +78,12 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- brain -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <circle cx="11" cy="11" r="6" />
-                  <path d="M21 21l-4.35-4.35" />
+                  <path d="M12 3c-1 0-2 .5-2 1.5S11 7 12 7s2-1.5 2-2.5S13 3 12 3z" />
+                  <path d="M6 9c-1 1-1 2-1 3s1 2 2 2" />
+                  <path d="M18 9c1 1 1 2 1 3s-1 2-2 2" />
+                  <path d="M8 21c2-1 4 0 8 0" />
                 </svg>
               </div>
               <div className="card-body">Professional tips, in-depth configuration recipes and best practices</div>
@@ -87,6 +91,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- link/chain -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M10 14a5 5 0 0 1 0-7l1.41-1.41a5 5 0 0 1 7.07 7.07L17.07 14" />
                   <path d="M14 10a5 5 0 0 1 0 7l-1.41 1.41a5 5 0 0 1-7.07-7.07L6.93 10" />
@@ -97,10 +102,11 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- target -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <rect x="3" y="4" width="18" height="16" rx="2" />
-                  <path d="M7 8h10" />
-                  <path d="M7 12h6" />
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
                 </svg>
               </div>
               <div className="card-body">Effective prompts, detailed walkthroughs, and skill training</div>
@@ -108,6 +114,7 @@ export default function EnHome(){
 
             <div className="card">
               <div className="icon" aria-hidden>
+                <!-- book -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                   <path d="M3 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a1 1 0 0 1-1.3.95L12 16l-7.7 2.95A1 1 0 0 1 3 18V6z" />
                   <path d="M7 8h10M7 12h6" />
