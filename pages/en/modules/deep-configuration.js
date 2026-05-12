@@ -14,25 +14,25 @@ export default function DeepConfigEn(){
 
           {/* Cards styled like /en/modules/installation-and-run */}
           <div className="grid" aria-hidden>
-            <a href="#optimization" className="card" data-accent data-slug="deep-configuration">
+            <a href="/en/modules/deep-configuration/optimization" className="card" data-accent data-slug="deep-configuration">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Performance tuning</h3></div>
               <p className="muted">Settings for throughput, caching and token budget optimization.</p>
             </a>
 
-            <a href="#architecture" className="card">
+            <a href="/en/modules/deep-configuration/architecture" className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Architecture & configs</h3></div>
               <p className="muted">How to design agent "personas", role separation and team composition.</p>
             </a>
 
-            <a href="#skills" className="card">
+            <a href="/en/modules/deep-configuration/skills" className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Skills & extensions</h3></div>
               <p className="muted">Adding third‑party modules, extending capabilities and code examples.</p>
             </a>
 
-            <a href="#security" className="card">
+            <a href="/en/modules/deep-configuration/security" className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Security & backups</h3></div>
               <p className="muted">Designing a secure data perimeter and backup/restore procedures.</p>
