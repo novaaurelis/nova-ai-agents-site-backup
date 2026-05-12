@@ -14,19 +14,19 @@ export default function UpdatesSupportEn(){
 
           {/* Cards styled like second module */}
           <div className="grid" aria-hidden>
-            <a href="#update" className="card" data-accent data-slug="updates-and-support">
+            <a href="/en/modules/updates-and-support/update" className="card" data-accent data-slug="updates-and-support">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Update procedures</h3></div>
               <p className="muted">Steps for updating, migrations and compatibility checks.</p>
             </a>
 
-            <a href="#diag" className="card">
+            <a href="/en/modules/updates-and-support/diag" className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Automated diagnostics</h3></div>
               <p className="muted">Build a "doctor bot" for automated health checks and alerts.</p>
             </a>
 
-            <a href="#faq" className="card">
+            <a href="/en/modules/updates-and-support/faq" className="card">
               <span className="paid-badge" title="Paid module" aria-hidden>💰</span>
               <div className="card-head"><h3>Recovery & FAQ</h3></div>
               <p className="muted">How to act on failures and restore from backups.</p>
