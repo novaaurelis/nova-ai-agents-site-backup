@@ -18,113 +18,135 @@ export default function MacInstall(){
             <p className="muted">Пошаговое руководство — от окружения до запуска сервера. Команды готовы к копированию.</p>
           </header>
 
-          <section className="intro">
-            <p className="lead">Коротко: установим Homebrew, nvm/Node, клонируем репозиторий, установим зависимости и настроим постоянный запуск через pm2. Всё оформлено так, чтобы можно было копировать команды одной кнопкой.</p>
-          </section>
 
           <section className="steps">
-            <ol>
-              <li className="step">
-                <h3>1) Требования и подготовка</h3>
-                <ul>
-                  <li>macOS 11+ (рекомендовано).</li>
-                  <li>Homebrew — пакетный менеджер.</li>
-                  <li>Git и управление версиями Node через <strong>nvm</strong>.</li>
-                  <li>Проверить свободное пространство и права.</li>
-                </ul>
-              </li>
 
-              <li className="step">
-                <h3>2) Установка Homebrew</h3>
-                <p className="note">Homebrew упрощает установку многих инструментов.</p>
-                <CodeBlock>{`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`}</CodeBlock>
-              </li>
+            <div className="step">
+              <h3>Установка OpenClaw на macOS</h3>
+              <p>Пошаговое руководство по установке цифрового ассистента на macOS. Рекомендуем выполнять команды в терминале — они готовы к копированию.</p>
+            </div>
 
-              <li className="step">
-                <h3>3) Установка nvm и Node.js</h3>
-                <p>Рекомендую LTS‑версию Node через nvm.</p>
-                <CodeBlock>{`# Установить nvm
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-# Перезапустите терминал или выполните
-export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"
-# Установить LTS
-nvm install --lts
-nvm use --lts
-node -v`}</CodeBlock>
-              </li>
+            <div className="step">
+              <h3>Шаг 1. Проверяем системные требования</h3>
+              <ul>
+                <li>macOS 11+ (рекомендовано).</li>
+                <li>Пакетный менеджер Homebrew.</li>
+                <li>Git и менеджер версий Node (nvm).</li>
+                <li>Свободное дисковое пространство ~300–500 МБ и нужные права доступа.</li>
+                <li>Если планируете локальные языковые модели: минимум 8 ГБ RAM (минимум 2 ГБ, рекомендуемо 16 ГБ и дискретная GPU).</li>
+              </ul>
+            </div>
 
-              <li className="step">
-                <h3>4) Клонирование репозитория и установка зависимостей</h3>
-                <p>Клонируем проект рядом с Documents и ставим зависимости.</p>
-                <CodeBlock>{`git clone https://github.com/novaaurelis/ai-agents-site.git ~/Documents/ai-agents-site
-cd ~/Documents/ai-agents-site
-npm ci`}</CodeBlock>
-                <p className="tip">Если не используешь npm ci (нет package-lock), используй <code>npm install</code>.</p>
-              </li>
+            <div className="step">
+              <h3>Шаг 2. Установка Homebrew</h3>
+              <p className="note">Homebrew упрощает установку инструментов. Официальный сайт: <a href="https://brew.sh">https://brew.sh</a></p>
+              <p>Открой терминал (Spotlight → Terminal) и выполните одну из команд ниже.</p>
+              <CodeBlock>{`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`}</CodeBlock>
+              <p className="tip">Альтернативно скачайте .pkg с релиза Homebrew на GitHub: https://github.com/Homebrew/brew/releases/latest</p>
+              <p className="tip">Если у вас Apple Silicon: <code>eval "$(/opt/homebrew/bin/brew shellenv)"</code></p>
+            </div>
 
-              <li className="step">
-                <h3>5) .env.local</h3>
-                <p>Создай <code>.env.local</code> и добавь переменные окружения (если нужны).</p>
-                <CodeBlock>{`# .env.local
-NEXT_PUBLIC_API_URL=http://localhost:3000
-# TELEGRAM_BOT_TOKEN=...
-# OTHER_KEY=...`}</CodeBlock>
-              </li>
+            <div className="step">
+              <h3>Шаг 3. Установка nvm и Node.js</h3>
+              <p>Официальные репозитории: <a href="https://github.com/nvm-sh/nvm">nvm</a>, <a href="https://nodejs.org/">Node.js</a></p>
+              <CodeBlock>{`# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+# Затем (без перезапуска shell):
+\. "$HOME/.nvm/nvm.sh"
+# Установить Node.js (пример: v24):
+nvm install 24
+# Проверить версию:
+node -v
+npm -v`}</CodeBlock>
+              <p className="tip">Альтернативный вариант — скачать .pkg инсталлер с https://nodejs.org/dist/</p>
+            </div>
 
-              <li className="step">
-                <h3>6) Локальный запуск (dev)</h3>
-                <p>Запускаем dev‑сервер и проверяем в браузере.</p>
-                <CodeBlock>{`npm run dev
-# Открой http://localhost:3000`}</CodeBlock>
-                <p className="check">Логи проекта: <code>tail -n 200 ~/Documents/ai-agents-site-dev.log</code> или <code>pm2 logs ai-agents-site --lines 200</code></p>
-              </li>
+            <div className="step">
+              <h3>Шаг 4. (Опционально) Установка Bun</h3>
+              <p>Если хотите попробовать Bun (альтернатива Node.js): <a href="https://bun.sh">https://bun.sh</a></p>
+              <CodeBlock>{`curl -fsSL https://bun.com/install | bash
+# или через Homebrew
+brew install oven-sh/bun/bun`}</CodeBlock>
+            </div>
 
-              <li className="step">
-                <h3>7) Постоянный запуск: pm2</h3>
-                <p>Для автоперезапуска удобно pm2. Не используем pm2 в prod с dev — лучше сборка и next start.</p>
-                <CodeBlock>{`# Установить pm2
-npm install -g pm2
-# Запустить (dev)
-pm2 start npm --name ai-agents-site --cwd /Users/$(whoami)/Documents/ai-agents-site -- run dev --watch --update-env
-# Сохранить процессы
-pm2 save
-# Автозапуск при загрузке
-pm2 startup`}</CodeBlock>
-              </li>
+            <div className="step">
+              <h3>Шаг 5. Устанавливаем Ollama</h3>
+              <p>Ollama позволяет работать с локальными и приватными моделями. При желании этот шаг можно пропустить.</p>
+              <p>Подробности: <a href="/ru/modules/installation-and-run/ollama">страница интеграции с Ollama</a></p>
+            </div>
 
-              <li className="step">
-                <h3>8) Production — кратко</h3>
-                <CodeBlock>{`npm run build
-npm run start
-# или под pm2
-pm2 start npm --name ai-agents-site -- run start`}</CodeBlock>
-                <p className="tip">Рекомендуется поставить reverse proxy (Caddy/Nginx) и включить HTTPS.</p>
-              </li>
+            <div className="step">
+              <h3>Шаг 6. Установка OpenClaw</h3>
+              <p>Репозиторий и документация:</p>
+              <ul>
+                <li><a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a></li>
+                <li><a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></li>
+              </ul>
 
-              <li className="step">
-                <h3>9) Диагностика и быстрые решения</h3>
-                <div className="columns">
-                  <div>
-                    <h4>Проверка слушателя</h4>
-                    <CodeBlock>{`lsof -iTCP:3000 -sTCP:LISTEN -Pn`}</CodeBlock>
-                  </div>
-                  <div>
-                    <h4>Проверка ответа</h4>
-                    <CodeBlock>{`curl -I http://localhost:3000`}</CodeBlock>
-                  </div>
+              <p>Варианты установки — выберите удобный для вас:</p>
+              <CodeBlock>{`# Установка через инсталлятор
+curl -fsSL https://openclaw.ai/install.sh | bash
+
+# Установка через npm
+npm install -g openclaw@latest
+openclaw onboard --install-daemon
+
+# Через pnpm
+pnpm add -g openclaw@latest
+pnpm approve-builds -g
+openclaw onboard --install-daemon
+
+# Через bun (если установлен)
+bun add -g openclaw@latest
+openclaw onboard --install-daemon`}</CodeBlock>
+
+              <p className="tip">Флаг <code>--install-daemon</code> регистрирует сервис (launchd на macOS). Если мастер не запустится автоматически — выполните <code>openclaw onboard --install-daemon</code>.</p>
+
+            </div>
+
+            <div className="step">
+              <h3>Шаг 7. Onboarding — кратко</h3>
+              <ol>
+                <li>Подтвердите лицензионные/вспомогательные запросы (Yes/Да).</li>
+                <li>Выберите режим: <strong>QuickStart</strong> (рекомендуется) или Manual для тонкой настройки.</li>
+                <li>При выборе провайдера модели укажите Ollama и вставьте API‑ключи.</li>
+                <li>Выберите канал коммуникации (например, Telegram) и следуйте инструкциям по созданию бота.</li>
+                <li>При завершении скопируйте Gateway Token — он понадобится для входа в Web UI.</li>
+              </ol>
+              <p className="tip">Адрес Web UI по умолчанию: <code>http://127.0.0.1:18789/</code></p>
+            </div>
+
+            <div className="step">
+              <h3>Шаг 8. Скиллы, хуки и дополнительные настройки</h3>
+              <p>Хуки (hooks) автоматизируют триггерные действия. Рекомендуется включить базовые хуки: boot-md, bootstrap-extra-files, command-logger, session-memory.</p>
+              <p>Подробнее: <a href="https://docs.openclaw.ai/automation/hooks">https://docs.openclaw.ai/automation/hooks</a></p>
+            </div>
+
+            <div className="step">
+              <h3>Шаг 9. Диагностика и запуск</h3>
+              <div className="columns">
+                <div>
+                  <h4>Проверка слушателя</h4>
+                  <CodeBlock>{`lsof -iTCP:3000 -sTCP:LISTEN -Pn`}</CodeBlock>
                 </div>
-                <p className="warning">Если в браузере видишь «missing required error components» — вероятно запущены несколько инстансов dev. Останови лишние процессы.</p>
-              </li>
+                <div>
+                  <h4>Проверка ответа</h4>
+                  <CodeBlock>{`curl -I http://localhost:3000`}</CodeBlock>
+                </div>
+              </div>
+              <p className="warning">Если видите ошибку «missing required error components» — возможно запущены несколько инстансов dev. Остановите лишние процессы.</p>
+            </div>
 
-              <li className="step">
-                <h3>10) Полезные команды для восстановления</h3>
-                <ul className="checks">
-                  <li><strong>Удалить артефакты:</strong> <code>rm -rf .next</code></li>
-                  <li><strong>Переустановить зависимости:</strong> <code>rm -rf node_modules && npm ci</code></li>
-                  <li><strong>Убить процесс по PID:</strong> <code>kill &lt;PID&gt;</code></li>
-                </ul>
-              </li>
-            </ol>
+            <div className="step">
+              <h3>Шаг 10. Удаление</h3>
+              <p>Если нужно удалить OpenClaw:</p>
+              <CodeBlock>{`# Простая деинсталляция
+openclaw uninstall
+
+# Полный гайд по удалению см. документацию:
+https://docs.openclaw.ai/install/uninstall`}</CodeBlock>
+            </div>
+
           </section>
 
           <section className="resources">
@@ -149,7 +171,7 @@ pm2 start npm --name ai-agents-site -- run start`}</CodeBlock>
           .module-header p{margin:0;color:var(--muted)}
           .intro .lead{margin:10px 0 18px;font-size:1rem;color:var(--muted)}
 
-          .steps ol{counter-reset:step; padding-left:0}
+          .steps{padding-left:0}
           .step{background:var(--surface);border-radius:12px;padding:14px;margin:12px 0;border:1px solid rgba(15,23,42,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.03)}
           .step h3{margin:0 0 8px;color:var(--accent)}
           .step ul{margin:6px 0 0 18px}
