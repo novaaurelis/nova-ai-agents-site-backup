@@ -107,8 +107,6 @@ npm -v # Should print "11.12.1".
 
               <p>Официальный репозиторий Openclaw на Github: <a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a><br/>Официальная документация: <a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></p>
 
-              <div className="figure"><img src="/images/install-script.svg" alt="Install script" className="responsive"/></div>
-
               <p>Установка Openclaw. Выбери одну из команд и скопируй её в терминал</p>
 
               <CodeBlock>{`curl -fsSL https://openclaw.ai/install.sh | bash`}</CodeBlock>
@@ -131,6 +129,8 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <p style={{margin:0,height:'14px'}}></p>
 
               <p>В процессе копирования файлов установщик проверит необходимые составляющие (Homebrew, Node.js, Git) и при необходимости установит, если что-то было установлено не так.</p>
+
+              <div className="figure"><img src="/images/install-script.svg" alt="Install script" className="responsive"/></div>
 
             </div>
 
