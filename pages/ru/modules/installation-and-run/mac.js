@@ -124,6 +124,10 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <CodeBlock>{`bun add -g openclaw@latest
 openclaw onboard --install-daemon`}</CodeBlock>
 
+              <p>⚠️ Если в процессе установки возникли какие-либо ошибки - используй официальную документацию.</p>
+
+              <p>В процессе копирования файлов установщик проверит необходимые составляющие (Homebrew, Node.js, Git) и при необходимости установит, если что-то было установлено не так.</p>
+
             </div>
 
           </section>
