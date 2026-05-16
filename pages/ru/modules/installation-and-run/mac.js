@@ -1,13 +1,8 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Header from 'components/Header'
-import Link from 'next/link'
 import CodeBlock from 'components/CodeBlock'
 
 export default function MacInstall(){
-  useEffect(()=>{
-    // noop - placeholder if we need client effects
-  },[])
-
   return (
     <div>
       <Header/>
@@ -15,185 +10,54 @@ export default function MacInstall(){
         <article className="module">
           <header className="module-header">
             <h1>Установка OpenClaw на macOS</h1>
-            <p className="muted">Пошаговое руководство — от окружения до запуска сервера. Команды готовы к копированию.</p>
+            <p className="muted">Пошаговое руководство по установке цифрового ассистента на операционную систему твоего Mac.<br/>Рекомендуем ставить все необходимое через терминал. Все команды готовы к копированию.</p>
           </header>
 
-
           <section className="steps">
-
             <div className="step">
-              <h3>Установка OpenClaw на macOS</h3>
-              <p>Пошаговое руководство по установке цифрового ассистента на macOS. Рекомендуем выполнять команды в терминале — они готовы к копированию.</p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 1. Проверяем системные требования</h3>
+              <div className="step-header"><h3>Шаг 1. Проверяем, подходят ли наши системные требования<br/>для установки цифрового ассистента</h3></div>
               <ul>
-                <li>macOS 11+ (рекомендовано).</li>
-                <li>Пакетный менеджер Homebrew.</li>
-                <li>Git и менеджер версий Node (nvm).</li>
-                <li>Свободное дисковое пространство ~300–500 МБ и нужные права доступа.</li>
-                <li>Если планируете локальные языковые модели: минимум 8 ГБ RAM (минимум 2 ГБ, рекомендуемо 16 ГБ и дискретная GPU).</li>
+                <li>macOS 11+ (рекомендовано)</li>
+                <li>наличие пакетного менеджера Homebrew</li>
+                <li>наличие Git зависимостей и Node.js</li>
+                <li>наличие свободного дискового пространства (300-500Мб) и необходимых прав</li>
+                <li>если планируете скачивать и запускать локальные языковые модели,<br/>то желательно иметь минимум 8Гб оперативной памяти (чем больше, тем лучше).<br/>Абсолютный минимум 2 Гб. Наиболее предпочтительными параметрами являются<br/>оперативная память 16Гб и более и наличие дискретной графической карты.</li>
               </ul>
             </div>
 
             <div className="step">
-              <h3>Шаг 2. Установка Homebrew</h3>
-              <p className="note">Homebrew упрощает установку инструментов. Официальный сайт: <a href="https://brew.sh">https://brew.sh</a></p>
-              <p>Открой терминал (Spotlight → Terminal) и выполните одну из команд ниже.</p>
+              <div className="step-header"><h3>Шаг 2. Установка Homebrew</h3></div>
+
+              <p>Пакетный менеджер Homebrew упрощает установку многих инструментов.<br/>Официальный сайт: <a href="https://brew.sh">https://brew.sh/</a></p>
+
+              <p>Вызываем окно терминала. Для этого нажимаем в верхнем правом тулбара вашего рабочего стола значок лупы (поставить изображение лупы для удобства восприятия). Далее в поиске пишем Terminal и нажимаем Enter.</p>
+
+              <p>Первый способ. Для установки пакетного менеджера скопируйте данную команду в терминал:</p>
               <CodeBlock>{`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`}</CodeBlock>
-              <p className="tip">Альтернативно скачайте .pkg с релиза Homebrew на GitHub: https://github.com/Homebrew/brew/releases/latest</p>
-              <p className="tip">Если у вас Apple Silicon: <code>eval "$(/opt/homebrew/bin/brew shellenv)"</code></p>
+
+              <p>Второй способ. Скачать установщик .pkg. Его можно скачать в последнем релизе Homebrew на GitHub:<br/><a href="https://github.com/Homebrew/brew/releases/latest">https://github.com/Homebrew/brew/releases/latest</a></p>
             </div>
-
-            <div className="step">
-              <h3>Шаг 3. Установка nvm и Node.js</h3>
-              <p>Официальные репозитории: <a href="https://github.com/nvm-sh/nvm">nvm</a>, <a href="https://nodejs.org/">Node.js</a></p>
-              <CodeBlock>{`# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
-# Затем (без перезапуска shell):
-\. "$HOME/.nvm/nvm.sh"
-# Установить Node.js (пример: v24):
-nvm install 24
-# Проверить версию:
-node -v
-npm -v`}</CodeBlock>
-              <p className="tip">Альтернативный вариант — скачать .pkg инсталлер с https://nodejs.org/dist/</p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 4. (Опционально) Установка Bun</h3>
-              <p>Если хотите попробовать Bun (альтернатива Node.js): <a href="https://bun.sh">https://bun.sh</a></p>
-              <CodeBlock>{`curl -fsSL https://bun.com/install | bash
-# или через Homebrew
-brew install oven-sh/bun/bun`}</CodeBlock>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 5. Устанавливаем Ollama</h3>
-              <p>Ollama позволяет работать с локальными и приватными моделями. При желании этот шаг можно пропустить.</p>
-              <p>Подробности: <a href="/ru/modules/installation-and-run/ollama">страница интеграции с Ollama</a></p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 6. Установка OpenClaw</h3>
-              <p>Репозиторий и документация:</p>
-              <ul>
-                <li><a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a></li>
-                <li><a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></li>
-              </ul>
-
-              <p>Варианты установки — выберите удобный для вас:</p>
-              <CodeBlock>{`# Установка через инсталлятор
-curl -fsSL https://openclaw.ai/install.sh | bash
-
-# Установка через npm
-npm install -g openclaw@latest
-openclaw onboard --install-daemon
-
-# Через pnpm
-pnpm add -g openclaw@latest
-pnpm approve-builds -g
-openclaw onboard --install-daemon
-
-# Через bun (если установлен)
-bun add -g openclaw@latest
-openclaw onboard --install-daemon`}</CodeBlock>
-
-              <p className="tip">Флаг <code>--install-daemon</code> регистрирует сервис (launchd на macOS). Если мастер не запустится автоматически — выполните <code>openclaw onboard --install-daemon</code>.</p>
-
-            </div>
-
-            <div className="step">
-              <h3>Шаг 7. Onboarding — кратко</h3>
-              <ol>
-                <li>Подтвердите лицензионные/вспомогательные запросы (Yes/Да).</li>
-                <li>Выберите режим: <strong>QuickStart</strong> (рекомендуется) или Manual для тонкой настройки.</li>
-                <li>При выборе провайдера модели укажите Ollama и вставьте API‑ключи.</li>
-                <li>Выберите канал коммуникации (например, Telegram) и следуйте инструкциям по созданию бота.</li>
-                <li>При завершении скопируйте Gateway Token — он понадобится для входа в Web UI.</li>
-              </ol>
-              <p className="tip">Адрес Web UI по умолчанию: <code>http://127.0.0.1:18789/</code></p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 8. Скиллы, хуки и дополнительные настройки</h3>
-              <p>Хуки (hooks) автоматизируют триггерные действия. Рекомендуется включить базовые хуки: boot-md, bootstrap-extra-files, command-logger, session-memory.</p>
-              <p>Подробнее: <a href="https://docs.openclaw.ai/automation/hooks">https://docs.openclaw.ai/automation/hooks</a></p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 9. Диагностика и запуск</h3>
-              <div className="columns">
-                <div>
-                  <h4>Проверка слушателя</h4>
-                  <CodeBlock>{`lsof -iTCP:3000 -sTCP:LISTEN -Pn`}</CodeBlock>
-                </div>
-                <div>
-                  <h4>Проверка ответа</h4>
-                  <CodeBlock>{`curl -I http://localhost:3000`}</CodeBlock>
-                </div>
-              </div>
-              <p className="warning">Если видите ошибку «missing required error components» — возможно запущены несколько инстансов dev. Остановите лишние процессы.</p>
-            </div>
-
-            <div className="step">
-              <h3>Шаг 10. Удаление</h3>
-              <p>Если нужно удалить OpenClaw:</p>
-              <CodeBlock>{`# Простая деинсталляция
-openclaw uninstall
-
-# Полный гайд по удалению см. документацию:
-https://docs.openclaw.ai/install/uninstall`}</CodeBlock>
-            </div>
-
           </section>
 
-          <section className="resources">
-            <h3>Полезные ссылки</h3>
-            <ul>
-              <li><a href="https://brew.sh">Homebrew</a></li>
-              <li><a href="https://github.com/nvm-sh/nvm">nvm</a></li>
-              <li><a href="https://pm2.keymetrics.io/">PM2</a></li>
-              <li><a href="https://nextjs.org/docs">Next.js docs</a></li>
-            </ul>
-          </section>
-
-          <div style={{marginTop:20,textAlign:'center'}}>
-            <Link href="/ru/modules/installation-and-run" legacyBehavior><a className="button secondary">Назад</a></Link>
-          </div>
         </article>
 
-        <style jsx>{`
-          .module{max-width:920px;margin:18px auto;padding:0 18px}
-          .module-header{margin-bottom:12px}
-          .module-header h1{margin:0 0 6px}
-          .module-header p{margin:0;color:var(--muted)}
-          .intro .lead{margin:10px 0 18px;font-size:1rem;color:var(--muted)}
-
-          .steps{padding-left:0}
-          .step{background:var(--surface);border-radius:12px;padding:14px;margin:12px 0;border:1px solid rgba(15,23,42,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.03)}
-          .step h3{margin:0 0 8px;color:var(--accent)}
-          .step ul{margin:6px 0 0 18px}
-
-          .note{background:rgba(99,102,241,0.06);border-left:3px solid var(--accent);padding:8px;border-radius:6px;margin:8px 0}
-          .tip{color:var(--muted);font-size:0.95rem}
-          .warning{background:rgba(255,69,58,0.06);border-left:3px solid #ff453a;padding:8px;border-radius:6px;margin-top:8px}
-
-          .columns{display:flex;gap:12px}
-          .columns > div{flex:1}
-
-          .checks{list-style:none;padding-left:0}
-          .checks li{margin:6px 0;padding-left:10px}
-
-          .resources ul{padding-left:18px}
-
-          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-
-          @media (max-width:720px){
-            .columns{flex-direction:column}
-          }
-        `}</style>
+        <style jsx>{`\n          .module{--step-highlight-width:650px;max-width:720px !important;box-sizing:border-box;margin:12px auto;padding:0 18px 100px;overflow-wrap:break-word}
+          @media (max-width:720px){.module{padding-bottom:60px}}
+          @media (max-width:700px){
+            .module-header, .steps { max-width:100%; margin:0 12px }
+            .module { padding:0 12px 60px }
+          }\n          .module-header{margin-bottom:0;text-align:center}
+          /* align header and steps to the same visual guide (green lines) */
+          .module-header, .steps{max-width:var(--step-highlight-width);margin:0 18px;box-sizing:border-box}\n          .module-header h1{margin:0;font-size:28px;line-height:1}\n          .module-header p{margin:0;padding:0;line-height:1.25;margin-top:-6px} .module-header h1 + p{margin-top:-6px;padding-top:0}\n          .steps{display:flex;flex-direction:column;align-items:center;padding-left:0}\n          .step{background:var(--surface);border-radius:10px;padding:12px;margin:12px 0;border:1px solid rgba(15,23,42,0.04);box-shadow:0 4px 12px rgba(2,6,23,0.03);width:100%;max-width:100%;box-sizing:border-box;overflow:hidden}
+          /* prevent overflow and long‑word breaks */
+          .step p, .step h3, .step li{overflow-wrap:break-word;word-break:break-word}
+          /* ensure images inside steps follow the step width */
+          .step .responsive, .step .image-grid img{max-width:100%;height:auto;display:block;margin:8px auto}\n          .step h3{margin:0 0 6px;color:#000;font-weight:700}
+          .step-header{display:block;width:100%;box-sizing:border-box;padding:8px 12px;border-left:4px solid var(--accent);border-right:6px solid var(--accent);background:rgba(2,6,23,0.02);border-radius:6px;text-align:left;overflow:hidden}
+          .step > ul, .step > p, .step pre, .step .responsive, .step .image-grid img{max-width:100%;width:100%;margin:0;padding:0;box-sizing:border-box}
+          .step > ul{padding-left:18px;list-style-position:inside;margin:8px 0}
+          .step li{margin-bottom:6px;word-break:break-word}\n          pre{background:rgba(0,0,0,0.03);padding:8px;border-radius:6px;overflow:auto}\n          .figure{margin:8px 0}\n          .responsive{max-width:720px !important;width:100%;height:auto;display:block;margin:8px auto;border-radius:6px;object-fit:contain}\n          .image-grid{display:flex;flex-direction:column;align-items:center;gap:8px;margin:8px 0}
+          .image-grid img{width:100%;max-width:720px;margin:0 auto;display:block;border-radius:6px;object-fit:contain}\n\n          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:600}\n        `}</style>
       </main>
     </div>
   )
