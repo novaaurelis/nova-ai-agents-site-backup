@@ -23,6 +23,11 @@ export default function MacInstall(){
                 <li>наличие свободного дискового пространства (300-500Мб) и необходимых прав</li>
                 <li>если планируете скачивать и запускать локальные языковые модели,<br/>то желательно иметь минимум 8Гб оперативной памяти (чем больше, тем лучше).<br/>Абсолютный минимум 2 Гб. Наиболее предпочтительными параметрами являются<br/>оперативная память 16Гб и более и наличие дискретной графической карты.</li>
               </ul>
+
+              <p>⚠️ Если у вас нет Homebrew и других зависимостей, то мы установим их далее.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+
             </div>
 
             <div className="step">
@@ -35,8 +40,65 @@ export default function MacInstall(){
               <p>Первый способ. Для установки пакетного менеджера скопируйте данную команду в терминал:</p>
               <CodeBlock>{`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`}</CodeBlock>
 
-              <p>Второй способ. Скачать установщик .pkg. Его можно скачать в последнем релизе Homebrew на GitHub:<br/><a href="https://github.com/Homebrew/brew/releases/latest">https://github.com/Homebrew/brew/releases/latest</a></p>
+              <p className="with-gap">Второй способ. Скачать установщик .pkg. Его можно скачать в <a href="https://github.com/Homebrew/brew/releases/latest">последнем релизе</a> Homebrew на GitHub.</p>
+              <p style={{margin:0,height:'14px'}}></p>
             </div>
+
+            <div className="step">
+              <div className="step-header"><h3>Шаг 3. Установка Node Version Manager и Node.js</h3></div>
+
+              <p>Официальный сайт (репозиторий): <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a><br/>Официальный сайт Node.js: <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
+
+              <p>Установка NVM и Node.js. Скопируй команду в терминал</p>
+
+              <CodeBlock>{`# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+
+# Download and install Node.js:
+nvm install 24
+
+# Verify the Node.js version:
+node -v # Should print "v24.15.0".
+
+# Verify npm version:
+npm -v # Should print "11.12.1".
+`}</CodeBlock>
+
+              <p>Альтернативный способ: скачать инсталлер <a href="https://nodejs.org/dist/v24.15.0/node-v24.15.0.pkg">.pkg</a></p>
+
+              <div className="note" role="note" aria-label="Примечание">
+                ⚠️ Если по каким-либо причинам команды или ссылки на скачивание потеряли актуальность или были изменены разработчиками, пожалуйста, перейдите на официальные сайты для получения актуальной информации.
+              </div>
+              <p style={{margin:0,height:'14px'}}></p>
+            </div>
+
+            <div className="step">
+              <div className="step-header"><h3>Шаг 4. (Опционально) Установка Bun</h3></div>
+
+              <p>Bun — это современная, сверхбыстрая среда выполнения JavaScript и TypeScript, созданная как прямая, более эффективная альтернатива Node.js.<br/>Официальный сайт Bun: <a href="https://bun.com/">https://bun.com/</a></p>
+
+              <p>Установка Bun. Скопируй команду в терминал</p>
+
+              <CodeBlock>{`curl -fsSL https://bun.com/install | bash`}</CodeBlock>
+
+              <p>Или альтернативная команда через Homebrew:</p>
+              <CodeBlock>{`brew install oven-sh/bun/bun`}</CodeBlock>
+
+              <p>Также на <a href="https://bun.com/">официальном сайте</a> можно скачать установщики для конкретной версии вашего компьютера для процессоров на базе ARM или Intel.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+            </div>
+
+            <div className="step">
+                <div className="step-header"><h3>Шаг 5. Устанавливаем Ollama</h3></div>
+
+                <p>Ollama — это бесплатная платформа с открытым исходным кодом, позволяющая использовать вашего агента с помощью облачных и локальных моделей, обеспечивая конфиденциальность данных.<br/>Для интеграции и установки смотри <a href="http://localhost:3000/ru/modules/installation-and-run/ollama">раздел об установке Ollama</a>.</p>
+
+                <p style={{margin:0,height:'14px'}}></p>
+
+                <p>⚠️ Если у вас уже есть подписка на другую нейросеть, или агрегатор нейросетей с доступом к API-ключам, то этот шаг можно пропустить. Используйте ваши ключи для корректного запуска Openclaw в процессе установки.</p>
+              </div>
+
           </section>
 
         </article>
@@ -56,8 +118,14 @@ export default function MacInstall(){
           .step-header{display:block;width:100%;box-sizing:border-box;padding:8px 12px;border-left:4px solid var(--accent);border-right:6px solid var(--accent);background:rgba(2,6,23,0.02);border-radius:6px;text-align:left;overflow:hidden}
           .step > ul, .step > p, .step pre, .step .responsive, .step .image-grid img{max-width:100%;width:100%;margin:0;padding:0;box-sizing:border-box}
           .step > ul{padding-left:18px;list-style-position:inside;margin:8px 0}
-          .step li{margin-bottom:6px;word-break:break-word}\n          pre{background:rgba(0,0,0,0.03);padding:8px;border-radius:6px;overflow:auto}\n          .figure{margin:8px 0}\n          .responsive{max-width:720px !important;width:100%;height:auto;display:block;margin:8px auto;border-radius:6px;object-fit:contain}\n          .image-grid{display:flex;flex-direction:column;align-items:center;gap:8px;margin:8px 0}
-          .image-grid img{width:100%;max-width:720px;margin:0 auto;display:block;border-radius:6px;object-fit:contain}\n\n          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:600}\n        `}</style>
+          .step li{margin-bottom:6px;word-break:break-word}
+          .step li:last-child{margin-bottom:14px}\n          pre{background:rgba(0,0,0,0.03);padding:8px;border-radius:6px;overflow:auto}\n          .figure{margin:8px 0}\n          .responsive{max-width:720px !important;width:100%;height:auto;display:block;margin:8px auto;border-radius:6px;object-fit:contain}\n          .image-grid{display:flex;flex-direction:column;align-items:center;gap:8px;margin:8px 0}
+          .image-grid img{width:100%;max-width:720px;margin:0 auto;display:block;border-radius:6px;object-fit:contain}\n\n
+          .note{background:rgba(255,249,230,1);border-left:4px solid var(--accent);padding:10px 12px;border-radius:6px;margin:8px 0;display:flex;align-items:center;gap:8px}
+          .note .icon{margin-right:8px;font-size:18px;line-height:1}
+          .note span{display:inline-block}
+          .step > p.with-gap{margin-bottom:14px !important}
+          .button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:600}\n        `}</style>
       </main>
     </div>
   )
