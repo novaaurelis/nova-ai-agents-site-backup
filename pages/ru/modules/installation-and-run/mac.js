@@ -168,7 +168,7 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <p style={{margin:0,height:'14px'}}></p>
               <p style={{margin:0,height:'14px'}}></p>
 
-              <div className="figure"><img src="/images/ollama_window.png" alt="Ollama window" className="responsive"/></div>
+              <div className="figure small"><img src="/images/ollama_window.png" alt="Ollama window" className="responsive"/></div>
             </div>
 
           </section>
@@ -192,6 +192,7 @@ openclaw onboard --install-daemon`}</CodeBlock>
           .step > ul{padding-left:18px;list-style-position:inside;margin:8px 0}
           .step li{margin-bottom:6px;word-break:break-word}
           .step li:last-child{margin-bottom:14px}\n          pre{background:rgba(0,0,0,0.03);padding:8px;border-radius:6px;overflow:auto}\n          .figure{margin:8px 0}\n          .responsive{max-width:720px !important;width:100%;height:auto;display:block;margin:8px auto;border-radius:6px;object-fit:contain}\n          .image-grid{display:flex;flex-direction:column;align-items:center;gap:8px;margin:8px 0}
+          .figure.small img{max-width:480px;margin:0 auto;display:block}
           .image-grid img{width:100%;max-width:720px;margin:0 auto;display:block;border-radius:6px;object-fit:contain}\n\n
           .note{background:rgba(255,249,230,1);border-left:4px solid var(--accent);padding:10px 12px;border-radius:6px;margin:8px 0;display:flex;align-items:center;gap:8px}
           .note .icon{margin-right:8px;font-size:18px;line-height:1}
