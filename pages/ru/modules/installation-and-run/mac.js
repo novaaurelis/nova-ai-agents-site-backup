@@ -159,6 +159,11 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <p style={{margin:0,height:'14px'}}></p>
 
               <div className="figure"><img src="/images/intro.avif" alt="Intro" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>3. Выбираем языковую нейромодель, которую мы будем использовать и которую мы настроили через Ollama. Для этого на следующем шаге при выборе провайдера мы выбираем Ollama.</p>
             </div>
 
           </section>
