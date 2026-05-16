@@ -99,6 +99,30 @@ npm -v # Should print "11.12.1".
                 <p>⚠️ Если у вас уже есть подписка на другую нейросеть, или агрегатор нейросетей с доступом к API-ключам, то этот шаг можно пропустить. Используйте ваши ключи для корректного запуска Openclaw в процессе установки.</p>
               </div>
 
+            <div className="step">
+              <div className="step-header"><h3>Шаг 6. Устанавливаем Openclaw</h3></div>
+
+              <p>Официальный репозиторий Openclaw на Github: <a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a><br/>Официальная документация: <a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></p>
+
+              <p>Установка Openclaw. Выбери одну из команд и скопируй её в терминал</p>
+
+              <CodeBlock>{`curl -fsSL https://openclaw.ai/install.sh | bash`}</CodeBlock>
+
+              <p>Установка через npm</p>
+              <CodeBlock>{`npm install -g openclaw@latest
+openclaw onboard --install-daemon`}</CodeBlock>
+
+              <p>Установка через pnpm</p>
+              <CodeBlock>{`pnpm add -g openclaw@latest
+pnpm approve-builds -g
+openclaw onboard --install-daemon`}</CodeBlock>
+
+              <p>Установка через bun (если устанавливал bun, шаг 4)</p>
+              <CodeBlock>{`bun add -g openclaw@latest
+openclaw onboard --install-daemon`}</CodeBlock>
+
+            </div>
+
           </section>
 
         </article>
