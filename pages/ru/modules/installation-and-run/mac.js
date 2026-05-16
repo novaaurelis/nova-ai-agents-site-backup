@@ -169,6 +169,17 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <p style={{margin:0,height:'14px'}}></p>
 
               <div className="figure small"><img src="/images/ollama_window.png" alt="Ollama window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Нажимаем Enter и выбираем языковую модель, по умолчанию стоит Kimi K2.5 (или возможно доступна более продвинутая Kimi K2.6). После выбора модели вставляем наши API-ключи, которые мы сгенерировали при регистрации в Ollama. Жмем Enter.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>4. Устанавливаем связь с нашим ботом в мессенджере.</p>
+
+              <p>На следующем шаге мастер спросит, какой канал вы хотите использовать для общения с OpenClaw. Вариантов много: Telegram, WhatsApp, Discord, Slack, Signal, LINE, iMessage, Google Chat, Microsoft Teams, Twitch и другие. Несмотря на блокировки и замедление Telegram в России, я рекомендую выбрать именно его, так как настройка достаточно простая, а интерфейс мессенджера привычен большинству пользователей.</p>
             </div>
 
           </section>
