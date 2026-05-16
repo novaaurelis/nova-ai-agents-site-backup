@@ -130,6 +130,9 @@ openclaw onboard --install-daemon`}</CodeBlock>
 
               <p>В процессе копирования файлов установщик проверит необходимые составляющие (Homebrew, Node.js, Git) и при необходимости установит, если что-то было установлено не так.</p>
 
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
               <div className="figure"><img src="/images/install-script.svg" alt="Install script" className="responsive"/></div>
 
               <p style={{margin:0,height:'14px'}}></p>
