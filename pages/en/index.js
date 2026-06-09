@@ -56,10 +56,11 @@ export default function EnHome(){
           <div className="grid-cards">
             <div className="card">
               <div className="icon" aria-hidden>
-                {/* wrench / tools */}
+                {/* clipboard / checklist */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <path d="M22 12v2a2 2 0 0 1-2 2h-1l-3.5-3.5 1-1L19 15v-1a2 2 0 0 1 2-2z" />
-                  <path d="M8.5 15.5L3 21l1.5-5.5L9 13l-0.5 2.5z" />
+                  <path d="M9 2h6a2 2 0 0 1 2 2v1h-10V4a2 2 0 0 1 2-2z" />
+                  <rect x="7" y="7" width="10" height="14" rx="2" />
+                  <path d="M9.5 12.5l1.5 1.5L14.5 11" />
                 </svg>
               </div>
               <div className="card-body">Clear, step-by-step installation and startup guide</div>
@@ -152,7 +153,7 @@ export default function EnHome(){
           </p>
 
           <div style={{display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
-            <Link href="/en/dashboard" className="button">You're just one step away from magic</Link>
+            <Link href="/en/dashboard" className="button">You're one step closer to magic</Link>
           </div>
         </div>
 

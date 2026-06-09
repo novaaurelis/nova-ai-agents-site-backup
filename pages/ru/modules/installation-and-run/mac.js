@@ -92,22 +92,22 @@ npm -v # Should print "11.12.1".
             <div className="step">
                 <div className="step-header"><h3>Шаг 5. Устанавливаем Ollama</h3></div>
 
-                <p>Ollama — это бесплатная платформа с открытым исходным кодом, позволяющая использовать вашего агента с помощью облачных и локальных моделей, обеспечивая конфиденциальность данных.<br/>Для интеграции и установки смотри <a href="http://localhost:3000/ru/modules/installation-and-run/ollama">раздел об установке Ollama</a>.</p>
+                <p>Ollama — это бесплатная платформа с открытым исходным кодом, позволяющая использовать вашего агента с помощью облачных и локальных моделей, обеспечивая конфиденциальность данных.<br/>Для интеграции и установки смотри <a href="/ru/modules/installation-and-run/ollama">раздел об установке Ollama</a>.</p>
 
                 <p style={{margin:0,height:'14px'}}></p>
 
-                <p>⚠️ Если у вас уже есть подписка на другую нейросеть, или агрегатор нейросетей с доступом к API-ключам, то этот шаг можно пропустить. Используйте ваши ключи для корректного запуска Openclaw в процессе установки.</p>
+                <p>⚠️ Если у вас уже есть подписка на другую нейросеть, или агрегатор нейросетей с доступом к API-ключам, то этот шаг можно пропустить. Используйте ваши ключи для корректного запуска OpenClaw в процессе установки.</p>
 
                 <p style={{margin:0,height:'14px'}}></p>
 
               </div>
 
             <div className="step">
-              <div className="step-header"><h3>Шаг 6. Устанавливаем Openclaw</h3></div>
+              <div className="step-header"><h3>Шаг 6. Устанавливаем OpenClaw</h3></div>
 
-              <p>Официальный репозиторий Openclaw на Github: <a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a><br/>Официальная документация: <a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></p>
+              <p>Официальный репозиторий OpenClaw на GitHub: <a href="https://github.com/openclaw/openclaw">https://github.com/openclaw/openclaw</a><br/>Официальная документация: <a href="https://docs.openclaw.ai/">https://docs.openclaw.ai/</a></p>
 
-              <p>Установка Openclaw. Выбери одну из команд и скопируй её в терминал</p>
+              <p>Установка OpenClaw. Выбери одну из команд и скопируй её в терминал</p>
 
               <CodeBlock>{`curl -fsSL https://openclaw.ai/install.sh | bash`}</CodeBlock>
 
@@ -124,7 +124,7 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <CodeBlock>{`bun add -g openclaw@latest
 openclaw onboard --install-daemon`}</CodeBlock>
 
-              <p>⚠️ Если в процессе установки возникли какие-либо ошибки - используй официальную документацию.</p>
+              <p>⚠️ Если в процессе установки возникли какие-либо ошибки — используй официальную документацию.</p>
 
               <p style={{margin:0,height:'14px'}}></p>
 
@@ -143,7 +143,7 @@ openclaw onboard --install-daemon`}</CodeBlock>
             <div className="step">
               <div className="step-header"><h3>Шаг 7. Запуск онбординга - мастера настройки нашего ассистента</h3></div>
 
-              <p>Если мастер настройки не запустится автоматически, то запускаем его через команду</p>
+              <p>Если мастер настройки не запустится автоматически, то запускаем его через команду:</p>
               <CodeBlock>{`openclaw onboard --install-daemon`}</CodeBlock>
 
               <p>Флаг <code>--install-daemon</code> автоматически регистрирует OpenClaw как системный сервис: на macOS это launchd, на Linux — systemd. После этого Gateway будет стартовать при загрузке системы.</p>
@@ -180,6 +180,177 @@ openclaw onboard --install-daemon`}</CodeBlock>
               <p>4. Устанавливаем связь с нашим ботом в мессенджере.</p>
 
               <p>На следующем шаге мастер спросит, какой канал вы хотите использовать для общения с OpenClaw. Вариантов много: Telegram, WhatsApp, Discord, Slack, Signal, LINE, iMessage, Google Chat, Microsoft Teams, Twitch и другие. Несмотря на блокировки и замедление Telegram в России, я рекомендую выбрать именно его, так как настройка достаточно простая, а интерфейс мессенджера привычен большинству пользователей.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/telegram_window.png" alt="Telegram window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Нажмите Enter. После этого мастер настройки предложит вам зарегистрировать нового бота Telegram и предоставит все необходимые инструкции. Про то, как создать телеграмм-бота мы рассказали в отдельном разделе.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/telegrambot_setup.png" alt="Telegram bot setup" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>На следующем шаге выбираем вставку токена нашего бота в терминале.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/telegram_token_window.png" alt="Telegram token window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Вставляем наш токен и жмем Enter.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/telegram_token_window2.png" alt="Telegram token window 2" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Мастер настройки сообщит об успешно подключенном боте.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>5. Следующий шаг - выбор поискового провайдера. Он позволяет OpenClaw искать актуальную информацию в интернете, когда вы задаете вопросы, требующие свежих данных. Большинство сервисов требуют платных ключей, поэтому выбирайте для начала бесплатные варианты, например, DuckDuckGo.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/search_provider_window.png" alt="Search provider window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>В завершение нажмите Enter.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>6. Скиллы (умения) бота - это следующий шаг при установке. При первоначальной установке нет смысла устанавливать скиллы, поэтому на следующем шаге выбираем NO ("Нет").</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/skills_window.png" alt="Skills window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>7. Еще одна важная настройка OpenClaw - это хуки. Это триггеры, которые автоматически запускают определенные действия в ответ на события в системе. Они позволяют автоматизировать рутину и интегрировать OpenClaw в ваш рабочий процесс без ручного ввода команд.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/hooks_window.png" alt="Hooks window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Здесь мы рекомендуем с помощью пробела выбрать все четыре хука и нажать Enter.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/hooks_window2.png" alt="Hooks window 2" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Хуки — это небольшие скрипты, которые срабатывают при наступлении определённых событий. В OpenClaw они используются для автоматизации рабочих процессов: позволяют сохранять историю сессий, вести аудит действий агента, запускать фоновые задачи при старте и завершении работы, а также взаимодействовать с внешними API. По сути, это набор «автоправил», которые упрощают настройку системы и фиксируют важные события без ручного вмешательства. Подробнее о настройке можно узнать в <a href="https://docs.openclaw.ai/automation/hooks">документации</a>.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>В OpenClaw хуки можно включить при первичной настройке или через конфигурационный файл. Доступны следующие варианты:</p>
+
+              <ul>
+                <li><strong>boot-md</strong> (системный хук)<br/>Автоматически создаёт и обновляет файл boot.md в рабочей директории. Это своего рода шпаргалка для агента: файл с инструкциями, который всегда находится в проекте и помогает ИИ понимать контекст без дополнительных запросов.<br/><br/>При запуске агента или сбросе сессии в boot.md записывается:<br/><br/>- краткое описание проекта из настроек;<br/>- правила работы (например, стиль кода или поведение);<br/>- текущее состояние (где агент остановился ранее).<br/><br/>Благодаря этому агенту не нужно каждый раз перечитывать всю историю диалога — он просто обращается к boot.md. Это снижает расход токенов и помогает не путаться при работе с несколькими проектами.</li>
+                <li><strong>bootstrap-extra-files</strong> (загрузка дополнительных файлов)<br/>Этот хук подгружает в рабочую среду агента дополнительные инструкции или конфигурации перед началом работы. Например, если есть файл .claws-rules агент автоматически прочитает его сразу после запуска.</li>
+                <li><strong>command-logger</strong> (логирование команд)<br/>Записывает все команды, которые агент выполняет в терминале, а также ответы системы. Это полезно для отладки и анализа: можно точно увидеть, какие действия привели к ошибке. Также повышает безопасность, так как сохраняется полный журнал действий.</li>
+                <li><strong>session-memory</strong> (память сессии)<br/>Отвечает за сохранение контекста между запусками и внутри длительных диалогов. Без него агент может терять нить работы. Хук помогает поддерживать актуальное состояние проекта и избегать повторения одних и тех же действий.</li>
+              </ul>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>8. На следующем шаге мастер настройки попросит вас выбрать интерфейс, в котором вы будете общаться с ИИ-агентом сразу после установки.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/hatch_window.png" alt="Interface selection window" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <ul>
+                <li><strong>Hatch in TUI</strong> — текстовый интерфейс прямо в вашем терминале (консоли). Это самый быстрый вариант: не нужно открывать браузер, всё происходит там же, где вы вводите команды настройки;</li>
+                <li><strong>Open the Web UI</strong> — запуск полноценного графического интерфейса в браузере (по типу ChatGPT или Claude, но локально). Здесь удобнее работать со структурой файлов, есть боковая панель с логами и наглядное отображение того, как агент «думает» и изменяет код;</li>
+                <li><strong>Do this later</strong> — пропустить этот шаг и выбрать позже.</li>
+              </ul>
+
+              <p>Выбираем Hatch in Tui и можно сразу же в терминале задать ему вопрос, чтобы проверить все ли правильно мы подключили.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/openclaw_start.png" alt="OpenClaw start" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Шаг 7. Запускаем цифрового ассистента в Веб-сессии и телеграме.</p>
+
+              <p>Прежде чем мы выйдем из установщика в терминале я рекомендую найти токен нашего установленного ассистента и скопировать его. Для этого необходимо прокрутить немного вверх, найти раздел Control UI и эту строчку:</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/openclaw_token.png" alt="OpenClaw token" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Это наш токен (выделил красным). Копируем его и сохраняем в безопасное место. Зеленым цветом выделен адрес гейта, на котором будет работать наш ассистент. После копирования нашего токена из установка можно выйти, нажав Ctrl+С дважды.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Далее заходим в любой удобный браузер.</p>
+              <p>Вставляем адрес нашего гейта: <a href="http://127.0.0.1:18789/">http://127.0.0.1:18789/</a> и наблюдаем как появляется интерфейс для входа в веб-сессию с нашим агентом.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <div className="figure small"><img src="/images/b3huwmir.jpg" alt="OpenClaw web session" className="responsive"/></div>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Вставляем в раздел Gateway Token наш токен и запускаем агента. Сразу же появляется диалоговое окно, в котором вы можете общаться с вашим агентом. Ура! Также вы можете общаться с вашим агентом через вашего бота, которого мы создали в телеграм.</p>
+
+              <p style={{margin:0,height:'14px'}}></p>
+              <p style={{margin:0,height:'14px'}}></p>
+
+              <p>Шаг 8. (При необходимости) Удаление Openclaw.</p>
+
+              <p>При необходимости удаления всех файлов цифрового помощника воспользуйся командой в терминале</p>
+              <CodeBlock>{`openclaw uninstall`}</CodeBlock>
+
+              <p>При возникновении ошибок или остаточных следов установки воспользуйся <a href="https://docs.openclaw.ai/install/uninstall">официальным гайдом по удалению</a>.</p>
             </div>
 
           </section>
