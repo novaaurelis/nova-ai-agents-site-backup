@@ -10,7 +10,9 @@ export async function getStaticPaths(){
   const files = fs.readdirSync(dir).filter(f=>f.endsWith('.mdx'))
   const slugs = files.map(f=>f.replace(/\.(ru|en)\.mdx$/,''))
   const uniq = [...new Set(slugs)]
-  return { paths: uniq.map(s=>({params:{slug:s}})), fallback:false }
+  const staticSlugs = new Set(['first-steps','installation-and-run','deep-configuration','updates-and-support','practical-cases','skills-and-personas'])
+  const paths = uniq.filter(s=>!staticSlugs.has(s)).map(s=>({params:{slug:s}}))
+  return { paths, fallback:false }
 }
 
 export async function getStaticProps({params}){

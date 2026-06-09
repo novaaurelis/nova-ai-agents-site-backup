@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function Header(){
   const router = useRouter()
-  const path = router.asPath || ''
+  const path = typeof router.asPath === 'string' ? router.asPath : ''
   let current = 'ru'
   if (path.startsWith('/en')) current = 'en'
   else if (path.startsWith('/ru')) current = 'ru'
@@ -42,8 +42,8 @@ export default function Header(){
             <button type="button" className="lang-button" onClick={() => setOpen(v => !v)}>{current.toUpperCase()} ▾</button>
             {open && (
               <div className="lang-menu">
-                <Link href={ruPath} className="lang-item" onClick={() => setOpen(false)}>RU</Link>
-                <Link href={enPath} className="lang-item" onClick={() => setOpen(false)}>EN</Link>
+                <a href={ruPath} className="lang-item" onClick={() => setOpen(false)}>RU</a>
+                <a href={enPath} className="lang-item" onClick={() => setOpen(false)}>EN</a>
               </div>
             )}
           </div>
